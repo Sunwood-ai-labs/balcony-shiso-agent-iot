@@ -664,6 +664,7 @@
       </div>
       <p class="callout">この図の見方: ベランダ常設の本命は「DFRobot SEN0308級の防水土壌水分センサー + 分離チューブポンプ」。プロトタイプ部品は構成図から外しました。</p>
       <p class="callout">配置ルール: 壁や手すりに固定できる前提にしない。M5側防滴ボックスは、横長プランターに立てた短い支柱/小型ワイヤーネットへ結束バンドで固定する。</p>
+      <p class="callout">環境情報も取るなら: ENV IIIで温度・湿度・気圧、DLightで照度を追加。G9/G10はI2Cに使い、土壌水分はUnit ADC、ポンプ制御はEXT.IO2へ逃がす。</p>
     </section>
 
     <section class="extras" aria-label="補助備品">
@@ -686,6 +687,10 @@
       <article class="mini">
         <h3>M5箱の固定</h3>
         <p>ラック前提にしない。プランターの土に短い支柱か小型ワイヤーネットを立て、箱を結束バンドで固定する。</p>
+      </article>
+      <article class="mini">
+        <h3>温湿度・照度</h3>
+        <p>ENV IIIとDLightを追加候補にする。外気と照度を測るので、箱内ではなく雨よけ下に出す。</p>
       </article>
       <article class="mini">
         <h3>北向きベランダ</h3>
