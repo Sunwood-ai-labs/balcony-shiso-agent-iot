@@ -732,9 +732,51 @@
       <p class="callout">API前提なら判断を変える。安いWi-Fi気象計はAPI未確定。メーカー公式でAPIが強い候補は Ecowitt、WeatherFlow Tempest、Ambient Weather。</p>
       <p class="callout">GW1100+WS90の代替: 第一候補はECOWITT Wittboy GW2001/WS90。API確度を落とさず、Amazon表示47,568円でGW1100+WS90より安い。</p>
       <p class="callout">最低要件だけなら自作が安い: ESP32/M5Stack + 温湿度センサー + BH1750/TSL2591照度センサー + 100均通風シェルターで7,000〜15,000円。APIはMQTT/HTTP/JSONで自由に出せる。</p>
-      <p class="callout">照度は必須: 北向きで何が育つかを決める入口。二度手間を避けるなら、温湿度だけでなく照度/UVまで常設で取れる候補を選ぶ。</p>
+      <p class="callout">まず作る版: 透明ケースにM5/ESP32、温湿度センサー、照度センサーを入れ、左右に通気スリット、底に水抜き穴。UVは初回不要。</p>
+      <p class="callout">照度は必須: 北向きで何が育つかを決める入口。フェーズ1は照度まで常設で取り、UVは外す。</p>
       <p class="callout">電源: ウェザーステーション屋外センサーはソーラー+電池で動かし、100Vを引かない。表示機/ゲートウェイは室内USB/AC、または100V箱側で保護して給電。</p>
       <p class="callout">Amazon商品リンク: SwitchBot防水温湿度計、SwitchBot Hub Mini、照度/UV込みウェザーステーション候補をASIN付き商品ページへリンク。照度計は型番決定後に商品URL化する。</p>
+      <table class="link-table" aria-label="透明ケース簡易版設計図">
+        <thead>
+          <tr>
+            <th>場所</th>
+            <th>入れる/加工するもの</th>
+            <th>目的</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>透明面</td>
+            <td>BH1750/TSL2591照度センサー</td>
+            <td>空の明るさを測る。小屋の影を測らない</td>
+          </tr>
+          <tr>
+            <td>内部</td>
+            <td>M5StickS3/ESP32、SHT31/SHT35/BME280、乾燥剤</td>
+            <td>温湿度 + 照度 + API送信を1箱で成立させる</td>
+          </tr>
+          <tr>
+            <td>左右側面</td>
+            <td>細い通気スリット + 防虫メッシュ</td>
+            <td>ケース内に熱と湿気がこもるのを減らす</td>
+          </tr>
+          <tr>
+            <td>底面</td>
+            <td>1〜2mm水抜き穴、下向きケーブル出口</td>
+            <td>結露や吹き込み水を逃がす</td>
+          </tr>
+          <tr>
+            <td>API</td>
+            <td>HTTP /metrics.json または MQTT temp/humidity/lux</td>
+            <td>外部から値を取れるようにする</td>
+          </tr>
+          <tr>
+            <td>初回で外す</td>
+            <td>UV、風速、雨量、本格百葉箱</td>
+            <td>最低要件ではない。透明ケースでUVは値が狂いやすい</td>
+          </tr>
+        </tbody>
+      </table>
       <table class="link-table" aria-label="API前提の星取表">
         <thead>
           <tr>
