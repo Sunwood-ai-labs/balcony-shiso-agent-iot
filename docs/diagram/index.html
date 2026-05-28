@@ -205,19 +205,19 @@
     }
 
     .part {
-      min-height: 118px;
+      min-height: 132px;
       padding: 8px;
       border: 1px solid rgba(31,42,36,.12);
       background: #fffaf0;
       display: grid;
-      grid-template-rows: 74px auto;
+      grid-template-rows: 76px auto;
       gap: 7px;
       align-items: center;
     }
 
     .part img {
       width: 100%;
-      height: 74px;
+      height: 76px;
       object-fit: contain;
     }
 
@@ -228,11 +228,19 @@
     }
 
     .arrow {
-      display: grid;
-      place-items: center;
-      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      width: min(100%, 760px);
+      margin: 10px auto;
+      padding: 8px 14px;
+      text-align: center;
+      overflow-wrap: anywhere;
+      background: rgba(255,253,248,.78);
+      border: 1px dashed rgba(47,125,74,.38);
       color: var(--green);
-      font: 900 28px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+      font: 900 clamp(18px, 4vw, 26px)/1.25 ui-monospace, SFMono-Regular, Menlo, monospace;
     }
 
     .split {
@@ -452,7 +460,7 @@
             <div class="inside">
               <div class="part">
                 <img src="https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1207/K150-stickS3_main-products_01.webp" alt="M5StickS3">
-                <span>M5StickS3</span>
+                <span>M5StickS3<br>Grove端子:<br>GND/5V/G9/G10</span>
               </div>
               <div class="part">
                 <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_01.webp" alt="M5Stack TypeC2Grove">
@@ -464,14 +472,14 @@
               </div>
               <div class="part">
                 <img src="https://shop.m5stack.com/cdn/shop/products/1_a12cb37d-7bf3-4336-8bcf-276172f8087b_1200x1200.jpg" alt="M5Stack Grove2Dupont 変換ケーブル">
-                <span>Grove2Dupont<br>A096</span>
+                <span>Grove2Dupont<br>A096<br>G9へSignal</span>
               </div>
               <div class="part">
                 <img src="https://dfimg.dfrobot.com/enshop/DFR0457/DFR0457_Main_01.jpg" alt="DFRobot Gravity MOSFET Power Controller">
-                <span>DFR0457<br>MOSFET</span>
+                <span>DFR0457<br>MOSFET<br>G10へIN</span>
               </div>
               <div class="part">
-                <span>共通GND<br>5Vポンプ<br>電源</span>
+                <span>M5 GND<br>ポンプGND<br>共通化</span>
               </div>
             </div>
           </div>
