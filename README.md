@@ -44,6 +44,7 @@ IP65防滴ボックス = M5側
 - [実装ロードマップ](docs/roadmap.md)
 - [仕様確認メモ](docs/source-notes.md)
 - [屋外運用設計](docs/outdoor-design.md)
+- [接続確認](docs/connectivity.md)
 - [備品画像つき簡易構成図](docs/diagram/index.html)
 - [過去のCAD・寸法検討](2026/05/28/tomato-agent-iot-02/README.md)
 

@@ -24,7 +24,13 @@
   - 確認観点: IP65、防水保護、3.3-5.5V、アナログ出力、ケーブル長、M5側ADC接続方法。
 - Adafruit Peristaltic Liquid Pump with Silicone Tubing / Product ID 3910
   - 参照: <https://www.adafruit.com/product/3910>
-  - 確認観点: 5V-6V DC、チューブポンプ、流量、消費電流、M5側駆動回路。
+  - 確認観点: 5V-6V DC、チューブポンプ、モーター電流約500mA、M5側駆動回路。
+
+## M5StickS3 接続
+
+- M5StickS3
+  - 参照: <https://docs.m5stack.com/en/core/StickS3>
+  - 確認観点: Grove端子が `GND / 5V / G9 / G10`。センサーADC入力とポンプ制御GPIOの割り当て候補。
 
 ## 100V 側・防滴部材
 
