@@ -577,6 +577,63 @@
       font: 900 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
     }
 
+    .power-weather-flow {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .flow-box {
+      padding: 14px;
+      border: 2px solid rgba(31,42,36,.18);
+      background: #fff;
+      min-height: 154px;
+      display: grid;
+      align-content: start;
+      gap: 8px;
+    }
+
+    .flow-box h3 {
+      margin: 0;
+      font: 900 15px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    .flow-box p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .flow-box ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .flow-box.power {
+      border-color: rgba(226,179,59,.56);
+      box-shadow: 8px 8px 0 rgba(226,179,59,.16);
+    }
+
+    .flow-box.weather {
+      border-color: rgba(46,143,181,.48);
+      box-shadow: 8px 8px 0 rgba(46,143,181,.12);
+    }
+
+    .flow-arrow {
+      min-width: 120px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: var(--green);
+      font: 900 15px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
     .build-layout {
       margin-top: 14px;
       display: grid;
@@ -663,6 +720,8 @@
       .target-grid { grid-template-columns: 1fr; }
       .weather-station { grid-template-columns: 1fr; }
       .build-layout { grid-template-columns: 1fr 1fr; }
+      .power-weather-flow { grid-template-columns: 1fr; }
+      .flow-arrow { min-height: 46px; }
       .station-flow { min-height: 32px; }
       .node b { font-size: 15px; }
     }
@@ -896,6 +955,27 @@
 
       <section class="section-panel" id="weather-station" aria-label="自作簡易ウェザーステーション図解">
         <h2 class="section-heading">自作簡易ウェザーステーション図解</h2>
+        <div class="power-weather-flow" aria-label="電源箱とウェザーステーション箱の分離図">
+          <div class="flow-box power">
+            <h3>100V側: 屋外用電源ボックス</h3>
+            <p>ここで100Vを5Vへ変換する箱。ダイソーケースとは別。</p>
+            <ul>
+              <li>HATAYA延長コードのメス側</li>
+              <li>USB-C ACアダプタ</li>
+              <li>100Vはこの箱で止める</li>
+            </ul>
+          </div>
+          <div class="flow-arrow">5V USB-Cだけ<br>-------></div>
+          <div class="flow-box weather">
+            <h3>5V側: ダイソー透明ケース</h3>
+            <p>簡易ウェザーステーション本体。ここに100Vは入れない。</p>
+            <ul>
+              <li>M5StickS3</li>
+              <li>ENV III/IV + DLight</li>
+              <li>Unit Hub / PaHUB</li>
+            </ul>
+          </div>
+        </div>
         <div class="weather-station">
           <div class="station-box">
             <h3>透明面 / 空側</h3>
