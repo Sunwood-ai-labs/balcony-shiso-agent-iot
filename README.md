@@ -84,9 +84,9 @@ IP65防滴ボックス = M5側
 
 | 方針 | 概算コスト | 判断 |
 |---|---:|---|
-| SwitchBot 防水温湿度計のみ | 公式 1,980円 | BLE/スマホ確認だけなら最安 |
-| SwitchBot 防水温湿度計 + Hub Mini | 公式セット 7,480円 | 推奨。屋外温湿度をM5と別系統で飛ばせる |
-| Ecowitt WS2910級 | 公式 $123.99 = 19,838円換算 | 照度/UV/雨/風まで欲しい場合 |
+| SwitchBot 防水温湿度計のみ | Amazon表示 1,780円 | BLE/スマホ確認だけなら最安 |
+| SwitchBot 防水温湿度計 + Hub Mini | Amazon表示 合計 7,010円 | 推奨。屋外温湿度をM5と別系統で飛ばせる |
+| Ecowitt WS2910級 | Amazon.co.jp未取得。公式 $123.99 = 19,838円換算 | 照度/UV/雨/風まで欲しい場合 |
 | Ecowitt GW1100 + WS90級 | 未確認 | 拡張性は高いがベランダ大葉には過剰気味 |
 | ENV III + DLight DIY | 約8,000〜25,000円以上 | M5直結学習向け。防水とシェルター工作が増える |
 
@@ -103,13 +103,13 @@ IP65防滴ボックス = M5側
 
 ## Amazon ASIN
 
-価格はAmazon価格ではなく、2026-05-28時点で確認できた公式価格。Amazon.co.jpの商品ページ価格はブラウザから取得できなかったため、購入時にAmazonアプリで確認する。
+価格は2026-05-28時点でChromeからAmazon.co.jp商品ページを開いて確認。SwitchBot 2点はAmazon表示価格、Ecowitt WS2910級は該当ASINがAmazon.co.jpで「ページが見つかりません」だったため公式価格を参考値として残す。
 
 | 商品 | ASIN | 確認価格 | 主な機能 | URL |
 |---|---|---:|---|---|
-| Ecowitt WS2910級 | `B0991GVBYK` | 公式 $123.99 = 19,838円換算 | 温度、湿度、照度/日射、UV、雨、風 | https://www.amazon.co.jp/dp/B0991GVBYK |
-| SwitchBot 防水温湿度計 | `B0BVLYPYT1` | 公式 1,980円 | 温度、湿度 | https://www.amazon.co.jp/dp/B0BVLYPYT1 |
-| SwitchBot Hub Mini Matter対応版 | `B0DSPXKDP8` | 公式 5,980円 | 遠隔確認、API/通知連携 | https://www.amazon.co.jp/dp/B0DSPXKDP8 |
+| Ecowitt WS2910級 | `B0991GVBYK` | Amazon.co.jp未取得。公式 $123.99 = 19,838円換算 | 温度、湿度、照度/日射、UV、雨、風 | https://www.amazon.co.jp/dp/B0991GVBYK |
+| SwitchBot 防水温湿度計 | `B0BVLYPYT1` | Amazon表示 1,780円 | 温度、湿度 | https://www.amazon.co.jp/dp/B0BVLYPYT1 |
+| SwitchBot Hub Mini Matter対応版 | `B0DSPXKDP8` | Amazon表示 5,230円 | 遠隔確認、API/通知連携 | https://www.amazon.co.jp/dp/B0DSPXKDP8 |
 
 Amazonアプリで直リンクが開けない場合は、Amazon検索欄にASINを入れる。
 
