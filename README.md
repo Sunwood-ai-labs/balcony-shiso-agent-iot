@@ -41,6 +41,7 @@ Unit Watering = 鉢側に露出
 - [安全チェックリスト](docs/safety-checklist.md)
 - [実装ロードマップ](docs/roadmap.md)
 - [仕様確認メモ](docs/source-notes.md)
+- [備品画像つき簡易構成図](docs/diagram/index.html)
 - [過去のCAD・寸法検討](2026/05/28/tomato-agent-iot-02/README.md)
 
 ## 現在のゴール
