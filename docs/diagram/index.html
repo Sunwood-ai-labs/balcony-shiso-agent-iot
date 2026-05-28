@@ -317,6 +317,22 @@
       line-height: 1.5;
     }
 
+    .wire-list {
+      margin: 10px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 6px;
+    }
+
+    .wire-list li {
+      padding: 7px 8px;
+      background: #f4f9f1;
+      border: 1px solid rgba(47,125,74,.18);
+      color: var(--green);
+      font: 800 12px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
     .callout {
       margin: 0;
       padding: 16px 18px;
@@ -479,7 +495,7 @@
                 <span>DFR0457<br>MOSFET<br>G10へIN</span>
               </div>
               <div class="part">
-                <span>M5 GND<br>ポンプGND<br>共通化</span>
+                <span>GND端子台<br>M5 GND +<br>ポンプ電源-</span>
               </div>
             </div>
           </div>
@@ -499,18 +515,24 @@
               <div class="target-part">
                 <img src="https://dfimg.dfrobot.com/enshop/SEN0308/SEN0308_Main_01.jpg" alt="DFRobot SEN0308 IP65 防水土壌水分センサー">
                 <b>DFRobot SEN0308</b>
-                <p>Grove2DupontでM5StickS3へ接続。SignalはG9/ADC、VCC/GNDも同じ端子群へ。</p>
+                <p>Grove2DupontでM5StickS3へ接続。</p>
+                <ul class="wire-list">
+                  <li>Signal -> G9 / ADC</li>
+                  <li>VCC -> 5V</li>
+                  <li>GND -> GND端子台</li>
+                </ul>
               </div>
               <div class="target-part">
                 <img src="https://cdn-shop.adafruit.com/970x728/3910-02.jpg" alt="Adafruit 5V-6V チューブポンプ">
                 <b>5V-6V チューブポンプ</b>
-                <p>DFR0457 MOSFET経由でG10からON/OFF。ポンプ5VとM5側GNDを共通化。</p>
+                <p>DFR0457 MOSFET経由でG10からON/OFF。</p>
+                <ul class="wire-list">
+                  <li>G10 -> MOSFET IN</li>
+                  <li>ポンプ+ -> 5Vポンプ電源+</li>
+                  <li>ポンプ- -> MOSFET OUT-</li>
+                  <li>M5 GND + ポンプ電源- -> 同じGND端子台</li>
+                </ul>
               </div>
-            </div>
-            <div class="note-strip">
-              <span>G9 = センサーADC</span>
-              <span>G10 = MOSFET IN</span>
-              <span>GNDは全系統共通</span>
             </div>
           </div>
         </div>
