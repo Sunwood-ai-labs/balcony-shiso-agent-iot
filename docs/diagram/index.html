@@ -274,6 +274,41 @@
       font: 800 12px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
     }
 
+    .target-grid {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .target-part {
+      padding: 10px;
+      border: 1px solid rgba(47,125,74,.2);
+      background: #fffaf0;
+      display: grid;
+      grid-template-rows: 150px auto auto;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .target-part img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      background: #fff;
+    }
+
+    .target-part b {
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .target-part p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
     .callout {
       margin: 0;
       padding: 16px 18px;
@@ -333,6 +368,7 @@
       .split .node { grid-template-columns: 1fr; }
       .split .photo { width: 100%; height: 140px; }
       .note-strip { grid-template-columns: 1fr; }
+      .target-grid { grid-template-columns: 1fr; }
       .node b { font-size: 15px; }
     }
   </style>
@@ -433,38 +469,30 @@
 
         <div class="node plant">
           <div class="photo">
-            <div class="fallback" style="display:flex">IP65/IP68<br>SOIL<br>SENSOR</div>
+            <img src="https://dfimg.dfrobot.com/enshop/SEN0308/SEN0308_Main_01.jpg" alt="DFRobot SEN0308 IP65 防水土壌水分センサー" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fallback">IP65<br>SOIL<br>SENSOR</div>
           </div>
           <div class="node-content">
             <small>outdoor target</small>
             <b>屋外本命: 防水土壌水分センサー + 分離ポンプ</b>
-            <p>ベランダ常設はこの考え方。土に挿すセンサーはIP65/IP68級、ポンプと基板は防滴箱や雨よけ下へ分離する。</p>
-            <div class="note-strip">
-              <span>防水センサー<br>土へ常設</span>
-              <span>ポンプ本体<br>雨よけ下</span>
-              <span>濡れるのは<br>チューブだけ</span>
-            </div>
-          </div>
-        </div>
-        <div class="arrow">↓ プロトタイプ確認にも使える</div>
-
-        <div class="split">
-          <div class="node plant">
-            <div class="photo">
-              <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_01.webp" alt="M5Stack Unit Watering U101" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="fallback">U101<br>Watering</div>
-            </div>
-            <div class="node-content">
-              <small>prototype only</small>
-              <b>Unit Watering U101</b>
-              <p>便利だが防水等級未確認。室内・軒下・短時間テスト用。雨ざらし常設にはしない。</p>
-              <div class="note-strip">
-                <span>センサー板<br>土へ挿す</span>
-                <span>吸水チューブ<br>水源へ</span>
-                <span>屋外本命<br>ではない</span>
+            <p>ベランダ常設はこれ。濡れてよい部品と保護する部品を分ける。</p>
+            <div class="target-grid">
+              <div class="target-part">
+                <img src="https://dfimg.dfrobot.com/enshop/SEN0308/SEN0308_Main_01.jpg" alt="DFRobot SEN0308 IP65 防水土壌水分センサー">
+                <b>DFRobot SEN0308</b>
+                <p>IP65防水土壌水分センサー。土に挿して水分をアナログ値で読む本命候補。</p>
+              </div>
+              <div class="target-part">
+                <img src="https://cdn-shop.adafruit.com/970x728/3910-02.jpg" alt="Adafruit 5V-6V チューブポンプ">
+                <b>5V-6V チューブポンプ</b>
+                <p>水に触れるのはチューブ側。ポンプ本体はM5箱内または雨よけ下に置く。</p>
               </div>
             </div>
           </div>
+        </div>
+        <div class="arrow">↓ センサーは土へ / チューブは水源と鉢へ</div>
+
+        <div class="split">
           <div class="node plant">
             <div class="photo">
               <img src="https://www.spider-farmer.com/wp-content/uploads/2021/09/spider-farmer-5-gallon-growbag.jpg" alt="5ガロン不織布ポット" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
@@ -473,22 +501,22 @@
             <div class="node-content">
               <small>tomato side</small>
               <b>不織布ポット</b>
-              <p>センサー板を根元から少し離して土へ挿す。吐水口は土表面へ固定。</p>
+              <p>防水センサーを根元から少し離して土へ挿す。吐水口は土表面へ固定。</p>
             </div>
           </div>
           <div class="node plant">
             <div class="photo">
-              <div class="fallback" style="display:flex">TEST CUP<br>OK<br>→ 5L TANK</div>
+              <div class="fallback" style="display:flex">5L<br>WATER<br>TANK</div>
             </div>
             <div class="node-content">
               <small>water source</small>
-              <b>初回はコップ / 運用は水タンク</b>
-              <p>コップは室内3秒テスト用ならOK。ベランダ運用は倒れにくい5L級タンク推奨。</p>
+              <b>5L級 水タンク</b>
+              <p>ベランダ運用は倒れにくいタンク。吸水チューブを入れ、空運転を避ける。</p>
             </div>
           </div>
         </div>
       </div>
-      <p class="callout">この図の見方: ベランダ常設の本命は「防水土壌水分センサー + 分離ポンプ」。Unit Watering U101 は便利な一体型ですが、防水等級が確認できないため、室内/軒下の短時間プロトタイプ扱いに下げます。</p>
+      <p class="callout">この図の見方: ベランダ常設の本命は「DFRobot SEN0308級の防水土壌水分センサー + 分離チューブポンプ」。プロトタイプ部品は構成図から外しました。</p>
     </section>
 
     <section class="extras" aria-label="補助備品">
