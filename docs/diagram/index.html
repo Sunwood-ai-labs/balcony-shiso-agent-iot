@@ -463,10 +463,12 @@
                 <span>OA-WH22-06/13 ×2-3</span>
               </div>
               <div class="part">
-                <span>Grove/HY2.0<br>to Dupont<br>変換</span>
+                <img src="https://shop.m5stack.com/cdn/shop/products/1_a12cb37d-7bf3-4336-8bcf-276172f8087b_1200x1200.jpg" alt="M5Stack Grove2Dupont 変換ケーブル">
+                <span>Grove2Dupont<br>A096</span>
               </div>
               <div class="part">
-                <span>MOSFET<br>ポンプ<br>ドライバ</span>
+                <img src="https://dfimg.dfrobot.com/enshop/DFR0457/DFR0457_Main_01.jpg" alt="DFRobot Gravity MOSFET Power Controller">
+                <span>DFR0457<br>MOSFET</span>
               </div>
               <div class="part">
                 <span>共通GND<br>5Vポンプ<br>電源</span>
@@ -489,13 +491,18 @@
               <div class="target-part">
                 <img src="https://dfimg.dfrobot.com/enshop/SEN0308/SEN0308_Main_01.jpg" alt="DFRobot SEN0308 IP65 防水土壌水分センサー">
                 <b>DFRobot SEN0308</b>
-                <p>IP65防水土壌水分センサー。GND/VCC/SignalをM5StickS3のADC入力へ変換接続する。</p>
+                <p>Grove2DupontでM5StickS3へ接続。SignalはG9/ADC、VCC/GNDも同じ端子群へ。</p>
               </div>
               <div class="target-part">
                 <img src="https://cdn-shop.adafruit.com/970x728/3910-02.jpg" alt="Adafruit 5V-6V チューブポンプ">
                 <b>5V-6V チューブポンプ</b>
-                <p>水に触れるのはチューブ側。GPIO直結せずMOSFETドライバでON/OFFする。</p>
+                <p>DFR0457 MOSFET経由でG10からON/OFF。ポンプ5VとM5側GNDを共通化。</p>
               </div>
+            </div>
+            <div class="note-strip">
+              <span>G9 = センサーADC</span>
+              <span>G10 = MOSFET IN</span>
+              <span>GNDは全系統共通</span>
             </div>
           </div>
         </div>
