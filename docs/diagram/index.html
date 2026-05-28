@@ -1219,6 +1219,11 @@
         Zigbeeに限定しない。SwitchBot、Tuya/Smart Life、Matter/Thread、Wi-Fi気象計、Netatmo/Ecowittのような既製品を組み合わせても簡易ウェザーステーション相当は作れる。
         見るべき軸は通信方式ではなく、温湿度、照度/日射、雨、API、屋外耐性、電源が揃うか。
       </div>
+      <div class="note">
+        <strong>クラウドAPIの意味:</strong>
+        Smart Life/Tuyaアプリで見る場合、センサー値はいったんTuya側のサーバーへ上がる。そのサーバーから値を読むのがクラウドAPI。
+        ベランダ内だけで完結させたいなら、Zigbee2MQTTやHome AssistantでローカルMQTT/API化する。つまり、このzmart/Tuya日光・雨センサーは「安い候補」だが、単体でHTTP APIを持つわけではない。
+      </div>
       <table class="link-table" aria-label="既製品組み合わせウェザーステーション比較">
         <thead>
           <tr>
@@ -1252,6 +1257,16 @@
             <td>SwitchBot: 電池<br>日光/雨: ソーラー充電<br>Gateway: 室内USB給電</td>
             <td>なし</td>
             <td>既製品だけで目的にかなり近い。API一本化が課題。</td>
+          </tr>
+          <tr>
+            <td>zmart/Tuya日光・雨センサー + Zigbee2MQTT</td>
+            <td>約8,000〜12,000円<br><small>日光/雨4,831円 + Zigbee USBドングル目安</small></td>
+            <td>明るさ、雨検知、雨量/雨強度系、電池</td>
+            <td>Zigbee + ローカルMQTT</td>
+            <td>クラウドを使わず、Home Assistant/Zigbee2MQTTで値を読む。RB-SRAIN01系は illuminance/rain/battery の公開例あり。</td>
+            <td>センサー: ソーラー充電<br>USBドングル: 常時稼働機</td>
+            <td>ソフト設定あり</td>
+            <td>このスクショの商品系。安いが、単体APIではない。ローカル化するなら有力。</td>
           </tr>
           <tr>
             <td>Tuya Zigbee日光/雨センサー + Tuya温湿度センサー + Tuya Gateway</td>
@@ -1350,7 +1365,7 @@
           <tr>
             <td>zmart / Tuya Zigbee 日光・雨センサー</td>
             <td>スクショ表示 4,831円</td>
-            <td>日光/明るさ、雨検知。ソーラー充電。Smart Life/Tuya系。</td>
+            <td>日光/明るさ、雨検知。ソーラー充電。Smart Life/Tuya系。単体HTTP APIではなく、Tuya Gateway経由またはZigbee2MQTT経由で読む。</td>
             <td><a href="https://www.amazon.co.jp/s?k=zmart+Tuya+Zigbee+%E6%97%A5%E5%85%89+%E9%9B%A8%E3%82%BB%E3%83%B3%E3%82%B5%E3%83%BC" target="_blank" rel="noopener noreferrer">Amazon検索</a> / <a href="https://www.zigbee2mqtt.io/devices/RB-SRAIN01.html" target="_blank" rel="noopener noreferrer">Zigbee2MQTT対応例</a></td>
           </tr>
           <tr>

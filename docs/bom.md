@@ -50,10 +50,13 @@ Amazon で購入する前提の候補リストです。商品リンクは価格�
 
 Zigbeeに限定しない。SwitchBot、Tuya/Smart Life、Matter/Thread、Wi-Fi気象計、Netatmo/Ecowittのような既製品を組み合わせても、温湿度 + 明るさ + 雨検知の簡易ウェザーステーションは作れる。問題は、API/アプリが分かれること。データを一本化するならHome Assistant/MQTTで集約する。
 
+クラウドAPIは、Smart Life/Tuyaアプリで見る値をTuya側サーバーから読む方式。ベランダ内だけで完結させたいなら、Zigbee2MQTTやHome AssistantでローカルMQTT/API化する。zmart/Tuya日光・雨センサーは安い候補だが、センサー単体でHTTP APIを持つわけではない。
+
 | 構成 | 概算価格 | 取れるもの | 通信/API | 電源 | 判断 |
 |---|---:|---|---|---|---|
 | SwitchBot防水温湿度計 + Hub Mini | 約7,010円 | 温度、湿度、VPDなど | Bluetooth + Wi-Fi Hub / SwitchBot Cloud OpenAPI | センサー電池、Hub室内USB | 楽だが照度なし |
 | SwitchBot + Hub + Smart Life日光/雨センサー | 約12,000〜16,000円 | 温度、湿度、明るさ、雨検知 | Bluetooth + Wi-FiまたはZigbee / APIは分離 | 電池/ソーラー + Hub室内USB | 既製品だけなら有力。Home Assistant集約が現実的 |
+| zmart/Tuya日光・雨センサー + Zigbee2MQTT | 約8,000〜12,000円 | 明るさ、雨検知、電池 | Zigbee + ローカルMQTT | センサーソーラー、常時稼働機 | このスクショの商品系。安いが単体APIではない |
 | Tuya/Smart Life系で統一 | 約9,000〜13,000円 | 温度、湿度、明るさ、雨検知 | Wi-Fi/Zigbee + Tuya Cloud API | 電池/ソーラー + Gateway室内USB | アプリを1つに寄せられるが屋外温湿度仕様を要確認 |
 | Eve Weather / Matter-Thread + 別体照度 | 約12,000〜25,000円 | 温度、湿度、気圧、照度は追加 | Matter over Thread / Home Assistant等 | 電池 + Thread Border Router | Apple HomeやMatter中心なら候補。雨は別 |
 | Netatmo Weather Station + 別体照度 | 約25,000〜45,000円級 | 温湿度、気圧。雨/風は追加 | Wi-Fi + Netatmo API | 屋外電池、室内親機USB/AC | 既製品感は強いが照度は弱い |
