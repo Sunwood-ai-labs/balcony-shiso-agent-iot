@@ -733,19 +733,67 @@
       </div>
       <p class="callout">この図の見方: ベランダ常設の本命は「DFRobot SEN0308級の防水土壌水分センサー + 分離チューブポンプ」。プロトタイプ部品は構成図から外しました。</p>
       <p class="callout">配置ルール: 壁や手すりに固定できる前提にしない。M5側防滴ボックスは、横長プランターに立てた短い支柱/小型ワイヤーネットへ結束バンドで固定する。</p>
-      <p class="callout">環境情報も取るなら: ENV IIIで温度・湿度・気圧、DLightで照度を追加。G9/G10はI2Cに使い、土壌水分はUnit ADC、ポンプ制御はEXT.IO2へ逃がす。</p>
+      <p class="callout">環境情報はM5で楽に作る。M5StickS3 + ENV III/ENV IV + DLight + Unit Hub/PaHUB。Groveケーブルで差すだけ、ハンダなし。</p>
       <p class="callout">センサー保護: ENV IIIやDLightは裸で雨ざらしにしない。外気用には小型百葉箱/自然通風シェルター、照度用には透明カバーを別途用意する。</p>
       <p class="callout">具体候補: ENV IIIはフィールドプロFP1806級の小型自然通風シェルター、DLightは透明フタ付き小型ケースを候補にする。百葉箱にDLightを入れると暗く測る。</p>
       <p class="callout">実例傾向: 屋外DIYでは、温湿度は放射シールド/Stevenson screenに入れる。既製品を買う、3Dプリントする、白い皿状パーツで自作する、の3パターンが多い。下の「既存自作事例」表にリンク付きで整理。</p>
       <p class="callout">簡単案: 屋外温湿度はSwitchBot防水温湿度計に任せる。照度/UVまで欲しいなら、Ecowitt固定ではなく同じ機能要件のWi-Fiウェザーステーションから選ぶ。M5は土壌水分とポンプ制御に集中。</p>
       <p class="callout">API前提なら判断を変える。安いWi-Fi気象計はAPI未確定。メーカー公式でAPIが強い候補は Ecowitt、WeatherFlow Tempest、Ambient Weather。</p>
       <p class="callout">GW1100+WS90の代替: 第一候補はECOWITT Wittboy GW2001/WS90。API確度を落とさず、Amazon表示47,568円でGW1100+WS90より安い。</p>
-      <p class="callout">最低要件だけなら自作が安い: ESP32/M5Stack + 温湿度センサー + BH1750/TSL2591照度センサー + 100均通風シェルターで7,000〜15,000円。APIはMQTT/HTTP/JSONで自由に出せる。</p>
-      <p class="callout">まず作る版: 透明ケースにM5/ESP32、温湿度センサー、照度センサーを入れ、左右に通気スリット、底に水抜き穴。UVは初回不要。</p>
+      <p class="callout">最低要件だけならM5ハンダなし自作が現実的: M5StickS3 + ENV + DLight + Unit Hub/PaHUB + ダイソー透明ケース。APIはMQTT/HTTP/JSONで自由に出せる。</p>
+      <p class="callout">まず作る版: ダイソー透明ケースにM5本体、ENV、DLightを入れ、左右に通気スリット、底に水抜き穴。UVは初回不要。</p>
       <p class="callout">照度は必須: 北向きで何が育つかを決める入口。フェーズ1は照度まで常設で取り、UVは外す。</p>
       <p class="callout">電源: ウェザーステーション屋外センサーはソーラー+電池で動かし、100Vを引かない。表示機/ゲートウェイは室内USB/AC、または100V箱側で保護して給電。</p>
       <p class="callout">Amazon商品リンク: SwitchBot防水温湿度計、SwitchBot Hub Mini、照度/UV込みウェザーステーション候補をASIN付き商品ページへリンク。照度計は型番決定後に商品URL化する。</p>
       <h2 class="section-heading">まず作る透明ケース案</h2>
+      <table class="link-table" aria-label="M5ハンダなし構成表">
+        <thead>
+          <tr>
+            <th>部品</th>
+            <th>数</th>
+            <th>役割</th>
+            <th>接続</th>
+            <th>リンク</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>M5StickS3</td>
+            <td>1</td>
+            <td>Wi-Fi/API送信本体</td>
+            <td>USB-C給電、GroveへUnit Hub/PaHUB</td>
+            <td><a href="https://docs.m5stack.com/en/core/StickS3" target="_blank" rel="noopener noreferrer">公式</a></td>
+          </tr>
+          <tr>
+            <td>Unit Hub または PaHUB</td>
+            <td>1</td>
+            <td>Groveを分岐</td>
+            <td>ENVとDLightを同時接続。差すだけ</td>
+            <td><a href="https://docs.m5stack.com/en/unit/pahub" target="_blank" rel="noopener noreferrer">公式</a></td>
+          </tr>
+          <tr>
+            <td>M5Stack ENV III/ENV IV</td>
+            <td>1</td>
+            <td>温度・湿度・気圧</td>
+            <td>Grove。通風スリット近くに固定</td>
+            <td><a href="https://docs.m5stack.com/ja/unit/env" target="_blank" rel="noopener noreferrer">公式</a></td>
+          </tr>
+          <tr>
+            <td>M5Stack Unit DLight</td>
+            <td>1</td>
+            <td>照度 lux</td>
+            <td>Grove。透明面の裏に固定</td>
+            <td><a href="https://shop.m5stack.com/collections/globo_basis_collection/products/dlight-unit-ambient-light-sensor-bh1750fvi-tr" target="_blank" rel="noopener noreferrer">公式</a></td>
+          </tr>
+          <tr>
+            <td>HY2.0-4P Groveケーブル</td>
+            <td>必要分</td>
+            <td>配線</td>
+            <td>ハンダなしで差す</td>
+            <td><a href="https://docs.m5stack.com/en/learn/interface/grove" target="_blank" rel="noopener noreferrer">仕様</a></td>
+          </tr>
+        </tbody>
+      </table>
       <table class="link-table" aria-label="透明ケース簡易版設計図">
         <thead>
           <tr>
@@ -757,13 +805,13 @@
         <tbody>
           <tr>
             <td>透明面</td>
-            <td>BH1750/TSL2591照度センサー</td>
-            <td>空の明るさを測る。小屋の影を測らない</td>
+            <td>M5Stack Unit DLight</td>
+            <td>空の明るさを測る。小屋の影を測らない。Groveで差すだけ</td>
           </tr>
           <tr>
             <td>内部</td>
-            <td>M5StickS3/ESP32、SHT31/SHT35/BME280、乾燥剤</td>
-            <td>温湿度 + 照度 + API送信を1箱で成立させる</td>
+            <td>M5StickS3、Unit Hub/PaHUB、ENV III/ENV IV、乾燥剤</td>
+            <td>温湿度 + 照度 + API送信をハンダなしで成立させる</td>
           </tr>
           <tr>
             <td>左右側面</td>

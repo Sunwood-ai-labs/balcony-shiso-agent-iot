@@ -115,19 +115,25 @@ API確認メモ:
 
 ## フェーズ1設計図: 透明ケース簡易版
 
-UVは今回の最低要件から外す。透明ケース越しのUVは素材で値が変わりやすいため、まずは温湿度 + 照度 + APIを成立させる。
+UVは今回の最低要件から外す。透明ケース越しのUVは素材で値が変わりやすいため、まずは温湿度 + 照度 + APIを成立させる。ハンダはしない。M5StickS3とGrove接続のM5Stack Unitだけで組む。
 
 ```text
-透明ケース簡易版
+ダイソー透明ケース + M5 ハンダなし版
 
-透明面:
-  BH1750/TSL2591 照度センサー
-
-内部:
-  M5StickS3 または ESP32
-  SHT31/SHT35 または BME280
+本体箱:
+  ダイソー フタ付収納ケース（透明）M
+  M5StickS3
+  Unit Hub または PaHUB
   USB-C 5V入力
   乾燥剤
+
+温湿度:
+  M5Stack ENV III/ENV IV
+  通風スリット近く、できれば白い小型通風カバー側へ寄せる
+
+照度:
+  M5Stack Unit DLight
+  透明面の裏、空が見える向き
 
 左右側面:
   通気スリット + 防虫メッシュ
@@ -147,6 +153,18 @@ API:
 | 底面 | 1〜2mm水抜き穴を数個 | 結露や吹き込み水を逃がす |
 | ケーブル出口 | 下向き、必要ならグロメット | 水がケーブルを伝って入るのを避ける |
 | 照度センサー位置 | 透明面の裏に固定 | 小屋の影を測らない |
+
+### ハンダなしM5構成
+
+| 部品 | 数 | URL | 役割 |
+|---|---:|---|---|
+| M5StickS3 | 1 | https://docs.m5stack.com/en/core/StickS3 | Wi-Fi/API送信本体 |
+| M5Stack ENV III または ENV IV | 1 | https://docs.m5stack.com/ja/unit/env | 温度・湿度・気圧 |
+| M5Stack Unit DLight | 1 | https://shop.m5stack.com/collections/globo_basis_collection/products/dlight-unit-ambient-light-sensor-bh1750fvi-tr | 照度 lux |
+| M5Stack Unit Hub または PaHUB | 1 | https://docs.m5stack.com/en/unit/pahub | Groveを分岐。ENVとDLightを同時接続 |
+| HY2.0-4P Groveケーブル | 必要分 | https://docs.m5stack.com/en/learn/interface/grove | 差すだけ配線 |
+| ダイソー フタ付収納ケース（透明）M | 1 | https://jp.daisonet.com/products/4550480731698 | 本体箱 |
+| 防虫メッシュ、結束バンド、乾燥剤 | 1式 | - | 通風、固定、湿気対策 |
 
 | 初回で外すもの | 理由 |
 |---|---|
