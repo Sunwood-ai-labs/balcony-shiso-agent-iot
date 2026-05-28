@@ -91,28 +91,7 @@
 
     .system {
       margin-top: 28px;
-      display: grid;
-      grid-template-columns: minmax(260px, .95fr) minmax(340px, 1.25fr) minmax(260px, .9fr);
-      gap: 18px;
-      align-items: stretch;
-    }
-
-    .zone {
-      background: rgba(255,253,248,.9);
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-      padding: 18px;
-      min-height: 100%;
-    }
-
-    .zone h2 {
-      margin: 0 0 14px;
-      font-size: 18px;
-      letter-spacing: 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
+      display: block;
     }
 
     .badge {
@@ -131,81 +110,8 @@
     .badge.dc { background: var(--water); }
     .badge.plant { background: var(--green); }
 
-    .stack {
-      display: grid;
-      gap: 14px;
-    }
-
-    .item {
-      position: relative;
-      display: grid;
-      grid-template-columns: 92px 1fr;
-      gap: 13px;
-      min-height: 118px;
-      padding: 10px;
-      background: #fff;
-      border: 1px solid rgba(31,42,36,.12);
-      overflow: hidden;
-    }
-
-    .item img {
-      width: 92px;
-      height: 92px;
-      object-fit: contain;
-      align-self: center;
-      background: #f3efe4;
-      border: 1px solid rgba(31,42,36,.08);
-    }
-
-    .item .fallback {
-      display: none;
-      width: 92px;
-      height: 92px;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: repeating-linear-gradient(-45deg, #f2eadb 0 8px, #fff9ef 8px 16px);
-      border: 1px solid rgba(31,42,36,.12);
-      color: var(--muted);
-      font: 700 11px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
-    }
-
-    .item h3 {
-      margin: 1px 0 6px;
-      font-size: 15px;
-      line-height: 1.35;
-    }
-
-    .item p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.55;
-    }
-
-    .qty {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      width: 28px;
-      height: 28px;
-      border-radius: 999px;
-      background: var(--tomato);
-      color: #fff;
-      display: grid;
-      place-items: center;
-      font: 800 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
-    }
-
-    .flow {
-      display: grid;
-      grid-template-rows: auto 1fr auto;
-      gap: 16px;
-    }
-
     .diagram {
-      min-height: 575px;
-      padding: 22px;
+      padding: 24px;
       background:
         linear-gradient(180deg, rgba(46,143,181,.08), transparent 34%),
         #fffdf8;
@@ -215,19 +121,16 @@
       overflow: hidden;
     }
 
-    .diagram::before {
-      content: "";
-      position: absolute;
-      inset: 18px;
-      border: 1px dashed rgba(31,42,36,.22);
-      pointer-events: none;
-    }
-
     .node {
       position: relative;
-      width: min(100%, 330px);
+      display: grid;
+      grid-template-columns: 145px 1fr;
+      gap: 16px;
+      align-items: center;
+      width: min(100%, 760px);
+      min-height: 154px;
       margin: 0 auto;
-      padding: 14px 16px;
+      padding: 14px;
       background: #fff;
       border: 2px solid rgba(31,42,36,.18);
       box-shadow: 8px 8px 0 rgba(47,125,74,.12);
@@ -235,6 +138,43 @@
     }
 
     .node + .arrow { margin-top: 8px; }
+
+    .node.ac { border-color: rgba(226,179,59,.55); box-shadow: 8px 8px 0 rgba(226,179,59,.18); }
+    .node.dc { border-color: rgba(46,143,181,.45); box-shadow: 8px 8px 0 rgba(46,143,181,.16); }
+    .node.plant { border-color: rgba(47,125,74,.45); box-shadow: 8px 8px 0 rgba(47,125,74,.15); }
+
+    .photo {
+      width: 145px;
+      height: 124px;
+      background: #f3efe4;
+      border: 1px solid rgba(31,42,36,.1);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 6px;
+    }
+
+    .photo .fallback {
+      display: none;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: repeating-linear-gradient(-45deg, #f2eadb 0 8px, #fff9ef 8px 16px);
+      color: var(--muted);
+      font: 800 12px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    .node-content {
+      min-width: 0;
+    }
 
     .node small {
       display: block;
@@ -246,15 +186,45 @@
 
     .node b {
       display: block;
-      font-size: 17px;
+      font-size: 22px;
       line-height: 1.35;
     }
 
     .node p {
       margin: 6px 0 0;
       color: var(--muted);
-      font-size: 12px;
+      font-size: 13px;
       line-height: 1.55;
+    }
+
+    .inside {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .part {
+      min-height: 118px;
+      padding: 8px;
+      border: 1px solid rgba(31,42,36,.12);
+      background: #fffaf0;
+      display: grid;
+      grid-template-rows: 74px auto;
+      gap: 7px;
+      align-items: center;
+    }
+
+    .part img {
+      width: 100%;
+      height: 74px;
+      object-fit: contain;
+    }
+
+    .part span {
+      color: var(--ink);
+      font: 700 12px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
+      text-align: center;
     }
 
     .arrow {
@@ -276,7 +246,13 @@
     .split .node {
       width: 100%;
       padding: 12px;
+      grid-template-columns: 105px 1fr;
       box-shadow: 6px 6px 0 rgba(46,143,181,.12);
+    }
+
+    .split .photo {
+      width: 105px;
+      height: 92px;
     }
 
     .callout {
@@ -322,7 +298,7 @@
     }
 
     @media (max-width: 980px) {
-      header, .system, .extras {
+      header, .extras {
         grid-template-columns: 1fr;
       }
       .status { justify-self: start; }
@@ -331,9 +307,12 @@
 
     @media (max-width: 560px) {
       .page { width: min(100vw - 20px, 1180px); padding-top: 16px; }
-      .item { grid-template-columns: 80px 1fr; }
-      .item img, .item .fallback { width: 80px; height: 80px; }
+      .node { grid-template-columns: 1fr; }
+      .photo { width: 100%; height: 170px; }
+      .inside { grid-template-columns: 1fr; }
       .split { grid-template-columns: 1fr; }
+      .split .node { grid-template-columns: 1fr; }
+      .split .photo { width: 100%; height: 140px; }
       .node b { font-size: 15px; }
     }
   </style>
@@ -351,123 +330,110 @@
       </aside>
     </header>
 
-    <section class="system" aria-label="構成図">
-      <aside class="zone">
-        <h2>100V側 <span class="badge ac">AC</span></h2>
-        <div class="stack">
-          <article class="item">
-            <img src="https://www.hataya.jp/uploads/product/1066/1_1.jpg" alt="HATAYA BFX延長コード" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="fallback">HATAYA<br>BFX</div>
-            <div>
-              <h3>HATAYA BFX-013KC2</h3>
-              <p>防雨形コンセントから取る最初の延長コード。漏電遮断・防雨前提の安全境界。</p>
-            </div>
-            <span class="qty">1</span>
-          </article>
-          <article class="item">
-            <img src="https://restmo.online/cdn/shop/files/1600.png" alt="RESTMO 屋外電気ボックス" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="fallback">RESTMO<br>BOX</div>
-            <div>
-              <h3>RESTMO 大型屋外電気ボックス</h3>
-              <p>延長コードのメス側とUSB-C ACアダプタを入れる100V側の箱。</p>
-            </div>
-            <span class="qty">1</span>
-          </article>
-          <article class="item">
-            <img src="https://www.ankerjapan.com/cdn/shop/products/A2039001_1200x1200.jpg" alt="Anker 523 Charger 47W" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="fallback">ANKER<br>47W</div>
-            <div>
-              <h3>Anker 523 Charger 47W</h3>
-              <p>100Vを5V USB-Cへ変換。密閉箱内の発熱は実物で確認する。</p>
-            </div>
-            <span class="qty">1</span>
-          </article>
-        </div>
-      </aside>
-
-      <section class="flow">
-        <div class="diagram">
-          <div class="node">
+    <section class="system" aria-label="画像入り構成図">
+      <div class="diagram">
+        <div class="node ac">
+          <div class="photo">
+            <div class="fallback" style="display:flex">OUTLET<br>100V</div>
+          </div>
+          <div class="node-content">
             <small>wall outlet</small>
             <b>防雨形コンセント</b>
             <p>既設設備。ここは加工せず、屋外対応の完成品だけを接続。</p>
           </div>
-          <div class="arrow">↓</div>
-          <div class="node">
-            <small>100V safety</small>
-            <b>漏電遮断器付き・防雨型延長コード</b>
-            <p>過負荷・漏電・短絡時の遮断を期待する最初の防衛線。</p>
+        </div>
+        <div class="arrow">↓ 100V</div>
+
+        <div class="node ac">
+          <div class="photo">
+            <img src="https://www.hataya.jp/uploads/product/1066/1_1.jpg" alt="HATAYA BFX延長コード" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fallback">HATAYA<br>BFX</div>
           </div>
-          <div class="arrow">↓</div>
-          <div class="node">
+          <div class="node-content">
+            <small>100V safety</small>
+            <b>HATAYA BFX-013KC2</b>
+            <p>防雨形コンセントから取る最初の延長コード。漏電遮断・防雨前提の安全境界。</p>
+          </div>
+        </div>
+        <div class="arrow">↓ 100V</div>
+
+        <div class="node ac">
+          <div class="photo">
+            <img src="https://restmo.online/cdn/shop/files/1600.png" alt="RESTMO 屋外電気ボックス" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fallback">RESTMO<br>BOX</div>
+          </div>
+          <div class="node-content">
             <small>outdoor power box</small>
             <b>100V側ボックス</b>
-            <p>延長コード接続部とACアダプタだけを収納。裸線加工はしない。</p>
-          </div>
-          <div class="arrow">↓ 5V USB-C</div>
-          <div class="node">
-            <small>ip65 m5 box</small>
-            <b>M5側防滴ボックス</b>
-            <p>M5StickS3 と TypeC2Grove を入れる。100Vは入れない。</p>
-          </div>
-          <div class="arrow">↓ Grove</div>
-          <div class="split">
-            <div class="node">
-              <small>plant side</small>
-              <b>Unit Watering</b>
-              <p>土壌水分と短時間給水。</p>
-            </div>
-            <div class="node">
-              <small>reservoir</small>
-              <b>水タンク 5L</b>
-              <p>空運転を避ける。</p>
+            <p>延長コードのメス側とUSB-C ACアダプタを入れる。裸線加工はしない。</p>
+            <div class="inside">
+              <div class="part">
+                <img src="https://www.ankerjapan.com/cdn/shop/products/A2039001_1200x1200.jpg" alt="Anker 523 Charger 47W">
+                <span>Anker 523 Charger</span>
+              </div>
+              <div class="part">
+                <img src="https://www.hataya.jp/uploads/product/1066/1_2.jpg" alt="HATAYA BFX差込側">
+                <span>HATAYA メス側</span>
+              </div>
+              <div class="part">
+                <span>USB-C<br>3m ×2</span>
+              </div>
             </div>
           </div>
         </div>
-        <p class="callout">セパレートキャプコンは、USB-Cのようなコネクタ付きケーブルを通すための要所。普通のケーブルグランドだとコネクタが通らない可能性がある。</p>
-      </section>
+        <div class="arrow">↓ 5V USB-C</div>
 
-      <aside class="zone">
-        <h2>5V・鉢側 <span class="badge dc">DC</span></h2>
-        <div class="stack">
-          <article class="item">
+        <div class="node dc">
+          <div class="photo">
             <img src="https://www.takachi-el.co.jp/assets/attachments/images/bcap_01.jpg" alt="タカチ BCAP 防水防塵ボックス" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <div class="fallback">TAKACHI<br>BCAP</div>
-            <div>
-              <h3>タカチ BCAP112107G</h3>
-              <p>M5StickS3 と TypeC2Grove を入れるIP65防滴箱。穴あけ後の防滴条件を確認。</p>
+          </div>
+          <div class="node-content">
+            <small>ip65 m5 box</small>
+            <b>M5側防滴ボックス</b>
+            <p>M5StickS3 と TypeC2Grove を収納。100Vは入れない。</p>
+            <div class="inside">
+              <div class="part">
+                <img src="https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1207/K150-stickS3_main-products_01.webp" alt="M5StickS3">
+                <span>M5StickS3</span>
+              </div>
+              <div class="part">
+                <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_01.webp" alt="M5Stack TypeC2Grove">
+                <span>TypeC2Grove</span>
+              </div>
+              <div class="part">
+                <span>セパレート<br>キャプコン<br>×2-3</span>
+              </div>
             </div>
-            <span class="qty">1</span>
-          </article>
-          <article class="item">
-            <img src="https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1207/K150-stickS3_main-products_01.webp" alt="M5StickS3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="fallback">M5<br>StickS3</div>
-            <div>
-              <h3>M5StickS3</h3>
-              <p>Wi-Fi付き制御本体。給水判断と短時間ポンプ制御の中枢。</p>
-            </div>
-            <span class="qty">1</span>
-          </article>
-          <article class="item">
-            <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_01.webp" alt="M5Stack TypeC2Grove" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="fallback">TypeC<br>Grove</div>
-            <div>
-              <h3>M5Stack TypeC2Grove</h3>
-              <p>ポンプ電源をM5本体だけに背負わせないための外部給電補助。</p>
-            </div>
-            <span class="qty">1</span>
-          </article>
-          <article class="item">
-            <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_01.webp" alt="M5Stack Unit Watering U101" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="fallback">U101<br>Watering</div>
-            <div>
-              <h3>M5Stack Unit Watering U101</h3>
-              <p>鉢側に露出。まずは1秒から3秒だけ動かして電圧降下を見る。</p>
-            </div>
-            <span class="qty">1</span>
-          </article>
+          </div>
         </div>
-      </aside>
+        <div class="arrow">↓ Grove + 給水チューブ</div>
+
+        <div class="split">
+          <div class="node plant">
+            <div class="photo">
+              <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/watering/watering_01.webp" alt="M5Stack Unit Watering U101" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="fallback">U101<br>Watering</div>
+            </div>
+            <div class="node-content">
+              <small>plant side</small>
+              <b>Unit Watering</b>
+              <p>鉢側に露出。まずは1秒から3秒だけ動かす。</p>
+            </div>
+          </div>
+          <div class="node plant">
+            <div class="photo">
+              <div class="fallback" style="display:flex">POT<br>+<br>5L TANK</div>
+            </div>
+            <div class="node-content">
+              <small>tomato side</small>
+              <b>不織布ポット + 水タンク</b>
+              <p>プチトマト、鉢皿、5L水タンク。空運転と水漏れに注意。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="callout">この図の見方: 上から下へ「100V → 100V側ボックス内で5V化 → M5側防滴ボックス → 鉢側Unit Watering」。画像が入っている場所が、実際に購入して置く備品の位置です。</p>
     </section>
 
     <section class="extras" aria-label="補助備品">
