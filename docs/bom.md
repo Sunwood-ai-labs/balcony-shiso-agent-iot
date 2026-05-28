@@ -48,12 +48,12 @@ Amazon で購入する前提の候補リストです。商品リンクは価格�
 
 Amazon商品リンク:
 
-| 用途 | 商品 | ASIN | URL | 開けない時 |
-|---|---|---|---|---|
-| 照度込みウェザーステーション | Ecowitt WS2910級 Wi-Fi Weather Station | B0991GVBYK | https://www.amazon.co.jp/dp/B0991GVBYK | Amazon検索欄に `B0991GVBYK` を入れる |
-| 屋外温湿度 | SwitchBot 防水温湿度計 | B0BVLYPYT1 | https://www.amazon.co.jp/dp/B0BVLYPYT1 | Amazon検索欄に `B0BVLYPYT1` を入れる |
-| SwitchBotクラウド連携 | SwitchBot Hub Mini Matter対応版 | B0DSPXKDP8 | https://www.amazon.co.jp/dp/B0DSPXKDP8 | Amazon検索欄に `B0DSPXKDP8` を入れる |
-| 照度計/ルクスメーター | 未定 | - | - | 初期調査はスマホアプリでも可。買う場合は型番を決めてから商品URL化 |
+| 用途 | 商品 | ASIN | 概算価格 | 機能 | 電源/通信 | URL | 開けない時 |
+|---|---|---|---:|---|---|---|---|
+| 照度込みウェザーステーション | Ecowitt WS2910級 Wi-Fi Weather Station | B0991GVBYK | 約20,000円前後 | 温度、湿度、照度/日射、UV、雨、風 | 屋外センサーはソーラー+電池、表示機はUSB/AC、Wi-Fi/API系 | https://www.amazon.co.jp/dp/B0991GVBYK | Amazon検索欄に `B0991GVBYK` を入れる |
+| 屋外温湿度 | SwitchBot 防水温湿度計 | B0BVLYPYT1 | 約2,000円 | 温度、湿度 | 電池、Bluetooth。Hub追加でクラウド/API | https://www.amazon.co.jp/dp/B0BVLYPYT1 | Amazon検索欄に `B0BVLYPYT1` を入れる |
+| SwitchBotクラウド連携 | SwitchBot Hub Mini Matter対応版 | B0DSPXKDP8 | 約5,000〜6,000円 | SwitchBot機器の遠隔確認、API/通知連携 | USB給電、Wi-Fi/Bluetooth | https://www.amazon.co.jp/dp/B0DSPXKDP8 | Amazon検索欄に `B0DSPXKDP8` を入れる |
+| 照度計/ルクスメーター | 未定 | - | 0〜3,000円程度 | 手動の照度確認 | スマホアプリまたは電池式照度計 | - | 初期調査はスマホアプリでも可。買う場合は型番を決めてから商品URL化 |
 
 ## 環境情報コスト比較
 

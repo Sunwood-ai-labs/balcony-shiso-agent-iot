@@ -103,11 +103,11 @@ IP65防滴ボックス = M5側
 
 ## Amazon ASIN
 
-| 商品 | ASIN | URL |
-|---|---|---|
-| Ecowitt WS2910級 | `B0991GVBYK` | https://www.amazon.co.jp/dp/B0991GVBYK |
-| SwitchBot 防水温湿度計 | `B0BVLYPYT1` | https://www.amazon.co.jp/dp/B0BVLYPYT1 |
-| SwitchBot Hub Mini Matter対応版 | `B0DSPXKDP8` | https://www.amazon.co.jp/dp/B0DSPXKDP8 |
+| 商品 | ASIN | 概算価格 | 主な機能 | URL |
+|---|---|---:|---|---|
+| Ecowitt WS2910級 | `B0991GVBYK` | 約20,000円前後 | 温度、湿度、照度/日射、UV、雨、風 | https://www.amazon.co.jp/dp/B0991GVBYK |
+| SwitchBot 防水温湿度計 | `B0BVLYPYT1` | 約2,000円 | 温度、湿度 | https://www.amazon.co.jp/dp/B0BVLYPYT1 |
+| SwitchBot Hub Mini Matter対応版 | `B0DSPXKDP8` | 約5,000〜6,000円 | 遠隔確認、API/通知連携 | https://www.amazon.co.jp/dp/B0DSPXKDP8 |
 
 Amazonアプリで直リンクが開けない場合は、Amazon検索欄にASINを入れる。
 
