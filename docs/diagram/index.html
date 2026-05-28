@@ -519,6 +519,34 @@
       font: 900 15px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
     }
 
+    .station-img {
+      width: 100%;
+      height: 110px;
+      display: grid;
+      place-items: center;
+      background: #fffaf0;
+      border: 1px solid rgba(31,42,36,.12);
+      overflow: hidden;
+    }
+
+    .station-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 6px;
+    }
+
+    .station-img .fallback {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: var(--muted);
+      font: 900 12px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
+      background: repeating-linear-gradient(-45deg, #f2eadb 0 8px, #fff9ef 8px 16px);
+    }
+
     .station-box ul {
       margin: 0;
       padding-left: 18px;
@@ -547,6 +575,39 @@
       text-align: center;
       color: var(--ink);
       font: 900 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    .build-layout {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .build-card {
+      min-height: 174px;
+      padding: 8px;
+      border: 1px solid rgba(60,80,55,.16);
+      background: #fff;
+      display: grid;
+      grid-template-rows: 96px auto;
+      gap: 8px;
+    }
+
+    .build-card img {
+      width: 100%;
+      height: 96px;
+      object-fit: contain;
+      background: #fffaf0;
+      border: 1px solid rgba(31,42,36,.08);
+      padding: 6px;
+    }
+
+    .build-card span {
+      font: 900 12px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
+      text-align: center;
+      color: var(--ink);
     }
 
     .extras {
@@ -601,6 +662,7 @@
       .note-strip { grid-template-columns: 1fr; }
       .target-grid { grid-template-columns: 1fr; }
       .weather-station { grid-template-columns: 1fr; }
+      .build-layout { grid-template-columns: 1fr 1fr; }
       .station-flow { min-height: 32px; }
       .node b { font-size: 15px; }
     }
@@ -837,6 +899,9 @@
         <div class="weather-station">
           <div class="station-box">
             <h3>透明面 / 空側</h3>
+            <a class="station-img" href="https://docs.m5stack.com/en/unit/dlight" target="_blank" rel="noopener noreferrer">
+              <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/dlight/dlight_01.webp" alt="M5Stack Unit DLight 照度センサー">
+            </a>
             <ul>
               <li>DLightを透明面の裏へ固定</li>
               <li>空の明るさをluxで取る</li>
@@ -845,6 +910,9 @@
           </div>
           <div class="station-box main">
             <h3>ダイソー フタ付透明ケースM</h3>
+            <a class="station-img" href="https://jp.daisonet.com/products/4550480731698" target="_blank" rel="noopener noreferrer">
+              <span class="fallback">DAISO<br>フタ付透明ケースM<br>21.5 x 32 x 12.3cm</span>
+            </a>
             <ul>
               <li>M5StickS3</li>
               <li>Unit Hub または PaHUB</li>
@@ -854,6 +922,9 @@
           </div>
           <div class="station-box">
             <h3>通風 / 雨よけ側</h3>
+            <a class="station-img" href="https://docs.m5stack.com/en/unit/envIII" target="_blank" rel="noopener noreferrer">
+              <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/envIII/envIII_01.webp" alt="M5Stack ENV III 温湿度気圧センサー">
+            </a>
             <ul>
               <li>左右に細いスリット</li>
               <li>内側に防虫メッシュ</li>
@@ -863,6 +934,28 @@
         </div>
         <div class="station-flow">M5StickS3 -> Wi-Fi -> /metrics.json または MQTT</div>
         <div class="station-base">底面: 1〜2mm水抜き穴 / 側面下寄り: USB-Cケーブル穴 + セパレートキャプコン / ケーブルは一度下へ垂らしてから入れる</div>
+        <div class="build-layout" aria-label="自作ウェザーステーション部品画像">
+          <a class="build-card" href="https://docs.m5stack.com/en/core/StickS3" target="_blank" rel="noopener noreferrer">
+            <img src="https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1207/K150-stickS3_main-products_01.webp" alt="M5StickS3">
+            <span>M5StickS3<br>本体/API送信</span>
+          </a>
+          <a class="build-card" href="https://docs.m5stack.com/en/unit/pahub" target="_blank" rel="noopener noreferrer">
+            <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/pahub/pahub_01.webp" alt="M5Stack PaHUB">
+            <span>Unit Hub / PaHUB<br>Grove分岐</span>
+          </a>
+          <a class="build-card" href="https://docs.m5stack.com/en/unit/envIII" target="_blank" rel="noopener noreferrer">
+            <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/envIII/envIII_01.webp" alt="M5Stack ENV III">
+            <span>ENV III/IV<br>温湿度</span>
+          </a>
+          <a class="build-card" href="https://docs.m5stack.com/en/unit/dlight" target="_blank" rel="noopener noreferrer">
+            <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/dlight/dlight_01.webp" alt="M5Stack DLight">
+            <span>DLight<br>照度 lux</span>
+          </a>
+          <a class="build-card" href="https://www.ohm.jp/english/parts/capcon_oa-w/separate/" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.ohm.jp/english/media/oa-w_sep_main.jpg" alt="オーム電機 セパレートキャプコン">
+            <span>セパレートキャプコン<br>USB-C穴</span>
+          </a>
+        </div>
       </section>
 
       <h2 class="section-heading">M5ハンダなし部品</h2>
