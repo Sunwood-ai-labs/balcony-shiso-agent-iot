@@ -87,8 +87,8 @@ IP65防滴ボックス = M5側
 | SwitchBot 防水温湿度計のみ | Amazon表示 1,780円 | BLE/スマホ確認だけなら最安 |
 | SwitchBot 防水温湿度計 + Hub Mini | Amazon表示 合計 7,010円 | 推奨。屋外温湿度をM5と別系統で飛ばせる |
 | JoyeeLii スマート気象観測ステーション | Amazon表示 17,699円 | 安いが照度要件は商品詳細で再確認 |
-| Moongiantgo スマホアプリ接続 気象観測器 | Amazon表示 26,850円 | 照度/UV/雨/風まで常設で取る本命帯 |
-| 特大画面WIFIプロフェッショナル屋外センサー | Amazon表示 27,949〜27,990円 | 照度/UV/雨/風まで常設で取る本命帯 |
+| Moongiantgo スマホアプリ接続 気象観測器 | Amazon表示 26,850円 | 照度/UV/雨/風まで常設で取る本命帯。API記載は未確認 |
+| 特大画面WIFIプロフェッショナル屋外センサー | Amazon表示 27,949〜27,990円 | 照度/UV/雨/風まで常設で取る本命帯。専用サイトアップロード表記あり |
 | TIMDU / Moongiantgo / Kurflo 系 | Amazon表示 32,800〜38,850円 | 高め。説明書、レビュー、販売者で選別 |
 | ENV III + DLight DIY | 約8,000〜25,000円以上 | M5直結学習向け。防水とシェルター工作が増える |
 
@@ -105,7 +105,7 @@ IP65防滴ボックス = M5側
 
 ## Amazon ASIN
 
-価格は2026-05-28時点でChromeからAmazon.co.jpを開いて確認。SwitchBot 2点は商品ページ、ウェザーステーション候補はAmazon検索結果の表示価格。
+価格と連携表記は2026-05-28時点でChromeからAmazon.co.jpを開いて確認。SwitchBot 2点は商品ページ、ウェザーステーション候補はAmazon検索結果と商品ページの表示。API明記は未確認。
 
 | 商品 | ASIN | 確認価格 | 主な機能 | URL |
 |---|---|---:|---|---|
@@ -120,6 +120,12 @@ IP65防滴ボックス = M5側
 | Moongiantgo ウェザーステーション | `B0CK21Z7ST` | Amazon表示 38,850円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0CK21Z7ST |
 | SwitchBot 防水温湿度計 | `B0BVLYPYT1` | Amazon表示 1,780円 | 温度、湿度 | https://www.amazon.co.jp/dp/B0BVLYPYT1 |
 | SwitchBot Hub Mini Matter対応版 | `B0DSPXKDP8` | Amazon表示 5,230円 | 遠隔確認、API/通知連携 | https://www.amazon.co.jp/dp/B0DSPXKDP8 |
+
+API確認メモ:
+
+- Amazon商品ページ上で「API」と明記されたウェザーステーション候補は未確認。
+- 「Wi-Fi」「アプリ」「専用サイトへアップロード」は、データを外へ出せる可能性はあるが、こちらからJSON APIで自由に読める保証ではない。
+- 自作連携前提なら、購入前に Weather Underground / WeatherCloud / Custom server / custom upload 対応を確認する。
 
 Amazonアプリで直リンクが開けない場合は、Amazon検索欄にASINを入れる。
 
