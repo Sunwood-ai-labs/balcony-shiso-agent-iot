@@ -86,6 +86,8 @@ IP65防滴ボックス = M5側
 |---|---:|---|
 | SwitchBot 防水温湿度計のみ | Amazon表示 1,780円 | BLE/スマホ確認だけなら最安 |
 | SwitchBot 防水温湿度計 + Hub Mini | Amazon表示 合計 7,010円 | 推奨。屋外温湿度をM5と別系統で飛ばせる |
+| ECOWITT Wittboy GW2001/WS90 | Amazon表示 47,568円 | API/Custom upload前提なら本命 |
+| ECOWITT GW1100 + WS90 | Amazon表示 68,273円 | LAN/Cloud/Custom uploadと拡張性重視 |
 | JoyeeLii スマート気象観測ステーション | Amazon表示 17,699円 | 安いが照度要件は商品詳細で再確認 |
 | Moongiantgo スマホアプリ接続 気象観測器 | Amazon表示 26,850円 | 照度/UV/雨/風まで常設で取る本命帯。API記載は未確認 |
 | 特大画面WIFIプロフェッショナル屋外センサー | Amazon表示 27,949〜27,990円 | 照度/UV/雨/風まで常設で取る本命帯。専用サイトアップロード表記あり |
@@ -109,6 +111,8 @@ IP65防滴ボックス = M5側
 
 | 商品 | ASIN | 確認価格 | 主な機能 | URL |
 |---|---|---:|---|---|
+| ECOWITT Wittboy GW2001/WS90 | `B09TZZTYPK` | Amazon表示 47,568円 | 温度、湿度、light/UV、風、雨。Cloud API/Custom upload系 | https://www.amazon.co.jp/dp/B09TZZTYPK |
+| ECOWITT GW1100 + WS90 キット | `B0D8BNR5JL` | Amazon表示 68,273円 | 温度、湿度、light/UV、風、雨。LAN/Cloud/Custom upload系 | https://www.amazon.co.jp/dp/B0D8BNR5JL |
 | JoyeeLii スマート気象観測ステーション | `B0GM6Q7BJV` | Amazon表示 17,699円 | 温度、湿度、UV、雨、風。照度は商品名に明記なし | https://www.amazon.co.jp/dp/B0GM6Q7BJV |
 | Moongiantgo スマホアプリ接続 気象観測器 | `B0DRHXMBKC` | Amazon表示 26,850円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0DRHXMBKC |
 | 特大画面WIFIプロフェッショナル屋外センサー | `B0GZWH4183` | Amazon表示 27,949円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0GZWH4183 |
@@ -123,6 +127,9 @@ IP65防滴ボックス = M5側
 
 API確認メモ:
 
+- Ecowittは公式情報で、Cloud API、LAN HTTP API、Home Assistant integration、Customized server upload が確認できるためAPI本命。
+- Ecowitt GW1100の公式マニュアルでは、アップロード先として ecowitt.net、Weather Underground、WeatherCloud、WOW、Customized servers が載っている。
+- Ecowitt GW1100の対応センサー表では、WS90が outdoor temperature/humidity、light、UV、wind、rainfall に対応。
 - Amazon商品ページ上で「API」と明記されたウェザーステーション候補は未確認。
 - 「Wi-Fi」「アプリ」「専用サイトへアップロード」は、データを外へ出せる可能性はあるが、こちらからJSON APIで自由に読める保証ではない。
 - 自作連携前提なら、購入前に Weather Underground / WeatherCloud / Custom server / custom upload 対応を確認する。

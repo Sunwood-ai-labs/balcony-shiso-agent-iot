@@ -729,8 +729,8 @@
       <p class="callout">具体候補: ENV IIIはフィールドプロFP1806級の小型自然通風シェルター、DLightは透明フタ付き小型ケースを候補にする。百葉箱にDLightを入れると暗く測る。</p>
       <p class="callout">実例傾向: 屋外DIYでは、温湿度は放射シールド/Stevenson screenに入れる。既製品を買う、3Dプリントする、白い皿状パーツで自作する、の3パターンが多い。</p>
       <p class="callout">簡単案: 屋外温湿度はSwitchBot防水温湿度計に任せる。照度/UVまで欲しいなら、Ecowitt固定ではなく同じ機能要件のWi-Fiウェザーステーションから選ぶ。M5は土壌水分とポンプ制御に集中。</p>
-      <p class="callout">ChromeでAmazon確認: 常設で照度/UVまで取るならSwitchBotだけでは不足。候補は17,699円から38,850円まで複数あり、二度手間を避ける本命帯は照度/UV明記ありの26,850〜27,990円帯。ただしAPI明記は未確認。</p>
-      <p class="callout">API注意: 「Wi-Fi」「アプリ」「専用サイトへアップロード」はAPIありと同じではない。自作連携したいならWeather Underground/WeatherCloud/Custom upload対応を購入前に確認する。</p>
+      <p class="callout">API前提なら判断を変える。安いWi-Fi気象計はAPI未確定。Ecowittは公式にCloud API、LAN HTTP API、Home Assistant integration、Custom upload系が確認できるため本命。</p>
+      <p class="callout">ChromeでAmazon確認: ECOWITT Wittboy GW2001/WS90は47,568円、ECOWITT GW1100+WS90キットは68,273円。安いMoongiantgo系は26,850〜27,990円帯だがAPI未確定。</p>
       <p class="callout">照度は必須: 北向きで何が育つかを決める入口。まずスマホ照度アプリか安価な照度計で朝/昼/夕方のluxを測る。常時IoT化はその後でよい。</p>
       <p class="callout">電源: ウェザーステーション屋外センサーはソーラー+電池で動かし、100Vを引かない。表示機/ゲートウェイは室内USB/AC、または100V箱側で保護して給電。</p>
       <p class="callout">Amazon商品リンク: SwitchBot防水温湿度計、SwitchBot Hub Mini、照度/UV込みウェザーステーション候補をASIN付き商品ページへリンク。照度計は型番決定後に商品URL化する。</p>
@@ -747,6 +747,24 @@
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>API本命・照度込み</td>
+            <td>ECOWITT Wittboy GW2001 / WS90</td>
+            <td><code>B09TZZTYPK</code></td>
+            <td>Amazon表示 47,568円</td>
+            <td>温度、湿度、light、UV、風、雨</td>
+            <td>Ecowitt Cloud API<br>Custom upload<br>WU/WeatherCloud/WOW系</td>
+            <td><a href="https://www.amazon.co.jp/dp/B09TZZTYPK" target="_blank" rel="noopener noreferrer">Amazon商品ページ</a><br>開けない時はAmazon検索欄にASINを入れる</td>
+          </tr>
+          <tr>
+            <td>API本命・拡張</td>
+            <td>ECOWITT GW1100 + WS90 キット</td>
+            <td><code>B0D8BNR5JL</code></td>
+            <td>Amazon表示 68,273円</td>
+            <td>温度、湿度、light、UV、風、雨</td>
+            <td>LAN/Cloud API系<br>Custom upload<br>センサー拡張</td>
+            <td><a href="https://www.amazon.co.jp/dp/B0D8BNR5JL" target="_blank" rel="noopener noreferrer">Amazon商品ページ</a><br>開けない時はAmazon検索欄にASINを入れる</td>
+          </tr>
           <tr>
             <td>照度込みウェザーステーション</td>
             <td>JoyeeLii スマート気象観測ステーション</td>
@@ -877,7 +895,7 @@
       </article>
       <article class="mini">
         <h3>コスト比較</h3>
-        <p>常設で照度/UVも必要ならSwitchBotだけでは足りない。本命は26,850〜27,990円帯。ただしAPIは未確定なので、Weather Underground/WeatherCloud/Custom upload対応を買う前に見る。</p>
+        <p>APIで取れないと無意味ならEcowitt系を本命にする。安いWi-Fi気象計はデータ閲覧はできてもAPI未確定。</p>
       </article>
       <article class="mini">
         <h3>照度の初期調査</h3>
