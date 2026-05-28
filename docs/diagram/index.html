@@ -731,6 +731,7 @@
       <p class="callout">簡単案: 屋外温湿度はSwitchBot防水温湿度計に任せる。照度/UVまで欲しいなら、Ecowitt固定ではなく同じ機能要件のWi-Fiウェザーステーションから選ぶ。M5は土壌水分とポンプ制御に集中。</p>
       <p class="callout">API前提なら判断を変える。安いWi-Fi気象計はAPI未確定。メーカー公式でAPIが強い候補は Ecowitt、WeatherFlow Tempest、Ambient Weather。</p>
       <p class="callout">GW1100+WS90の代替: 第一候補はECOWITT Wittboy GW2001/WS90。API確度を落とさず、Amazon表示47,568円でGW1100+WS90より安い。</p>
+      <p class="callout">最低要件だけなら自作が安い: ESP32/M5Stack + 温湿度センサー + BH1750/TSL2591照度センサー + 100均通風シェルターで7,000〜15,000円。APIはMQTT/HTTP/JSONで自由に出せる。</p>
       <p class="callout">照度は必須: 北向きで何が育つかを決める入口。二度手間を避けるなら、温湿度だけでなく照度/UVまで常設で取れる候補を選ぶ。</p>
       <p class="callout">電源: ウェザーステーション屋外センサーはソーラー+電池で動かし、100Vを引かない。表示機/ゲートウェイは室内USB/AC、または100V箱側で保護して給電。</p>
       <p class="callout">Amazon商品リンク: SwitchBot防水温湿度計、SwitchBot Hub Mini、照度/UV込みウェザーステーション候補をASIN付き商品ページへリンク。照度計は型番決定後に商品URL化する。</p>
@@ -821,12 +822,12 @@
           </tr>
           <tr>
             <td>自作 ESP32/M5Stack</td>
-            <td>18,000〜45,000円</td>
+            <td>7,000〜15,000円</td>
             <td>◎</td>
             <td>◎</td>
             <td>◎</td>
-            <td>◎</td>
-            <td>API自由度は最高。防水/校正/設置が作業量大</td>
+            <td>△</td>
+            <td>最低要件に最短。温湿度+照度+APIだけに絞る</td>
           </tr>
         </tbody>
       </table>
@@ -842,25 +843,25 @@
         </thead>
         <tbody>
           <tr>
-            <td>最小API構成</td>
-            <td>8,000〜15,000円</td>
+            <td>最低要件構成</td>
+            <td>7,000〜15,000円</td>
             <td>温湿度、照度</td>
-            <td>MQTT/HTTP自由</td>
-            <td>雨風なし。北向き栽培判断なら成立</td>
+            <td>MQTT/HTTP/JSON自由</td>
+            <td>まずこれ。UV/風雨/土壌水分は入れない</td>
           </tr>
           <tr>
-            <td>大葉向け常設API構成</td>
-            <td>18,000〜30,000円</td>
-            <td>温湿度、照度、UV、土壌水分</td>
-            <td>MQTT/HTTP自由</td>
-            <td>風雨より栽培に効く情報へ寄せる</td>
+            <td>大葉向け拡張</td>
+            <td>12,000〜22,000円</td>
+            <td>温湿度、照度、土壌水分</td>
+            <td>MQTT/HTTP/JSON自由</td>
+            <td>水やり判断まで見るならここ</td>
           </tr>
           <tr>
-            <td>フル気象自作</td>
-            <td>30,000〜45,000円</td>
-            <td>温湿度、照度、UV、風速、風向、雨量、土壌水分</td>
-            <td>MQTT/HTTP自由</td>
-            <td>防水、支柱、校正、風雨センサー固定が大変</td>
+            <td>UV追加</td>
+            <td>+1,000〜3,000円</td>
+            <td>UV</td>
+            <td>MQTT/HTTP/JSON自由</td>
+            <td>透明カバー素材で値が狂いやすい</td>
           </tr>
         </tbody>
       </table>

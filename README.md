@@ -92,7 +92,7 @@ IP65防滴ボックス = M5側
 | Sainlogic WiFi系 | 52,452円 | △ | × | ○ | × | ○ | WU/WeatherCloud中心。直接API用途では弱い |
 | Moongiantgo系 | 26,850〜38,850円 | △ | × | ○ | × | ○ | 安いがAPI未確定。本命にはしない |
 | QYTEC 0345 5-in-1 | 16,000円 | × | × | × | × | ○ | 安いが温湿度/風/雨のみ。API/照度UVなし |
-| 自作 ESP32/M5Stack 気象ノード | 約18,000〜45,000円 | ◎ | ◎ | ◎ | ○ | 部品次第 | API自由度は最高。防水/校正/設置が作業量大 |
+| 自作 ESP32/M5Stack 温湿度+照度APIノード | 約7,000〜15,000円 | ◎ | ◎ | ◎ | △ | 部品次第 | 最低要件に最短。温湿度+照度+APIだけに絞る |
 | SwitchBot + Hub | 7,010円 | ○ | △ | × | × | ◎ | 温湿度だけ。照度/UVなし |
 
 記号: ◎=公式情報で強い、○=可能、△=条件付き/要確認、×=不足。
@@ -156,27 +156,44 @@ Amazonアプリで直リンクが開けない場合は、Amazon検索欄にASIN�
 | Ambient Weather | JSON形式のREST/Real-Time API、API key、application key | https://ambientweather.com/support/question/view/id/1811/ |
 | Sainlogic | Weather Underground、WeatherCloud、App連携 | https://www.sainlogic.com/it/pages/0310-key-features |
 
-## 自作見積もり
+## 自作見積もり: 温湿度 + 照度 + API
+
+実例ベースでは、ESP32/ESP8266に BME280/SHT31 と BH1750 をI2C接続し、HTTP/WebSocket/MQTT/ThingSpeakへ送る構成が定番。今回の最低要件はこれで満たせる。
 
 | 構成 | 概算 | 取れるもの | API | 注意 |
 |---|---:|---|---|---|
-| 最小API構成 | 8,000〜15,000円 | 温湿度、照度 | ◎ MQTT/HTTP自由 | 雨風なし。まず育成判断用 |
-| 大葉向け常設API構成 | 18,000〜30,000円 | 温湿度、照度、UV、土壌水分 | ◎ MQTT/HTTP自由 | 風雨なし。栽培には一番現実的 |
-| フル気象自作 | 30,000〜45,000円 | 温湿度、照度、UV、風速、風向、雨量、土壌水分 | ◎ MQTT/HTTP自由 | 防水、支柱、校正、風雨センサー固定が面倒 |
+| 最低要件構成 | 7,000〜15,000円 | 温湿度、照度 | ◎ MQTT/HTTP/JSON自由 | まずこれ。UV/風雨/土壌水分は入れない |
+| 大葉向け拡張 | 12,000〜22,000円 | 温湿度、照度、土壌水分 | ◎ MQTT/HTTP/JSON自由 | 水やり判断まで見るならここ |
+| UV追加 | +1,000〜3,000円 | UV | ◎ | 透明カバー素材で値が狂いやすい |
 
 自作の部品目安:
 
 | 部品 | 概算 | 用途 |
 |---|---:|---|
-| M5StickS3/ESP32 | 3,000〜5,000円 | Wi-Fi/API送信 |
-| SHT31/SHT35 または BME280 | 1,000〜3,000円 | 温湿度/気圧 |
-| BH1750/TSL2591 | 500〜2,000円 | 照度 |
-| VEML6075/LTR390 | 1,000〜3,000円 | UV |
-| 防水土壌水分センサー | 2,000〜6,000円 | 土壌水分 |
-| 風速/風向センサー | 4,000〜10,000円 | 風 |
-| 転倒ます雨量計 | 3,000〜8,000円 | 雨量 |
-| 自然通風シェルター/防水箱/ケーブルグランド | 5,000〜12,000円 | 屋外保護 |
-| 支柱/固定具/ケーブル | 2,000〜6,000円 | 設置 |
+| ESP32 DevKit / M5Stamp / M5StickS3 | 1,500〜5,000円 | Wi-Fi/API送信 |
+| SHT31/SHT35 または BME280 | 1,000〜3,000円 | 温湿度。BME280なら気圧も取れる |
+| BH1750 または TSL2591 | 500〜2,000円 | 照度lux |
+| ダイソー/100均小物ケース、鉢皿、白プラ板 | 300〜1,000円 | 温湿度用の通風シェルター材料 |
+| 小型防水箱/ケーブルグランド/乾燥剤 | 1,500〜4,000円 | ESP32本体保護 |
+| USB-Cケーブル/5V電源/固定具 | 1,500〜4,000円 | 電源と設置 |
+| 防水土壌水分センサー | 2,000〜6,000円 | 大葉向け拡張 |
+
+配置:
+
+| 部位 | 置き方 |
+|---|---|
+| ESP32/M5本体 | 防水箱へ入れる。乾燥剤を入れ、直射日光を避ける |
+| 温湿度センサー | 白い通風シェルターへ入れる。密閉しない |
+| 照度センサー | 小屋の中に入れない。透明カバー下で空を見せる |
+| API | HTTP JSON、MQTT、WebSocket、ThingSpeak CSV/JSONのどれでも実装可能 |
+
+参考実例:
+
+| 実例 | 内容 | URL |
+|---|---|---|
+| ESP32/ESP8266 + BME280 + BH1750 | 温度、湿度、気圧、luxを取得し、HTTP/WebSocket化 | https://esp-32.com/index.php/2017/06/11/esp8266esp32-reading-temperature-airpressure-humidity-and-lux-with-a-bme280-and-bh1750/ |
+| ThingSpeak ESP32 + BME280 + BH1750 | 温度、湿度、気圧、LightをJSON/XML/CSVで公開 | https://thingspeak.mathworks.com/channels/997155 |
+| ESP32 MQTT BME280 Weather Station | ESP32/ESP8266でBME280をMQTT送信 | https://www.donskytech.com/arduino-mqtt-example-project-bmp-bme-280-weather-station/ |
 
 ## 照度の扱い
 
