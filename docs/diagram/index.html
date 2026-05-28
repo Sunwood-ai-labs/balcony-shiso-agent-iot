@@ -100,6 +100,22 @@
       display: block;
     }
 
+    .quick-nav {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .quick-nav a {
+      padding: 8px 10px;
+      background: rgba(255,253,248,.9);
+      border: 1px solid var(--line);
+      text-decoration: none;
+      color: var(--green);
+      font: 900 12px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
     .badge {
       display: inline-flex;
       align-items: center;
@@ -463,6 +479,76 @@
       font: 900 18px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
     }
 
+    .section-panel {
+      margin-top: 18px;
+      padding: 18px;
+      background: rgba(255,253,248,.92);
+      border: 1px solid var(--line);
+      box-shadow: 8px 8px 0 rgba(47,125,74,.08);
+    }
+
+    .section-panel p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .weather-station {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr 1fr;
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .station-box {
+      min-height: 150px;
+      padding: 14px;
+      background: #fff;
+      border: 2px solid rgba(47,125,74,.22);
+      display: grid;
+      align-content: start;
+      gap: 8px;
+      position: relative;
+    }
+
+    .station-box h3 {
+      margin: 0;
+      color: var(--green);
+      font: 900 15px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    .station-box ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    .station-box.main {
+      border-color: rgba(46,143,181,.48);
+      box-shadow: 8px 8px 0 rgba(46,143,181,.12);
+    }
+
+    .station-flow {
+      display: grid;
+      place-items: center;
+      color: var(--green);
+      font: 900 18px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    .station-base {
+      margin-top: 12px;
+      padding: 12px;
+      background: repeating-linear-gradient(-45deg, #f2eadb 0 10px, #fff9ef 10px 20px);
+      border: 2px solid rgba(47,125,74,.28);
+      text-align: center;
+      color: var(--ink);
+      font: 900 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
     .extras {
       margin-top: 18px;
       display: grid;
@@ -514,6 +600,8 @@
       .split .photo { width: 100%; height: 140px; }
       .note-strip { grid-template-columns: 1fr; }
       .target-grid { grid-template-columns: 1fr; }
+      .weather-station { grid-template-columns: 1fr; }
+      .station-flow { min-height: 32px; }
       .node b { font-size: 15px; }
     }
   </style>
@@ -524,6 +612,13 @@
       <div>
         <h1>ベランダで大葉エージェントIoT</h1>
         <p class="lead">大葉用の横長プランター、水源、100V側、5V制御側の位置関係を一枚で確認するための簡易構成図です。画像は各メーカー・販売元ページの公開画像を参照し、購入前の最終仕様確認は別途行います。</p>
+        <nav class="quick-nav" aria-label="ページ内リンク">
+          <a href="#overall">全体構成</a>
+          <a href="#weather-station">自作ウェザーステーション</a>
+          <a href="#daiso-case">ダイソーケース</a>
+          <a href="#case-studies">既存事例</a>
+          <a href="#comparison">比較表</a>
+        </nav>
       </div>
       <aside class="status">
         <strong>買う前の配置確認</strong>
@@ -531,7 +626,7 @@
       </aside>
     </header>
 
-    <section class="system" aria-label="画像入り構成図">
+    <section class="system" id="overall" aria-label="画像入り構成図">
       <div class="diagram">
         <div class="node ac">
           <div class="photo">
@@ -731,21 +826,46 @@
           </div>
         </div>
       </div>
-      <p class="callout">この図の見方: ベランダ常設の本命は「DFRobot SEN0308級の防水土壌水分センサー + 分離チューブポンプ」。プロトタイプ部品は構成図から外しました。</p>
-      <p class="callout">配置ルール: 壁や手すりに固定できる前提にしない。M5側防滴ボックスは、横長プランターに立てた短い支柱/小型ワイヤーネットへ結束バンドで固定する。</p>
-      <p class="callout">環境情報はM5で楽に作る。M5StickS3 + ENV III/ENV IV + DLight + Unit Hub/PaHUB。Groveケーブルで差すだけ、ハンダなし。</p>
-      <p class="callout">センサー保護: ENV IIIやDLightは裸で雨ざらしにしない。外気用には小型百葉箱/自然通風シェルター、照度用には透明カバーを別途用意する。</p>
-      <p class="callout">具体候補: ENV IIIはフィールドプロFP1806級の小型自然通風シェルター、DLightは透明フタ付き小型ケースを候補にする。百葉箱にDLightを入れると暗く測る。</p>
-      <p class="callout">実例傾向: 屋外DIYでは、温湿度は放射シールド/Stevenson screenに入れる。既製品を買う、3Dプリントする、白い皿状パーツで自作する、の3パターンが多い。下の「既存自作事例」表にリンク付きで整理。</p>
-      <p class="callout">簡単案: 屋外温湿度はSwitchBot防水温湿度計に任せる。照度/UVまで欲しいなら、Ecowitt固定ではなく同じ機能要件のWi-Fiウェザーステーションから選ぶ。M5は土壌水分とポンプ制御に集中。</p>
-      <p class="callout">API前提なら判断を変える。安いWi-Fi気象計はAPI未確定。メーカー公式でAPIが強い候補は Ecowitt、WeatherFlow Tempest、Ambient Weather。</p>
-      <p class="callout">GW1100+WS90の代替: 第一候補はECOWITT Wittboy GW2001/WS90。API確度を落とさず、Amazon表示47,568円でGW1100+WS90より安い。</p>
-      <p class="callout">最低要件だけならM5ハンダなし自作が現実的: M5StickS3 + ENV + DLight + Unit Hub/PaHUB + ダイソー透明ケース。APIはMQTT/HTTP/JSONで自由に出せる。</p>
-      <p class="callout">まず作る版: ダイソー透明ケースにM5本体、ENV、DLightを入れ、左右に通気スリット、底に水抜き穴。UVは初回不要。</p>
-      <p class="callout">照度は必須: 北向きで何が育つかを決める入口。フェーズ1は照度まで常設で取り、UVは外す。</p>
-      <p class="callout">電源: ウェザーステーション屋外センサーはソーラー+電池で動かし、100Vを引かない。表示機/ゲートウェイは室内USB/AC、または100V箱側で保護して給電。</p>
-      <p class="callout">Amazon商品リンク: SwitchBot防水温湿度計、SwitchBot Hub Mini、照度/UV込みウェザーステーション候補をASIN付き商品ページへリンク。照度計は型番決定後に商品URL化する。</p>
-      <h2 class="section-heading">まず作る透明ケース案</h2>
+      <div class="section-panel">
+        <h2 class="section-heading">ページの結論</h2>
+        <p>まず作るのは、ダイソーの蓋付き透明ケースに M5StickS3、ENV III/ENV IV、DLight、Unit Hub/PaHUB を入れる簡易ウェザーステーション。ハンダは使わず、Groveケーブルで差すだけにする。</p>
+        <p>ベランダ常設の注意点は、温湿度を密閉箱の熱だまりで測らないこと。ケース左右に通風スリットを作り、防虫メッシュ、底面水抜き、下向きケーブル出口を入れる。照度は透明面の裏で空を見せる。</p>
+      </div>
+
+      <section class="section-panel" id="weather-station" aria-label="自作簡易ウェザーステーション図解">
+        <h2 class="section-heading">自作簡易ウェザーステーション図解</h2>
+        <div class="weather-station">
+          <div class="station-box">
+            <h3>透明面 / 空側</h3>
+            <ul>
+              <li>DLightを透明面の裏へ固定</li>
+              <li>空の明るさをluxで取る</li>
+              <li>百葉箱には入れない</li>
+            </ul>
+          </div>
+          <div class="station-box main">
+            <h3>ダイソー フタ付透明ケースM</h3>
+            <ul>
+              <li>M5StickS3</li>
+              <li>Unit Hub または PaHUB</li>
+              <li>ENV III/ENV IV</li>
+              <li>乾燥剤、結束バンド固定</li>
+            </ul>
+          </div>
+          <div class="station-box">
+            <h3>通風 / 雨よけ側</h3>
+            <ul>
+              <li>左右に細いスリット</li>
+              <li>内側に防虫メッシュ</li>
+              <li>ENVはスリット近くへ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="station-flow">M5StickS3 -> Wi-Fi -> /metrics.json または MQTT</div>
+        <div class="station-base">底面: 1〜2mm水抜き穴 / 側面下寄り: USB-Cケーブル穴 + セパレートキャプコン / ケーブルは一度下へ垂らしてから入れる</div>
+      </section>
+
+      <h2 class="section-heading">M5ハンダなし部品</h2>
       <table class="link-table" aria-label="M5ハンダなし構成表">
         <thead>
           <tr>
@@ -794,6 +914,7 @@
           </tr>
         </tbody>
       </table>
+      <h2 class="section-heading" id="daiso-case">ダイソーケース加工</h2>
       <table class="link-table" aria-label="透明ケース簡易版設計図">
         <thead>
           <tr>
@@ -983,6 +1104,7 @@
         <strong>事例からの結論:</strong>
         ダイソー透明ケースは最短プロトタイプとしては使える。ただし常設の本命は、電子回路箱と温湿度の通風部を分ける構成。照度センサーは透明面または外向き、温湿度センサーは小さな白い通風カバーへ出す。
       </div>
+      <h2 class="section-heading" id="comparison">API前提の比較表</h2>
       <table class="link-table" aria-label="API前提の星取表">
         <thead>
           <tr>
