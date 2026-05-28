@@ -237,10 +237,10 @@
 
     .split {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 12px;
       margin: 0 auto;
-      width: min(100%, 360px);
+      width: min(100%, 1000px);
     }
 
     .split .node {
@@ -253,6 +253,25 @@
     .split .photo {
       width: 105px;
       height: 92px;
+    }
+
+    .note-strip {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .note-strip span {
+      min-height: 54px;
+      padding: 8px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background: #f4f9f1;
+      border: 1px solid rgba(47,125,74,.18);
+      color: var(--green);
+      font: 800 12px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
     }
 
     .callout {
@@ -313,6 +332,7 @@
       .split { grid-template-columns: 1fr; }
       .split .node { grid-template-columns: 1fr; }
       .split .photo { width: 100%; height: 140px; }
+      .note-strip { grid-template-columns: 1fr; }
       .node b { font-size: 15px; }
     }
   </style>
@@ -420,22 +440,38 @@
             <div class="node-content">
               <small>plant side</small>
               <b>Unit Watering</b>
-              <p>鉢側に露出。まずは1秒から3秒だけ動かす。</p>
+              <p>鉢側に露出。測定板が土壌水分センサー。ポンプは水源から吸って鉢へ吐水。</p>
+              <div class="note-strip">
+                <span>センサー板<br>土へ挿す</span>
+                <span>吸水チューブ<br>水源へ</span>
+                <span>吐水チューブ<br>鉢へ</span>
+              </div>
             </div>
           </div>
           <div class="node plant">
             <div class="photo">
-              <div class="fallback" style="display:flex">POT<br>+<br>5L TANK</div>
+              <img src="https://www.spider-farmer.com/wp-content/uploads/2021/09/spider-farmer-5-gallon-growbag.jpg" alt="5ガロン不織布ポット" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="fallback">GROW<br>BAG</div>
             </div>
             <div class="node-content">
               <small>tomato side</small>
-              <b>不織布ポット + 水タンク</b>
-              <p>プチトマト、鉢皿、5L水タンク。空運転と水漏れに注意。</p>
+              <b>不織布ポット</b>
+              <p>センサー板を根元から少し離して土へ挿す。吐水口は土表面へ固定。</p>
+            </div>
+          </div>
+          <div class="node plant">
+            <div class="photo">
+              <div class="fallback" style="display:flex">TEST CUP<br>OK<br>→ 5L TANK</div>
+            </div>
+            <div class="node-content">
+              <small>water source</small>
+              <b>初回はコップ / 運用は水タンク</b>
+              <p>コップは室内3秒テスト用ならOK。ベランダ運用は倒れにくい5L級タンク推奨。</p>
             </div>
           </div>
         </div>
       </div>
-      <p class="callout">この図の見方: 上から下へ「100V → 100V側ボックス内で5V化 → M5側防滴ボックス → 鉢側Unit Watering」。画像が入っている場所が、実際に購入して置く備品の位置です。</p>
+      <p class="callout">この図の見方: 上から下へ「100V → 100V側ボックス内で5V化 → M5側防滴ボックス → 鉢側Unit Watering」。Unit Wateringの測定板が土壌水分センサーで、別センサーを最初から追加する必要はありません。</p>
     </section>
 
     <section class="extras" aria-label="補助備品">
