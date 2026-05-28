@@ -26,7 +26,8 @@ const d = {
   adapter: { w: 45, dep: 45, h: 30 },
   m5: { w: 48, dep: 24, h: 15 },
   typec: { w: 32, dep: 24, h: 11 },
-  watering: { w: 193, dep: 27, h: 33 },
+  mosfet: { w: 37, dep: 27, h: 15 },
+  gndBlock: { w: 45, dep: 20, h: 16 },
   env: { w: 32, dep: 24, h: 8 },
   desiccant: { w: 55, dep: 35, h: 12 },
   outdoorOutlet: { w: 86, dep: 18, h: 120 },
@@ -137,8 +138,9 @@ out.push(plate(82, 72, 38, -215, 55, 61, "#9aa0a6", "USB-C adapter bend-clearanc
 
 out.push(cuboid(d.m5, 145, -55, 107, "#273c75", "M5StickS3 48x24x15"));
 out.push(cuboid(d.typec, 145, 5, 107, "#1aa89a", "TypeC2Grove U151 32x24x11"));
-out.push(cuboid(d.env, 145, 58, 107, "#6a994e", "ENV III U001-C 32x24x8"));
-out.push(cuboid(d.watering, 280, -55, 107, "#6d5ba6", "Unit Watering U101 193x27x33"));
+out.push(cuboid(d.env, 145, 58, 107, "#6a994e", "optional ENV III U001-C 32x24x8"));
+out.push(cuboid(d.mosfet, 245, -55, 107, "#6d5ba6", "MOSFET pump driver G10 input"));
+out.push(cuboid(d.gndBlock, 285, -5, 107, "#f2f2f2", "GND terminal block for common 5V ground"));
 out.push(cuboid(d.desiccant, 276, 58, 107, "#e9ecef", "replaceable desiccant pack"));
 
 out.push(cableGlandX("100V left-side cable entry gland", -448, -70, 95, C.cable));
@@ -156,7 +158,8 @@ out.push(cylBetween("5V USB-C only cord between boxes", [-190, 55, 91], [95, -96
 out.push(...dripLoop("5V USB-C drip loop", 35, -96, 145, 3.2, C.usb));
 out.push(cylBetween("Grove cable M5StickS3 to TypeC2Grove", [145, -43, 126], [145, -7, 122], 2, C.grove));
 out.push(cylBetween("Grove cable TypeC2Grove to ENV III", [145, 17, 121], [145, 54, 117], 2, C.grove));
-out.push(cylBetween("Grove cable TypeC2Grove to Unit Watering", [161, 5, 122], [265, -48, 126], 2, C.grove));
+out.push(cylBetween("G9 ADC sensor line from M5 to waterproof soil sensor", [161, 5, 122], [385, -96, 135], 2, C.grove));
+out.push(cylBetween("G10 control line from M5 to MOSFET pump driver", [161, 5, 122], [245, -48, 124], 2, C.grove));
 out.push(cylBetween("water tube route away from 100V", [385, -96, 135], [455, -185, 45], 3.5, C.water));
 
 if (showSafetyZones) {

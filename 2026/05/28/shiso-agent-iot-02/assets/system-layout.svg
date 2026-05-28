@@ -26,7 +26,7 @@
   </defs>
 
   <rect class="bg" width="1600" height="1000"/>
-  <text x="70" y="70" class="title">ベランダでプチトマトエージェントIoT計画 02</text>
+  <text x="70" y="70" class="title">ベランダで大葉エージェントIoT計画 02</text>
   <text x="70" y="108" class="subtitle">100V AC は屋外用電源ボックス内だけ。IP65 防滴ボックスには 5V USB-C / Grove だけを入れる。</text>
 
   <rect x="70" y="160" width="620" height="470" rx="16" class="box100"/>
@@ -48,7 +48,7 @@
 
   <rect x="910" y="160" width="620" height="470" rx="16" class="box5"/>
   <text x="945" y="205" class="label">IP65 防滴ボックス = 5V IoT側</text>
-  <text x="945" y="238" class="small">推奨内寸: Unit Watering収納なら 260 x 160 x 80 mm 以上</text>
+  <text x="945" y="238" class="small">推奨内寸: M5 / MOSFET / GND端子台 / 乾燥剤を収納</text>
 
   <rect x="960" y="290" width="150" height="70" rx="8" class="part"/>
   <text x="980" y="332" class="small">M5StickS3</text>
@@ -57,8 +57,8 @@
   <text x="978" y="447" class="small">TypeC2Grove</text>
 
   <rect x="1160" y="290" width="285" height="70" rx="8" class="part"/>
-  <text x="1190" y="332" class="small">Unit Watering</text>
-  <text x="1335" y="332" class="tiny">193 mm</text>
+  <text x="1190" y="332" class="small">MOSFET</text>
+  <text x="1310" y="332" class="tiny">G10制御</text>
 
   <rect x="1160" y="405" width="130" height="70" rx="8" class="part"/>
   <text x="1190" y="447" class="small">ENV III</text>
