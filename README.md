@@ -99,15 +99,16 @@ IP65防滴ボックス = M5側
 
 ## 既製品組み合わせ案
 
-SwitchBot防水温湿度計とTuya/Zigbee日光・雨センサーを組み合わせれば、温湿度 + 明るさ + 雨検知の簡易ウェザーステーションは作れる。ただし、SwitchBot系とTuya系でAPI/アプリが分かれるため、一本化したい場合はHome Assistant/MQTTで集約する。
+Zigbeeに限定しない。SwitchBot、Tuya/Smart Life、Matter/Thread、Wi-Fi気象計、Netatmo/Ecowittのような既製品を組み合わせても、温湿度 + 明るさ + 雨検知の簡易ウェザーステーションは作れる。見るべき軸は通信方式ではなく、温湿度、照度/日射、雨、API、屋外耐性、電源が揃うか。
 
-| 構成 | 概算価格 | 取れるもの | API/データ取得 | 判断 |
+| 構成 | 概算価格 | 取れるもの | 通信/API | 判断 |
 |---|---:|---|---|---|
-| SwitchBot防水温湿度計 + Hub Mini | 約7,010円 | 温度、湿度、VPDなど | SwitchBot Cloud/OpenAPI、アプリCSV、Home Assistant | 最小で楽。ただし照度なし |
-| SwitchBot + Hub + Tuya Zigbee日光/雨 + Tuya Gateway | 約13,800〜15,500円 | 温度、湿度、明るさ、雨検知 | SwitchBotとTuyaで分離。Home Assistant集約が現実的 | 既製品だけなら有力 |
-| Tuya日光/雨 + Tuya温湿度 + Tuya Gateway | 約9,000〜13,000円 | 温度、湿度、明るさ、雨検知 | Tuya/Smart Life、Tuya Cloud APIは要設定 | アプリを1つに寄せられるが屋外温湿度仕様を要確認 |
-| Tuya日光/雨 + Sonoff Zigbee USB Dongle + Zigbee2MQTT | 約8,000〜12,000円 | 明るさ、雨検知、電池。温湿度は追加 | ローカルMQTT | ローカルAPI重視なら強いが設定が重い |
-| M5StickS3 + ENV + DLight | 約12,000〜15,000円 | 温度、湿度、気圧、照度 | HTTP JSON/MQTTを自由に実装 | 工作は必要だがAPIが一番素直 |
+| SwitchBot防水温湿度計 + Hub Mini | 約7,010円 | 温度、湿度、VPDなど | Bluetooth + Wi-Fi Hub / SwitchBot Cloud OpenAPI | 最小で楽。ただし照度なし |
+| SwitchBot + Hub + Smart Life日光/雨センサー | 約12,000〜16,000円 | 温度、湿度、明るさ、雨検知 | Bluetooth + Wi-FiまたはZigbee / APIは分離 | 既製品だけなら有力。Home Assistant集約が現実的 |
+| Tuya/Smart Life系で統一 | 約9,000〜13,000円 | 温度、湿度、明るさ、雨検知 | Wi-Fi/Zigbee + Tuya Cloud API | アプリを1つに寄せられるが屋外温湿度仕様を要確認 |
+| Eve Weather / Matter-Thread + 別体照度 | 約12,000〜25,000円 | 温度、湿度、気圧、照度は追加 | Matter over Thread / Home Assistant等 | Apple HomeやMatter中心なら候補。雨は別 |
+| Netatmo Weather Station + 別体照度 | 約25,000〜45,000円級 | 温湿度、気圧。雨/風は追加 | Wi-Fi + Netatmo API | 既製品感は強いが照度は弱い |
+| M5StickS3 + ENV + DLight | 約12,000〜15,000円 | 温度、湿度、気圧、照度 | Wi-Fi / HTTP JSON・MQTT自由 | 工作は必要だがAPIが一番素直 |
 
 ## 電源まわり
 
