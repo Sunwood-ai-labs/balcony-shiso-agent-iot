@@ -581,7 +581,7 @@
     .build-layout {
       margin-top: 14px;
       display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
+      grid-template-columns: repeat(6, minmax(0, 1fr));
       gap: 10px;
       align-items: stretch;
     }
@@ -733,12 +733,26 @@
             </ul>
           </div>
         </div>
-        <div class="station-flow">100V側電源ボックス<br>↓<br>USB-C ACアダプタで5V化<br>↓<br>5V USB-Cだけをダイソー透明ケースへ</div>
+        <div class="station-flow">100V側電源ボックス<br>↓<br>USB-C ACアダプタで5V化<br>↓<br>USB-Cケーブル 1m-2m<br>↓<br>5V USB-Cだけをダイソー透明ケースへ</div>
+        <div class="build-layout" aria-label="必須USB-C系部品画像">
+          <a class="build-card" href="https://www.ankerjapan.com/products/a2039" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.ankerjapan.com/cdn/shop/products/A2039001_1200x1200.jpg" alt="Anker 523 Charger USB-C ACアダプタ">
+            <span>USB-C ACアダプタ<br>100V -> 5V</span>
+          </a>
+          <a class="build-card" href="https://www.ankerjapan.com/products/a8758" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.ankerjapan.com/cdn/shop/products/A8758001_1200x1200.jpg" alt="Anker USB-C & USB-C ケーブル">
+            <span>USB-Cケーブル<br>1m-2m</span>
+          </a>
+          <a class="build-card" href="https://www.ohm.jp/english/parts/capcon_oa-w/separate/" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.ohm.jp/english/media/oa-w_sep_main.jpg" alt="オーム電機 セパレートキャプコン">
+            <span>ケース入口<br>セパレートキャプコン</span>
+          </a>
+        </div>
       </section>
 
       <section class="section-panel" id="weather-station" aria-label="自作簡易ウェザーステーション図解">
         <h2 class="section-heading">自作簡易ウェザーステーション図解</h2>
-        <div class="station-flow"><a href="#power-route">上の電源導線</a><br>↓<br>5V USB-Cだけを受ける</div>
+        <div class="station-flow"><a href="#power-route">上の電源導線</a><br>↓<br>USB-Cケーブルで5Vだけを受ける</div>
         <div class="weather-station">
           <div class="station-box">
             <h3>透明面 / 空側</h3>
@@ -812,6 +826,36 @@
 
 
       <h2 class="section-heading">M5ハンダなし部品</h2>
+      <table class="link-table" aria-label="必須USB-C系部品表">
+        <thead>
+          <tr>
+            <th>部品</th>
+            <th>数</th>
+            <th>用途</th>
+            <th>確認</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>USB-C ACアダプタ</td>
+            <td>1</td>
+            <td>100V側電源ボックス内で5V化</td>
+            <td>PSE、発熱、必要なら2ポート</td>
+          </tr>
+          <tr>
+            <td>USB-C to USB-C ケーブル</td>
+            <td>1</td>
+            <td>100V側電源ボックスからダイソーケースへ5Vを送る</td>
+            <td>まず1m-2m。3mは箱を大きく離す時だけ</td>
+          </tr>
+          <tr>
+            <td>ケース入口の通線部品</td>
+            <td>1</td>
+            <td>USB-Cケーブルをダイソーケースへ入れる</td>
+            <td>OA-WH22-06/13は適合径6-13mm、取付穴径28mm。ケーブル外径確認</td>
+          </tr>
+        </tbody>
+      </table>
       <table class="link-table" aria-label="M5ハンダなし構成表">
         <thead>
           <tr>
