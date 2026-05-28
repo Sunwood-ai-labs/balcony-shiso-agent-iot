@@ -42,6 +42,7 @@ M5側IP65ボックス
 - DFRobot Gravity IP65 Capacitive Soil Moisture Sensor / SEN0308
   - IP65、防水保護、屋外ガーデニング向けの説明あり。
   - Arduino / ESP32 / Raspberry Pi 向けのアナログセンサーとして扱える。
+  - M5StickS3へは、直接Groveプラグではなく、GND/VCC/Signalを変換してアナログ入力へ接続する。
 - IP68級アナログ土壌水分センサー
   - 価格は上がるが、埋設や屋外環境を前提にしやすい。
 
@@ -51,7 +52,24 @@ M5側IP65ボックス
 
 - ポンプ本体をM5側防滴ボックス内、または雨が直接当たらない小型ポンプ箱へ置く。
 - 水に触れるのはチューブだけにする。
+- M5StickS3のGPIOへポンプを直結しない。MOSFETドライバやポンプ駆動モジュールを挟む。
+- ポンプ用5V電源とM5側GNDは共通化する。
 - 空運転を避けるため、1回の駆動時間、1日の回数、水源残量確認を必須にする。
+
+## M5StickS3 との接続
+
+SEN0308 はアナログ出力センサーなので、M5StickS3側ではADC入力として読む。
+
+```text
+SEN0308 Red    VCC    -> M5側 5V または 3.3V
+SEN0308 Black  GND    -> M5側 GND
+SEN0308 Yellow Signal -> M5StickS3 Grove側 GPIO / ADC入力
+SEN0308 Black  Shield -> GND、または未接続
+```
+
+M5StickS3のGrove端子はHY2.0-4Pで、公式PinMapでは `GND / 5V / G9 / G10` とされている。実装時はG9またはG10をADCとして読めることを、最初にテスターと短いArduinoスケッチで確認する。
+
+ポンプは別系統で、M5StickS3のGPIOは「ドライバをON/OFFする信号」にだけ使う。
 
 ## 構成の考え方
 
