@@ -87,8 +87,9 @@ IP65防滴ボックス = M5側
 | SwitchBot 防水温湿度計のみ | Amazon表示 1,780円 | BLE/スマホ確認だけなら最安 |
 | SwitchBot 防水温湿度計 + Hub Mini | Amazon表示 合計 7,010円 | 推奨。屋外温湿度をM5と別系統で飛ばせる |
 | JoyeeLii スマート気象観測ステーション | Amazon表示 17,699円 | 安いが照度要件は商品詳細で再確認 |
-| 特大画面WIFIプロフェッショナル屋外センサー | Amazon表示 27,990円 | 照度/UV/雨/風まで欲しい場合の候補 |
-| Kurflo ウェザーステーション | Amazon表示 37,500円 | 照度/UV込み、日本語説明書付き表記 |
+| Moongiantgo スマホアプリ接続 気象観測器 | Amazon表示 26,850円 | 照度/UV/雨/風まで常設で取る本命帯 |
+| 特大画面WIFIプロフェッショナル屋外センサー | Amazon表示 27,949〜27,990円 | 照度/UV/雨/風まで常設で取る本命帯 |
+| TIMDU / Moongiantgo / Kurflo 系 | Amazon表示 32,800〜38,850円 | 高め。説明書、レビュー、販売者で選別 |
 | ENV III + DLight DIY | 約8,000〜25,000円以上 | M5直結学習向け。防水とシェルター工作が増える |
 
 ## 電源まわり
@@ -109,8 +110,14 @@ IP65防滴ボックス = M5側
 | 商品 | ASIN | 確認価格 | 主な機能 | URL |
 |---|---|---:|---|---|
 | JoyeeLii スマート気象観測ステーション | `B0GM6Q7BJV` | Amazon表示 17,699円 | 温度、湿度、UV、雨、風。照度は商品名に明記なし | https://www.amazon.co.jp/dp/B0GM6Q7BJV |
+| Moongiantgo スマホアプリ接続 気象観測器 | `B0DRHXMBKC` | Amazon表示 26,850円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0DRHXMBKC |
+| 特大画面WIFIプロフェッショナル屋外センサー | `B0GZWH4183` | Amazon表示 27,949円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0GZWH4183 |
 | 特大画面WIFIプロフェッショナル屋外センサー | `B0DH4H5J72` | Amazon表示 27,990円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0DH4H5J72 |
+| TIMDU 気象観測所 5-in-1 | `B0GYS1WT7T` | Amazon表示 32,800円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0GYS1WT7T |
+| Moongiantgo 携帯アプリ付 気象観測器 | `B0CQXHQ4Z2` | Amazon表示 33,550円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0CQXHQ4Z2 |
+| Moongiantgo WIFI接続 気象観測器 | `B0CLVCLT2B` | Amazon表示 36,150円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0CLVCLT2B |
 | Kurflo ウェザーステーション | `B0F1CP1JZZ` | Amazon表示 37,500円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0F1CP1JZZ |
+| Moongiantgo ウェザーステーション | `B0CK21Z7ST` | Amazon表示 38,850円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0CK21Z7ST |
 | SwitchBot 防水温湿度計 | `B0BVLYPYT1` | Amazon表示 1,780円 | 温度、湿度 | https://www.amazon.co.jp/dp/B0BVLYPYT1 |
 | SwitchBot Hub Mini Matter対応版 | `B0DSPXKDP8` | Amazon表示 5,230円 | 遠隔確認、API/通知連携 | https://www.amazon.co.jp/dp/B0DSPXKDP8 |
 

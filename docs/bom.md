@@ -51,8 +51,15 @@ Amazon商品リンク:
 | 用途 | 商品 | ASIN | 確認価格 | 機能 | 電源/通信 | URL | 開けない時 |
 |---|---|---|---:|---|---|---|---|
 | 照度込みウェザーステーション | JoyeeLii スマート気象観測ステーション | B0GM6Q7BJV | Amazon表示 17,699円 | 温度、湿度、UV、雨、風。照度は商品名に明記なし | 屋外センサー、Wi-Fi/APP連動 | https://www.amazon.co.jp/dp/B0GM6Q7BJV | Amazon検索欄に `B0GM6Q7BJV` を入れる |
+| 照度込みウェザーステーション | Moongiantgo スマホアプリ接続 気象観測器 | B0DRHXMBKC | Amazon表示 26,850円 | 温度、湿度、照度、UV、雨、風 | ソーラーパネル付、スマホアプリ接続 | https://www.amazon.co.jp/dp/B0DRHXMBKC | Amazon検索欄に `B0DRHXMBKC` を入れる |
+| 照度込みウェザーステーション | 特大画面WIFIプロフェッショナル屋外センサー | B0GZWH4183 | Amazon表示 27,949円 | 温度、湿度、照度、UV、雨、風 | ソーラーパネル付、Wi-Fi | https://www.amazon.co.jp/dp/B0GZWH4183 | Amazon検索欄に `B0GZWH4183` を入れる |
 | 照度込みウェザーステーション | 特大画面WIFIプロフェッショナル屋外センサー | B0DH4H5J72 | Amazon表示 27,990円 | 温度、湿度、照度、UV、雨、風 | ソーラーパネル付、Wi-Fi | https://www.amazon.co.jp/dp/B0DH4H5J72 | Amazon検索欄に `B0DH4H5J72` を入れる |
+| 照度込みウェザーステーション | TIMDU 気象観測所 5-in-1 | B0GYS1WT7T | Amazon表示 32,800円 | 温度、湿度、照度、UV、雨、風 | 屋外ワイヤレス、Wi-Fi | https://www.amazon.co.jp/dp/B0GYS1WT7T | Amazon検索欄に `B0GYS1WT7T` を入れる |
+| 照度込みウェザーステーション | Moongiantgo 携帯アプリ付 気象観測器 | B0CQXHQ4Z2 | Amazon表示 33,550円 | 温度、湿度、照度、UV、雨、風 | ソーラーパネル付、携帯アプリ付 | https://www.amazon.co.jp/dp/B0CQXHQ4Z2 | Amazon検索欄に `B0CQXHQ4Z2` を入れる |
+| 照度込みウェザーステーション | Moongiantgo ウェザーステーション | B0CLG6B4QP | Amazon表示 34,950円 | 温度、湿度、照度、UV、雨、風 | ソーラーパネル付 | https://www.amazon.co.jp/dp/B0CLG6B4QP | Amazon検索欄に `B0CLG6B4QP` を入れる |
+| 照度込みウェザーステーション | Moongiantgo WIFI接続 気象観測器 | B0CLVCLT2B | Amazon表示 36,150円 | 温度、湿度、照度、UV、雨、風 | ソーラーパネル付、Wi-Fi | https://www.amazon.co.jp/dp/B0CLVCLT2B | Amazon検索欄に `B0CLVCLT2B` を入れる |
 | 照度込みウェザーステーション | Kurflo ウェザーステーション | B0F1CP1JZZ | Amazon表示 37,500円 | 温度、湿度、照度、UV、雨、風 | ソーラーパネル付、Wi-Fi | https://www.amazon.co.jp/dp/B0F1CP1JZZ | Amazon検索欄に `B0F1CP1JZZ` を入れる |
+| 照度込みウェザーステーション | Moongiantgo ウェザーステーション | B0CK21Z7ST | Amazon表示 38,850円 | 温度、湿度、照度、UV、雨、風 | ソーラーパネル付 | https://www.amazon.co.jp/dp/B0CK21Z7ST | Amazon検索欄に `B0CK21Z7ST` を入れる |
 | 屋外温湿度 | SwitchBot 防水温湿度計 | B0BVLYPYT1 | Amazon表示 1,780円 | 温度、湿度 | 電池、Bluetooth。Hub追加でクラウド/API | https://www.amazon.co.jp/dp/B0BVLYPYT1 | Amazon検索欄に `B0BVLYPYT1` を入れる |
 | SwitchBotクラウド連携 | SwitchBot Hub Mini Matter対応版 | B0DSPXKDP8 | Amazon表示 5,230円 | SwitchBot機器の遠隔確認、API/通知連携 | USB給電、Wi-Fi/Bluetooth | https://www.amazon.co.jp/dp/B0DSPXKDP8 | Amazon検索欄に `B0DSPXKDP8` を入れる |
 | 照度計/ルクスメーター | 未定 | - | 0〜3,000円程度 | 手動の照度確認 | スマホアプリまたは電池式照度計 | - | 初期調査はスマホアプリでも可。買う場合は型番を決めてから商品URL化 |
@@ -66,12 +73,12 @@ Amazon商品リンク:
 | 最安・近距離 | SwitchBot 防水温湿度計のみ | Amazon表示 1,780円 | 温度、湿度 | ほぼなし | スマホ/BLE圏内で見るだけなら最安。自動連携は弱い |
 | 推奨 | SwitchBot 防水温湿度計 + Hub Mini | Amazon表示 合計 7,010円 | 温度、湿度 | ほぼなし | 屋外IP65。Hub経由で遠隔確認/API/通知へ逃がせる |
 | 照度の初期調査 | スマホ照度アプリ、または安価な照度計 | 0〜3,000円程度 | 照度 | ほぼなし | 北向きで何が育つか判断する入口。まず朝/昼/夕方で測る |
-| 照度込み安め | JoyeeLii スマート気象観測ステーション | Amazon表示 17,699円 | 温度、湿度、UV、雨、風。照度は商品名に明記なし | 設置のみ | 安いが照度要件は商品詳細で再確認が必要 |
-| 照度込み | 特大画面WIFIプロフェッショナル屋外センサー | Amazon表示 27,990円 | 温度、湿度、光/UV、雨、風など | 設置のみ | 照度/UV込みでAmazon上の候補。大葉プランターにはやや大げさ |
-| 照度込み高め | Kurflo ウェザーステーション | Amazon表示 37,500円 | 温度、湿度、光/UV、雨、風など | 設置のみ | 日本語説明書付き表記。価格は高め |
+| 常設の最安候補 | JoyeeLii スマート気象観測ステーション | Amazon表示 17,699円 | 温度、湿度、UV、雨、風。照度は商品名に明記なし | 設置のみ | 安いが、照度が必須なら商品詳細確認なしでは本命にしない |
+| 常設の本命帯 | Moongiantgo スマホアプリ接続 / 特大画面WIFI系 | Amazon表示 26,850〜27,990円 | 温度、湿度、光/UV、雨、風など | 設置のみ | 照度/UV明記あり。二度手間を避けるならこの帯から選ぶ |
+| 常設の高め候補 | TIMDU / Moongiantgo / Kurflo 系 | Amazon表示 32,800〜38,850円 | 温度、湿度、光/UV、雨、風など | 設置のみ | 価格高め。日本語説明書やレビュー、販売者で選別 |
 | M5直結DIY | ENV III + DLight + PaHUB/Grove Hub + 保護カバー類 | 約8,000〜25,000円以上 | 温度、湿度、気圧、照度 | 多い | 学習には良いが、防水・シェルター・配線で手間が増える |
 
-現時点の判断: まずは SwitchBot 防水温湿度計 + Hub Mini が一番バランスがよい。照度が本当に必要になったら、Ecowitt固定ではなくWi-Fiウェザーステーション候補から選ぶ。M5側は土壌水分とポンプ制御へ集中させる。
+現時点の判断: 常設で照度/UVまで取るなら、SwitchBotだけでは不足。二度手間を避けるなら、最初から26,850〜27,990円帯の照度/UV明記ありWi-Fiウェザーステーションを入れる。M5側は土壌水分とポンプ制御へ集中させる。
 
 訂正: 照度は栽培可否の判断に必要なので、初期調査では必ず測る。常時IoT化するかどうかは後でよい。
 
