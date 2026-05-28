@@ -323,6 +323,38 @@
       line-height: 1.5;
     }
 
+    .link-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 18px;
+      background: #fffdf8;
+      border: 1px solid rgba(60, 80, 55, 0.18);
+      font-size: 14px;
+    }
+
+    .link-table th,
+    .link-table td {
+      padding: 10px;
+      border-bottom: 1px solid rgba(60, 80, 55, 0.14);
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+    }
+
+    .link-table th {
+      background: #eef7ee;
+      color: var(--green);
+      font-family: "SFMono-Regular", ui-monospace, Menlo, monospace;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .link-table code {
+      font-family: "SFMono-Regular", ui-monospace, Menlo, monospace;
+      font-weight: 800;
+      color: #18231e;
+    }
+
     .buy-hint {
       display: block;
       margin-top: 7px;
@@ -701,6 +733,36 @@
       <p class="callout">照度は必須: 北向きで何が育つかを決める入口。まずスマホ照度アプリか安価な照度計で朝/昼/夕方のluxを測る。常時IoT化はその後でよい。</p>
       <p class="callout">電源: ウェザーステーション屋外センサーはソーラー+電池で動かし、100Vを引かない。表示機/ゲートウェイは室内USB/AC、または100V箱側で保護して給電。</p>
       <p class="callout">Amazon商品リンク: Ecowitt WS2910、SwitchBot防水温湿度計、SwitchBot Hub MiniはASIN付き商品ページへリンク。照度計は型番決定後に商品URL化する。</p>
+      <table class="link-table" aria-label="Amazon商品リンク表">
+        <thead>
+          <tr>
+            <th>用途</th>
+            <th>商品</th>
+            <th>ASIN</th>
+            <th>URL / 開けない時</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>照度込みウェザーステーション</td>
+            <td>Ecowitt WS2910級 Wi-Fi Weather Station</td>
+            <td><code>B0991GVBYK</code></td>
+            <td><a href="https://www.amazon.co.jp/dp/B0991GVBYK" target="_blank" rel="noopener noreferrer">Amazon商品ページ</a><br>開けない時はAmazon検索欄にASINを入れる</td>
+          </tr>
+          <tr>
+            <td>屋外温湿度</td>
+            <td>SwitchBot 防水温湿度計</td>
+            <td><code>B0BVLYPYT1</code></td>
+            <td><a href="https://www.amazon.co.jp/dp/B0BVLYPYT1" target="_blank" rel="noopener noreferrer">Amazon商品ページ</a><br>開けない時はAmazon検索欄にASINを入れる</td>
+          </tr>
+          <tr>
+            <td>SwitchBotクラウド連携</td>
+            <td>SwitchBot Hub Mini Matter対応版</td>
+            <td><code>B0DSPXKDP8</code></td>
+            <td><a href="https://www.amazon.co.jp/dp/B0DSPXKDP8" target="_blank" rel="noopener noreferrer">Amazon商品ページ</a><br>開けない時はAmazon検索欄にASINを入れる</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section class="extras" aria-label="補助備品">

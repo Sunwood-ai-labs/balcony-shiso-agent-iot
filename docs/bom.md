@@ -48,10 +48,12 @@ Amazon で購入する前提の候補リストです。商品リンクは価格�
 
 Amazon商品リンク:
 
-- Ecowitt WS2910: https://www.amazon.co.jp/dp/B0991GVBYK
-- SwitchBot 防水温湿度計: https://www.amazon.co.jp/dp/B0BVLYPYT1
-- SwitchBot Hub Mini Matter対応版: https://www.amazon.co.jp/dp/B0DSPXKDP8
-- 照度計/ルクスメーター: 初期調査はスマホアプリでも可。Amazonで買う場合は型番を決めてから商品ページURLを採用する。
+| 用途 | 商品 | ASIN | URL | 開けない時 |
+|---|---|---|---|---|
+| 照度込みウェザーステーション | Ecowitt WS2910級 Wi-Fi Weather Station | B0991GVBYK | https://www.amazon.co.jp/dp/B0991GVBYK | Amazon検索欄に `B0991GVBYK` を入れる |
+| 屋外温湿度 | SwitchBot 防水温湿度計 | B0BVLYPYT1 | https://www.amazon.co.jp/dp/B0BVLYPYT1 | Amazon検索欄に `B0BVLYPYT1` を入れる |
+| SwitchBotクラウド連携 | SwitchBot Hub Mini Matter対応版 | B0DSPXKDP8 | https://www.amazon.co.jp/dp/B0DSPXKDP8 | Amazon検索欄に `B0DSPXKDP8` を入れる |
+| 照度計/ルクスメーター | 未定 | - | - | 初期調査はスマホアプリでも可。買う場合は型番を決めてから商品URL化 |
 
 ## 環境情報コスト比較
 

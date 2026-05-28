@@ -101,6 +101,16 @@ IP65防滴ボックス = M5側
 | Ecowitt表示機/ゲートウェイ | USB/ACアダプタ | 室内推奨。屋外なら100V箱側で保護 |
 | SwitchBot防水温湿度計 | 電池 | ベランダ。Hubは室内コンセント |
 
+## Amazon ASIN
+
+| 商品 | ASIN | URL |
+|---|---|---|
+| Ecowitt WS2910級 | `B0991GVBYK` | https://www.amazon.co.jp/dp/B0991GVBYK |
+| SwitchBot 防水温湿度計 | `B0BVLYPYT1` | https://www.amazon.co.jp/dp/B0BVLYPYT1 |
+| SwitchBot Hub Mini Matter対応版 | `B0DSPXKDP8` | https://www.amazon.co.jp/dp/B0DSPXKDP8 |
+
+Amazonアプリで直リンクが開けない場合は、Amazon検索欄にASINを入れる。
+
 ## 照度の扱い
 
 照度は後回しにしない。北向きベランダで「何が育つか」を判断する入口なので、購入前または初回設置前に測る。
