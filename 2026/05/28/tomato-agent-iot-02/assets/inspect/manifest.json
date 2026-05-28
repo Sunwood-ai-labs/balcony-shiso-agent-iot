@@ -1,0 +1,2238 @@
+{
+  "schemaVersion": 1,
+  "generator": {
+    "command": "forgecad render inspect",
+    "forgecadVersion": "0.9.3"
+  },
+  "source": {
+    "entryFile": "forgecad/main.forge.js",
+    "projectRoot": "forgecad"
+  },
+  "bundle": {
+    "channelsRequested": [
+      "rgb",
+      "mask",
+      "collisions"
+    ],
+    "channelsEmitted": [
+      "rgb",
+      "mask",
+      "collisions"
+    ],
+    "filters": {
+      "focus": null,
+      "hide": []
+    },
+    "sizePx": 800,
+    "quality": "default",
+    "deterministic": true
+  },
+  "views": {
+    "front": {
+      "kind": "canonical"
+    },
+    "right": {
+      "kind": "canonical"
+    },
+    "top": {
+      "kind": "canonical"
+    },
+    "iso": {
+      "kind": "canonical"
+    }
+  },
+  "scene": {
+    "bbox": {
+      "min": [
+        -450,
+        -237.11764705882354,
+        -8
+      ],
+      "max": [
+        472.6204545420443,
+        210,
+        330
+      ]
+    },
+    "volume": 33972200.5714447,
+    "params": [
+      {
+        "name": "Show clearance envelopes",
+        "value": 1,
+        "defaultValue": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "boolean": true
+      },
+      {
+        "name": "Show Unit Watering inside 5V box",
+        "value": 1,
+        "defaultValue": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "boolean": true
+      }
+    ],
+    "cutPlanes": [],
+    "animations": [],
+    "defaultAnimation": null,
+    "verifications": [],
+    "objects": [
+      {
+        "id": "obj-1",
+        "name": "balcony wall mounting plane",
+        "treePath": [
+          "balcony wall mounting plane"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-2",
+        "name": "not floor: boxes are raised above wet surfaces",
+        "treePath": [
+          "not floor: boxes are raised above wet surfaces"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-3",
+        "name": "100V outdoor power box Takasho LSO-70 class translucent outer envelope",
+        "treePath": [
+          "100V outdoor power box Takasho LSO-70 class translucent outer envelope"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-4",
+        "name": "100V outdoor power box Takasho LSO-70 class usable floor",
+        "treePath": [
+          "100V outdoor power box Takasho LSO-70 class usable floor"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-5",
+        "name": "100V outdoor power box Takasho LSO-70 class lid clearance plane",
+        "treePath": [
+          "100V outdoor power box Takasho LSO-70 class lid clearance plane"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-6",
+        "name": "HATAYA BFX breaker block placeholder: measure exact BFX-013KC2",
+        "treePath": [
+          "HATAYA BFX breaker block placeholder: measure exact BFX-013KC2"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-7",
+        "name": "HATAYA 3-outlet tap placeholder: measure exact BFX-013KC2",
+        "treePath": [
+          "HATAYA 3-outlet tap placeholder: measure exact BFX-013KC2"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-8",
+        "name": "USB-C AC adapter placeholder 100V to 5V only",
+        "treePath": [
+          "USB-C AC adapter placeholder 100V to 5V only"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-9",
+        "name": "adapter cable bend clearance envelope",
+        "treePath": [
+          "adapter cable bend clearance envelope"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-10",
+        "name": "HATAYA loose cord clearance envelope",
+        "treePath": [
+          "HATAYA loose cord clearance envelope"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-11",
+        "name": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+        "treePath": [
+          "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-12",
+        "name": "5V IP65 IoT box recommended 300x190x100 outer usable floor",
+        "treePath": [
+          "5V IP65 IoT box recommended 300x190x100 outer usable floor"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-13",
+        "name": "5V IP65 IoT box recommended 300x190x100 outer lid clearance plane",
+        "treePath": [
+          "5V IP65 IoT box recommended 300x190x100 outer lid clearance plane"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-14",
+        "name": "M5StickS3 48x24x15",
+        "treePath": [
+          "M5StickS3 48x24x15"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-15",
+        "name": "TypeC2Grove U151 32x24x11",
+        "treePath": [
+          "TypeC2Grove U151 32x24x11"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-16",
+        "name": "ENV III U001-C 32x24x8",
+        "treePath": [
+          "ENV III U001-C 32x24x8"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-17",
+        "name": "replaceable desiccant pack",
+        "treePath": [
+          "replaceable desiccant pack"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-18",
+        "name": "Unit Watering U101 193x27x33 inside-box fit check",
+        "treePath": [
+          "Unit Watering U101 193x27x33 inside-box fit check"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-19",
+        "name": "100V finished extension path from rainproof outlet to power box",
+        "treePath": [
+          "100V finished extension path from rainproof outlet to power box"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-20",
+        "name": "100V drip loop before power box down leg",
+        "treePath": [
+          "100V drip loop before power box down leg"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-21",
+        "name": "100V drip loop before power box bottom run",
+        "treePath": [
+          "100V drip loop before power box bottom run"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-22",
+        "name": "100V drip loop before power box up leg",
+        "treePath": [
+          "100V drip loop before power box up leg"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-23",
+        "name": "5V USB-C only path from adapter to IoT box",
+        "treePath": [
+          "5V USB-C only path from adapter to IoT box"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-24",
+        "name": "5V USB-C drip loop before IoT box down leg",
+        "treePath": [
+          "5V USB-C drip loop before IoT box down leg"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-25",
+        "name": "5V USB-C drip loop before IoT box bottom run",
+        "treePath": [
+          "5V USB-C drip loop before IoT box bottom run"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-26",
+        "name": "5V USB-C drip loop before IoT box up leg",
+        "treePath": [
+          "5V USB-C drip loop before IoT box up leg"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-27",
+        "name": "Grove signal/power short cable M5StickS3 to TypeC2Grove",
+        "treePath": [
+          "Grove signal/power short cable M5StickS3 to TypeC2Grove"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-28",
+        "name": "Grove cable TypeC2Grove to ENV III",
+        "treePath": [
+          "Grove cable TypeC2Grove to ENV III"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-29",
+        "name": "Grove cable TypeC2Grove to Unit Watering",
+        "treePath": [
+          "Grove cable TypeC2Grove to Unit Watering"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-30",
+        "name": "water tube route kept away from 100V side",
+        "treePath": [
+          "water tube route kept away from 100V side"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-31",
+        "name": "separation gap: keep water tube and 100V box apart",
+        "treePath": [
+          "separation gap: keep water tube and 100V box apart"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      }
+    ]
+  },
+  "channels": {
+    "rgb": {
+      "format": "png",
+      "views": {
+        "front": {
+          "path": "channels/rgb/front.png"
+        },
+        "right": {
+          "path": "channels/rgb/right.png"
+        },
+        "top": {
+          "path": "channels/rgb/top.png"
+        },
+        "iso": {
+          "path": "channels/rgb/iso.png"
+        }
+      }
+    },
+    "mask": {
+      "format": "png",
+      "encoding": "rgb8-object-palette",
+      "backgroundIndex": 0,
+      "backgroundColor": [
+        0,
+        0,
+        0
+      ],
+      "decode": "lookup exact RGB color in objects[].color; antialiased edge pixels may be blended",
+      "objects": [
+        {
+          "index": 1,
+          "color": [
+            230,
+            25,
+            75
+          ],
+          "hex": "#e6194b",
+          "id": "obj-1",
+          "name": "balcony wall mounting plane",
+          "treePath": [
+            "balcony wall mounting plane"
+          ],
+          "mock": false
+        },
+        {
+          "index": 2,
+          "color": [
+            60,
+            180,
+            75
+          ],
+          "hex": "#3cb44b",
+          "id": "obj-2",
+          "name": "not floor: boxes are raised above wet surfaces",
+          "treePath": [
+            "not floor: boxes are raised above wet surfaces"
+          ],
+          "mock": false
+        },
+        {
+          "index": 3,
+          "color": [
+            255,
+            225,
+            25
+          ],
+          "hex": "#ffe119",
+          "id": "obj-3",
+          "name": "100V outdoor power box Takasho LSO-70 class translucent outer envelope",
+          "treePath": [
+            "100V outdoor power box Takasho LSO-70 class translucent outer envelope"
+          ],
+          "mock": false
+        },
+        {
+          "index": 4,
+          "color": [
+            0,
+            130,
+            200
+          ],
+          "hex": "#0082c8",
+          "id": "obj-4",
+          "name": "100V outdoor power box Takasho LSO-70 class usable floor",
+          "treePath": [
+            "100V outdoor power box Takasho LSO-70 class usable floor"
+          ],
+          "mock": false
+        },
+        {
+          "index": 5,
+          "color": [
+            245,
+            130,
+            48
+          ],
+          "hex": "#f58230",
+          "id": "obj-5",
+          "name": "100V outdoor power box Takasho LSO-70 class lid clearance plane",
+          "treePath": [
+            "100V outdoor power box Takasho LSO-70 class lid clearance plane"
+          ],
+          "mock": false
+        },
+        {
+          "index": 6,
+          "color": [
+            145,
+            30,
+            180
+          ],
+          "hex": "#911eb4",
+          "id": "obj-6",
+          "name": "HATAYA BFX breaker block placeholder: measure exact BFX-013KC2",
+          "treePath": [
+            "HATAYA BFX breaker block placeholder: measure exact BFX-013KC2"
+          ],
+          "mock": false
+        },
+        {
+          "index": 7,
+          "color": [
+            70,
+            240,
+            240
+          ],
+          "hex": "#46f0f0",
+          "id": "obj-7",
+          "name": "HATAYA 3-outlet tap placeholder: measure exact BFX-013KC2",
+          "treePath": [
+            "HATAYA 3-outlet tap placeholder: measure exact BFX-013KC2"
+          ],
+          "mock": false
+        },
+        {
+          "index": 8,
+          "color": [
+            240,
+            50,
+            230
+          ],
+          "hex": "#f032e6",
+          "id": "obj-8",
+          "name": "USB-C AC adapter placeholder 100V to 5V only",
+          "treePath": [
+            "USB-C AC adapter placeholder 100V to 5V only"
+          ],
+          "mock": false
+        },
+        {
+          "index": 9,
+          "color": [
+            210,
+            245,
+            60
+          ],
+          "hex": "#d2f53c",
+          "id": "obj-9",
+          "name": "adapter cable bend clearance envelope",
+          "treePath": [
+            "adapter cable bend clearance envelope"
+          ],
+          "mock": false
+        },
+        {
+          "index": 10,
+          "color": [
+            250,
+            190,
+            190
+          ],
+          "hex": "#fabebe",
+          "id": "obj-10",
+          "name": "HATAYA loose cord clearance envelope",
+          "treePath": [
+            "HATAYA loose cord clearance envelope"
+          ],
+          "mock": false
+        },
+        {
+          "index": 11,
+          "color": [
+            0,
+            128,
+            128
+          ],
+          "hex": "#008080",
+          "id": "obj-11",
+          "name": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "treePath": [
+            "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope"
+          ],
+          "mock": false
+        },
+        {
+          "index": 12,
+          "color": [
+            230,
+            190,
+            255
+          ],
+          "hex": "#e6beff",
+          "id": "obj-12",
+          "name": "5V IP65 IoT box recommended 300x190x100 outer usable floor",
+          "treePath": [
+            "5V IP65 IoT box recommended 300x190x100 outer usable floor"
+          ],
+          "mock": false
+        },
+        {
+          "index": 13,
+          "color": [
+            170,
+            110,
+            40
+          ],
+          "hex": "#aa6e28",
+          "id": "obj-13",
+          "name": "5V IP65 IoT box recommended 300x190x100 outer lid clearance plane",
+          "treePath": [
+            "5V IP65 IoT box recommended 300x190x100 outer lid clearance plane"
+          ],
+          "mock": false
+        },
+        {
+          "index": 14,
+          "color": [
+            255,
+            250,
+            200
+          ],
+          "hex": "#fffac8",
+          "id": "obj-14",
+          "name": "M5StickS3 48x24x15",
+          "treePath": [
+            "M5StickS3 48x24x15"
+          ],
+          "mock": false
+        },
+        {
+          "index": 15,
+          "color": [
+            128,
+            0,
+            0
+          ],
+          "hex": "#800000",
+          "id": "obj-15",
+          "name": "TypeC2Grove U151 32x24x11",
+          "treePath": [
+            "TypeC2Grove U151 32x24x11"
+          ],
+          "mock": false
+        },
+        {
+          "index": 16,
+          "color": [
+            170,
+            255,
+            195
+          ],
+          "hex": "#aaffc3",
+          "id": "obj-16",
+          "name": "ENV III U001-C 32x24x8",
+          "treePath": [
+            "ENV III U001-C 32x24x8"
+          ],
+          "mock": false
+        },
+        {
+          "index": 17,
+          "color": [
+            128,
+            128,
+            0
+          ],
+          "hex": "#808000",
+          "id": "obj-17",
+          "name": "replaceable desiccant pack",
+          "treePath": [
+            "replaceable desiccant pack"
+          ],
+          "mock": false
+        },
+        {
+          "index": 18,
+          "color": [
+            255,
+            215,
+            180
+          ],
+          "hex": "#ffd7b4",
+          "id": "obj-18",
+          "name": "Unit Watering U101 193x27x33 inside-box fit check",
+          "treePath": [
+            "Unit Watering U101 193x27x33 inside-box fit check"
+          ],
+          "mock": false
+        },
+        {
+          "index": 19,
+          "color": [
+            0,
+            0,
+            128
+          ],
+          "hex": "#000080",
+          "id": "obj-19",
+          "name": "100V finished extension path from rainproof outlet to power box",
+          "treePath": [
+            "100V finished extension path from rainproof outlet to power box"
+          ],
+          "mock": false
+        },
+        {
+          "index": 20,
+          "color": [
+            128,
+            128,
+            128
+          ],
+          "hex": "#808080",
+          "id": "obj-20",
+          "name": "100V drip loop before power box down leg",
+          "treePath": [
+            "100V drip loop before power box down leg"
+          ],
+          "mock": false
+        },
+        {
+          "index": 21,
+          "color": [
+            230,
+            25,
+            75
+          ],
+          "hex": "#e6194b",
+          "id": "obj-21",
+          "name": "100V drip loop before power box bottom run",
+          "treePath": [
+            "100V drip loop before power box bottom run"
+          ],
+          "mock": false
+        },
+        {
+          "index": 22,
+          "color": [
+            60,
+            180,
+            75
+          ],
+          "hex": "#3cb44b",
+          "id": "obj-22",
+          "name": "100V drip loop before power box up leg",
+          "treePath": [
+            "100V drip loop before power box up leg"
+          ],
+          "mock": false
+        },
+        {
+          "index": 23,
+          "color": [
+            255,
+            225,
+            25
+          ],
+          "hex": "#ffe119",
+          "id": "obj-23",
+          "name": "5V USB-C only path from adapter to IoT box",
+          "treePath": [
+            "5V USB-C only path from adapter to IoT box"
+          ],
+          "mock": false
+        },
+        {
+          "index": 24,
+          "color": [
+            0,
+            130,
+            200
+          ],
+          "hex": "#0082c8",
+          "id": "obj-24",
+          "name": "5V USB-C drip loop before IoT box down leg",
+          "treePath": [
+            "5V USB-C drip loop before IoT box down leg"
+          ],
+          "mock": false
+        },
+        {
+          "index": 25,
+          "color": [
+            245,
+            130,
+            48
+          ],
+          "hex": "#f58230",
+          "id": "obj-25",
+          "name": "5V USB-C drip loop before IoT box bottom run",
+          "treePath": [
+            "5V USB-C drip loop before IoT box bottom run"
+          ],
+          "mock": false
+        },
+        {
+          "index": 26,
+          "color": [
+            145,
+            30,
+            180
+          ],
+          "hex": "#911eb4",
+          "id": "obj-26",
+          "name": "5V USB-C drip loop before IoT box up leg",
+          "treePath": [
+            "5V USB-C drip loop before IoT box up leg"
+          ],
+          "mock": false
+        },
+        {
+          "index": 27,
+          "color": [
+            70,
+            240,
+            240
+          ],
+          "hex": "#46f0f0",
+          "id": "obj-27",
+          "name": "Grove signal/power short cable M5StickS3 to TypeC2Grove",
+          "treePath": [
+            "Grove signal/power short cable M5StickS3 to TypeC2Grove"
+          ],
+          "mock": false
+        },
+        {
+          "index": 28,
+          "color": [
+            240,
+            50,
+            230
+          ],
+          "hex": "#f032e6",
+          "id": "obj-28",
+          "name": "Grove cable TypeC2Grove to ENV III",
+          "treePath": [
+            "Grove cable TypeC2Grove to ENV III"
+          ],
+          "mock": false
+        },
+        {
+          "index": 29,
+          "color": [
+            210,
+            245,
+            60
+          ],
+          "hex": "#d2f53c",
+          "id": "obj-29",
+          "name": "Grove cable TypeC2Grove to Unit Watering",
+          "treePath": [
+            "Grove cable TypeC2Grove to Unit Watering"
+          ],
+          "mock": false
+        },
+        {
+          "index": 30,
+          "color": [
+            250,
+            190,
+            190
+          ],
+          "hex": "#fabebe",
+          "id": "obj-30",
+          "name": "water tube route kept away from 100V side",
+          "treePath": [
+            "water tube route kept away from 100V side"
+          ],
+          "mock": false
+        },
+        {
+          "index": 31,
+          "color": [
+            0,
+            128,
+            128
+          ],
+          "hex": "#008080",
+          "id": "obj-31",
+          "name": "separation gap: keep water tube and 100V box apart",
+          "treePath": [
+            "separation gap: keep water tube and 100V box apart"
+          ],
+          "mock": false
+        }
+      ],
+      "views": {
+        "front": {
+          "path": "channels/mask/front.png"
+        },
+        "right": {
+          "path": "channels/mask/right.png"
+        },
+        "top": {
+          "path": "channels/mask/top.png"
+        },
+        "iso": {
+          "path": "channels/mask/iso.png"
+        }
+      }
+    },
+    "collisions": {
+      "format": "png",
+      "encoding": "rgb8-collision-highlight",
+      "backgroundColor": [
+        0,
+        0,
+        0
+      ],
+      "decode": "source objects are translucent ghost geometry; boolean intersection volumes use per-finding collisions[].color palette entries",
+      "method": "boolean-intersection",
+      "options": {
+        "minOverlapVolume": 0.1
+      },
+      "style": {
+        "sourceOpacity": 0.22,
+        "sourceColor": [
+          180,
+          200,
+          220
+        ],
+        "collisionColor": [
+          255,
+          68,
+          16
+        ],
+        "collisionHex": "#ff4410",
+        "collisionPalette": [
+          {
+            "index": 1,
+            "color": [
+              255,
+              68,
+              16
+            ],
+            "hex": "#ff4410"
+          },
+          {
+            "index": 2,
+            "color": [
+              0,
+              204,
+              255
+            ],
+            "hex": "#00ccff"
+          },
+          {
+            "index": 3,
+            "color": [
+              255,
+              214,
+              0
+            ],
+            "hex": "#ffd600"
+          },
+          {
+            "index": 4,
+            "color": [
+              66,
+              220,
+              120
+            ],
+            "hex": "#42dc78"
+          },
+          {
+            "index": 5,
+            "color": [
+              255,
+              76,
+              196
+            ],
+            "hex": "#ff4cc4"
+          },
+          {
+            "index": 6,
+            "color": [
+              142,
+              106,
+              255
+            ],
+            "hex": "#8e6aff"
+          },
+          {
+            "index": 7,
+            "color": [
+              255,
+              145,
+              48
+            ],
+            "hex": "#ff9130"
+          },
+          {
+            "index": 8,
+            "color": [
+              86,
+              232,
+              202
+            ],
+            "hex": "#56e8ca"
+          },
+          {
+            "index": 9,
+            "color": [
+              210,
+              245,
+              60
+            ],
+            "hex": "#d2f53c"
+          },
+          {
+            "index": 10,
+            "color": [
+              255,
+              120,
+              120
+            ],
+            "hex": "#ff7878"
+          },
+          {
+            "index": 11,
+            "color": [
+              80,
+              150,
+              255
+            ],
+            "hex": "#5096ff"
+          },
+          {
+            "index": 12,
+            "color": [
+              190,
+              110,
+              60
+            ],
+            "hex": "#be6e3c"
+          }
+        ]
+      },
+      "objectCount": 31,
+      "collisionCount": 29,
+      "objects": [
+        {
+          "index": 0,
+          "id": "obj-1",
+          "name": "balcony wall mounting plane",
+          "treePath": [
+            "balcony wall mounting plane"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -450,
+              164,
+              0
+            ],
+            "max": [
+              450,
+              176,
+              330
+            ]
+          }
+        },
+        {
+          "index": 1,
+          "id": "obj-2",
+          "name": "not floor: boxes are raised above wet surfaces",
+          "treePath": [
+            "not floor: boxes are raised above wet surfaces"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -450,
+              -210,
+              -8
+            ],
+            "max": [
+              450,
+              210,
+              -2
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "id": "obj-3",
+          "name": "100V outdoor power box Takasho LSO-70 class translucent outer envelope",
+          "treePath": [
+            "100V outdoor power box Takasho LSO-70 class translucent outer envelope"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -417.5,
+              -157.5,
+              80
+            ],
+            "max": [
+              -22.5,
+              157.5,
+              225
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "id": "obj-4",
+          "name": "100V outdoor power box Takasho LSO-70 class usable floor",
+          "treePath": [
+            "100V outdoor power box Takasho LSO-70 class usable floor"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -385,
+              -112.5,
+              82
+            ],
+            "max": [
+              -55,
+              112.5,
+              86
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "id": "obj-5",
+          "name": "100V outdoor power box Takasho LSO-70 class lid clearance plane",
+          "treePath": [
+            "100V outdoor power box Takasho LSO-70 class lid clearance plane"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -417.5,
+              -157.5,
+              225
+            ],
+            "max": [
+              -22.5,
+              157.5,
+              230
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "id": "obj-6",
+          "name": "HATAYA BFX breaker block placeholder: measure exact BFX-013KC2",
+          "treePath": [
+            "HATAYA BFX breaker block placeholder: measure exact BFX-013KC2"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -355,
+              -61.5,
+              88
+            ],
+            "max": [
+              -265,
+              -18.5,
+              131
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "id": "obj-7",
+          "name": "HATAYA 3-outlet tap placeholder: measure exact BFX-013KC2",
+          "treePath": [
+            "HATAYA 3-outlet tap placeholder: measure exact BFX-013KC2"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -240,
+              -65.5,
+              88
+            ],
+            "max": [
+              -120,
+              -10.5,
+              133
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "id": "obj-8",
+          "name": "USB-C AC adapter placeholder 100V to 5V only",
+          "treePath": [
+            "USB-C AC adapter placeholder 100V to 5V only"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -212.5,
+              32.5,
+              88
+            ],
+            "max": [
+              -167.5,
+              77.5,
+              118
+            ]
+          }
+        },
+        {
+          "index": 8,
+          "id": "obj-9",
+          "name": "adapter cable bend clearance envelope",
+          "treePath": [
+            "adapter cable bend clearance envelope"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -230,
+              20,
+              87
+            ],
+            "max": [
+              -150,
+              90,
+              132
+            ]
+          }
+        },
+        {
+          "index": 9,
+          "id": "obj-10",
+          "name": "HATAYA loose cord clearance envelope",
+          "treePath": [
+            "HATAYA loose cord clearance envelope"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -377.5,
+              -82.5,
+              84
+            ],
+            "max": [
+              -112.5,
+              32.5,
+              144
+            ]
+          }
+        },
+        {
+          "index": 10,
+          "id": "obj-11",
+          "name": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "treePath": [
+            "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              85,
+              -95,
+              125
+            ],
+            "max": [
+              385,
+              95,
+              225
+            ]
+          }
+        },
+        {
+          "index": 11,
+          "id": "obj-12",
+          "name": "5V IP65 IoT box recommended 300x190x100 outer usable floor",
+          "treePath": [
+            "5V IP65 IoT box recommended 300x190x100 outer usable floor"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              105,
+              -80,
+              127
+            ],
+            "max": [
+              365,
+              80,
+              131
+            ]
+          }
+        },
+        {
+          "index": 12,
+          "id": "obj-13",
+          "name": "5V IP65 IoT box recommended 300x190x100 outer lid clearance plane",
+          "treePath": [
+            "5V IP65 IoT box recommended 300x190x100 outer lid clearance plane"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              85,
+              -95,
+              225
+            ],
+            "max": [
+              385,
+              95,
+              230
+            ]
+          }
+        },
+        {
+          "index": 13,
+          "id": "obj-14",
+          "name": "M5StickS3 48x24x15",
+          "treePath": [
+            "M5StickS3 48x24x15"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              106,
+              -64,
+              133
+            ],
+            "max": [
+              154,
+              -40,
+              148
+            ]
+          }
+        },
+        {
+          "index": 14,
+          "id": "obj-15",
+          "name": "TypeC2Grove U151 32x24x11",
+          "treePath": [
+            "TypeC2Grove U151 32x24x11"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              114,
+              -4,
+              133
+            ],
+            "max": [
+              146,
+              20,
+              144
+            ]
+          }
+        },
+        {
+          "index": 15,
+          "id": "obj-16",
+          "name": "ENV III U001-C 32x24x8",
+          "treePath": [
+            "ENV III U001-C 32x24x8"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              114,
+              46,
+              133
+            ],
+            "max": [
+              146,
+              70,
+              141
+            ]
+          }
+        },
+        {
+          "index": 16,
+          "id": "obj-17",
+          "name": "replaceable desiccant pack",
+          "treePath": [
+            "replaceable desiccant pack"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              227.5,
+              40.5,
+              133
+            ],
+            "max": [
+              282.5,
+              75.5,
+              145
+            ]
+          }
+        },
+        {
+          "index": 17,
+          "id": "obj-18",
+          "name": "Unit Watering U101 193x27x33 inside-box fit check",
+          "treePath": [
+            "Unit Watering U101 193x27x33 inside-box fit check"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              168.5,
+              -65.5,
+              133
+            ],
+            "max": [
+              361.5,
+              -38.5,
+              166
+            ]
+          }
+        },
+        {
+          "index": 18,
+          "id": "obj-19",
+          "name": "100V finished extension path from rainproof outlet to power box",
+          "treePath": [
+            "100V finished extension path from rainproof outlet to power box"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -425.49226796847375,
+              -104.24081822981111,
+              93.31584493010087
+            ],
+            "max": [
+              -344.5077320315262,
+              -45.759181770188896,
+              130.68415506989913
+            ]
+          }
+        },
+        {
+          "index": 19,
+          "id": "obj-20",
+          "name": "100V drip loop before power box down leg",
+          "treePath": [
+            "100V drip loop before power box down leg"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -444,
+              -129,
+              35
+            ],
+            "max": [
+              -436,
+              -121,
+              105
+            ]
+          }
+        },
+        {
+          "index": 20,
+          "id": "obj-21",
+          "name": "100V drip loop before power box bottom run",
+          "treePath": [
+            "100V drip loop before power box bottom run"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -412.5,
+              -129,
+              66
+            ],
+            "max": [
+              -357.5,
+              -121,
+              74
+            ]
+          }
+        },
+        {
+          "index": 21,
+          "id": "obj-22",
+          "name": "100V drip loop before power box up leg",
+          "treePath": [
+            "100V drip loop before power box up leg"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -389,
+              -129,
+              97.5
+            ],
+            "max": [
+              -381,
+              -121,
+              152.5
+            ]
+          }
+        },
+        {
+          "index": 22,
+          "id": "obj-23",
+          "name": "5V USB-C only path from adapter to IoT box",
+          "treePath": [
+            "5V USB-C only path from adapter to IoT box"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -13.2153793494243,
+              6.841738259377507,
+              124.38151987104241
+            ],
+            "max": [
+              223.2153793494243,
+              43.15826174062249,
+              175.61848012895751
+            ]
+          }
+        },
+        {
+          "index": 23,
+          "id": "obj-24",
+          "name": "5V USB-C drip loop before IoT box down leg",
+          "treePath": [
+            "5V USB-C drip loop before IoT box down leg"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              66,
+              20.999999999999993,
+              45
+            ],
+            "max": [
+              74,
+              29,
+              115
+            ]
+          }
+        },
+        {
+          "index": 24,
+          "id": "obj-25",
+          "name": "5V USB-C drip loop before IoT box bottom run",
+          "treePath": [
+            "5V USB-C drip loop before IoT box bottom run"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              97.5,
+              21,
+              76
+            ],
+            "max": [
+              152.5,
+              29,
+              84
+            ]
+          }
+        },
+        {
+          "index": 25,
+          "id": "obj-26",
+          "name": "5V USB-C drip loop before IoT box up leg",
+          "treePath": [
+            "5V USB-C drip loop before IoT box up leg"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              121,
+              21,
+              107.5
+            ],
+            "max": [
+              129,
+              29,
+              162.5
+            ]
+          }
+        },
+        {
+          "index": 26,
+          "id": "obj-27",
+          "name": "Grove signal/power short cable M5StickS3 to TypeC2Grove",
+          "treePath": [
+            "Grove signal/power short cable M5StickS3 to TypeC2Grove"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              128,
+              -20.099875233887786,
+              147.0024953222443
+            ],
+            "max": [
+              132,
+              20.099875233887786,
+              152.9975046777557
+            ]
+          }
+        },
+        {
+          "index": 27,
+          "id": "obj-28",
+          "name": "Grove cable TypeC2Grove to ENV III",
+          "treePath": [
+            "Grove cable TypeC2Grove to ENV III"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              128,
+              38.84259502915998,
+              141.50620370269309
+            ],
+            "max": [
+              132,
+              77.15740497084002,
+              148.49379629730694
+            ]
+          }
+        },
+        {
+          "index": 28,
+          "id": "obj-29",
+          "name": "Grove cable TypeC2Grove to Unit Watering",
+          "treePath": [
+            "Grove cable TypeC2Grove to Unit Watering"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              204.68842333372785,
+              -73.32717822904169,
+              148.50216294899525
+            ],
+            "max": [
+              325.3115766662722,
+              -16.672821770958308,
+              157.49783705100475
+            ]
+          }
+        },
+        {
+          "index": 29,
+          "id": "obj-30",
+          "name": "water tube route kept away from 100V side",
+          "treePath": [
+            "water tube route kept away from 100V side"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              387.3795454579557,
+              -237.11764705882354,
+              7.503290261931269
+            ],
+            "max": [
+              472.6204545420443,
+              -112.88235294117646,
+              102.49670973806873
+            ]
+          }
+        },
+        {
+          "index": 30,
+          "id": "obj-31",
+          "name": "separation gap: keep water tube and 100V box apart",
+          "treePath": [
+            "separation gap: keep water tube and 100V box apart"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -15,
+              -155,
+              78
+            ],
+            "max": [
+              55,
+              125,
+              86
+            ]
+          }
+        }
+      ],
+      "collisions": [
+        {
+          "index": 1,
+          "id": "obj-3__obj-4",
+          "sourceIndex": 2,
+          "targetIndex": 3,
+          "sourceId": "obj-3",
+          "targetId": "obj-4",
+          "sourceName": "100V outdoor power box Takasho LSO-70 class translucent outer envelope",
+          "targetName": "100V outdoor power box Takasho LSO-70 class usable floor",
+          "overlapVolume": 297000,
+          "groupIndex": 1,
+          "color": [
+            255,
+            68,
+            16
+          ],
+          "hex": "#ff4410"
+        },
+        {
+          "index": 2,
+          "id": "obj-3__obj-6",
+          "sourceIndex": 2,
+          "targetIndex": 5,
+          "sourceId": "obj-3",
+          "targetId": "obj-6",
+          "sourceName": "100V outdoor power box Takasho LSO-70 class translucent outer envelope",
+          "targetName": "HATAYA BFX breaker block placeholder: measure exact BFX-013KC2",
+          "overlapVolume": 166410,
+          "groupIndex": 2,
+          "color": [
+            0,
+            204,
+            255
+          ],
+          "hex": "#00ccff"
+        },
+        {
+          "index": 3,
+          "id": "obj-3__obj-7",
+          "sourceIndex": 2,
+          "targetIndex": 6,
+          "sourceId": "obj-3",
+          "targetId": "obj-7",
+          "sourceName": "100V outdoor power box Takasho LSO-70 class translucent outer envelope",
+          "targetName": "HATAYA 3-outlet tap placeholder: measure exact BFX-013KC2",
+          "overlapVolume": 297000,
+          "groupIndex": 3,
+          "color": [
+            255,
+            214,
+            0
+          ],
+          "hex": "#ffd600"
+        },
+        {
+          "index": 4,
+          "id": "obj-3__obj-8",
+          "sourceIndex": 2,
+          "targetIndex": 7,
+          "sourceId": "obj-3",
+          "targetId": "obj-8",
+          "sourceName": "100V outdoor power box Takasho LSO-70 class translucent outer envelope",
+          "targetName": "USB-C AC adapter placeholder 100V to 5V only",
+          "overlapVolume": 60750,
+          "groupIndex": 4,
+          "color": [
+            66,
+            220,
+            120
+          ],
+          "hex": "#42dc78"
+        },
+        {
+          "index": 5,
+          "id": "obj-3__obj-9",
+          "sourceIndex": 2,
+          "targetIndex": 8,
+          "sourceId": "obj-3",
+          "targetId": "obj-9",
+          "sourceName": "100V outdoor power box Takasho LSO-70 class translucent outer envelope",
+          "targetName": "adapter cable bend clearance envelope",
+          "overlapVolume": 252000,
+          "groupIndex": 5,
+          "color": [
+            255,
+            76,
+            196
+          ],
+          "hex": "#ff4cc4"
+        },
+        {
+          "index": 6,
+          "id": "obj-3__obj-10",
+          "sourceIndex": 2,
+          "targetIndex": 9,
+          "sourceId": "obj-3",
+          "targetId": "obj-10",
+          "sourceName": "100V outdoor power box Takasho LSO-70 class translucent outer envelope",
+          "targetName": "HATAYA loose cord clearance envelope",
+          "overlapVolume": 1828500,
+          "groupIndex": 6,
+          "color": [
+            142,
+            106,
+            255
+          ],
+          "hex": "#8e6aff"
+        },
+        {
+          "index": 7,
+          "id": "obj-3__obj-19",
+          "sourceIndex": 2,
+          "targetIndex": 18,
+          "sourceId": "obj-3",
+          "targetId": "obj-19",
+          "sourceName": "100V outdoor power box Takasho LSO-70 class translucent outer envelope",
+          "targetName": "100V finished extension path from rainproof outlet to power box",
+          "overlapVolume": 6742.499335714119,
+          "groupIndex": 7,
+          "color": [
+            255,
+            145,
+            48
+          ],
+          "hex": "#ff9130"
+        },
+        {
+          "index": 8,
+          "id": "obj-3__obj-22",
+          "sourceIndex": 2,
+          "targetIndex": 21,
+          "sourceId": "obj-3",
+          "targetId": "obj-22",
+          "sourceName": "100V outdoor power box Takasho LSO-70 class translucent outer envelope",
+          "targetName": "100V drip loop before power box up leg",
+          "overlapVolume": 2694.0913638502384,
+          "groupIndex": 8,
+          "color": [
+            86,
+            232,
+            202
+          ],
+          "hex": "#56e8ca"
+        },
+        {
+          "index": 9,
+          "id": "obj-4__obj-10",
+          "sourceIndex": 3,
+          "targetIndex": 9,
+          "sourceId": "obj-4",
+          "targetId": "obj-10",
+          "sourceName": "100V outdoor power box Takasho LSO-70 class usable floor",
+          "targetName": "HATAYA loose cord clearance envelope",
+          "overlapVolume": 60949.999999999956,
+          "groupIndex": 9,
+          "color": [
+            210,
+            245,
+            60
+          ],
+          "hex": "#d2f53c"
+        },
+        {
+          "index": 10,
+          "id": "obj-6__obj-10",
+          "sourceIndex": 5,
+          "targetIndex": 9,
+          "sourceId": "obj-6",
+          "targetId": "obj-10",
+          "sourceName": "HATAYA BFX breaker block placeholder: measure exact BFX-013KC2",
+          "targetName": "HATAYA loose cord clearance envelope",
+          "overlapVolume": 166410,
+          "groupIndex": 10,
+          "color": [
+            255,
+            120,
+            120
+          ],
+          "hex": "#ff7878"
+        },
+        {
+          "index": 11,
+          "id": "obj-6__obj-19",
+          "sourceIndex": 5,
+          "targetIndex": 18,
+          "sourceId": "obj-6",
+          "targetId": "obj-19",
+          "sourceName": "HATAYA BFX breaker block placeholder: measure exact BFX-013KC2",
+          "targetName": "100V finished extension path from rainproof outlet to power box",
+          "overlapVolume": 722.4106431122199,
+          "groupIndex": 11,
+          "color": [
+            80,
+            150,
+            255
+          ],
+          "hex": "#5096ff"
+        },
+        {
+          "index": 12,
+          "id": "obj-7__obj-10",
+          "sourceIndex": 6,
+          "targetIndex": 9,
+          "sourceId": "obj-7",
+          "targetId": "obj-10",
+          "sourceName": "HATAYA 3-outlet tap placeholder: measure exact BFX-013KC2",
+          "targetName": "HATAYA loose cord clearance envelope",
+          "overlapVolume": 297000,
+          "groupIndex": 12,
+          "color": [
+            190,
+            110,
+            60
+          ],
+          "hex": "#be6e3c"
+        },
+        {
+          "index": 13,
+          "id": "obj-8__obj-9",
+          "sourceIndex": 7,
+          "targetIndex": 8,
+          "sourceId": "obj-8",
+          "targetId": "obj-9",
+          "sourceName": "USB-C AC adapter placeholder 100V to 5V only",
+          "targetName": "adapter cable bend clearance envelope",
+          "overlapVolume": 60750,
+          "groupIndex": 13,
+          "color": [
+            255,
+            68,
+            16
+          ],
+          "hex": "#ff4410"
+        },
+        {
+          "index": 14,
+          "id": "obj-9__obj-10",
+          "sourceIndex": 8,
+          "targetIndex": 9,
+          "sourceId": "obj-9",
+          "targetId": "obj-10",
+          "sourceName": "adapter cable bend clearance envelope",
+          "targetName": "HATAYA loose cord clearance envelope",
+          "overlapVolume": 45000,
+          "groupIndex": 14,
+          "color": [
+            0,
+            204,
+            255
+          ],
+          "hex": "#00ccff"
+        },
+        {
+          "index": 15,
+          "id": "obj-10__obj-19",
+          "sourceIndex": 9,
+          "targetIndex": 18,
+          "sourceId": "obj-10",
+          "targetId": "obj-19",
+          "sourceName": "HATAYA loose cord clearance envelope",
+          "targetName": "100V finished extension path from rainproof outlet to power box",
+          "overlapVolume": 2889.6425724488845,
+          "groupIndex": 15,
+          "color": [
+            255,
+            214,
+            0
+          ],
+          "hex": "#ffd600"
+        },
+        {
+          "index": 16,
+          "id": "obj-11__obj-12",
+          "sourceIndex": 10,
+          "targetIndex": 11,
+          "sourceId": "obj-11",
+          "targetId": "obj-12",
+          "sourceName": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "targetName": "5V IP65 IoT box recommended 300x190x100 outer usable floor",
+          "overlapVolume": 166399.99999999977,
+          "groupIndex": 16,
+          "color": [
+            66,
+            220,
+            120
+          ],
+          "hex": "#42dc78"
+        },
+        {
+          "index": 17,
+          "id": "obj-11__obj-14",
+          "sourceIndex": 10,
+          "targetIndex": 13,
+          "sourceId": "obj-11",
+          "targetId": "obj-14",
+          "sourceName": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "targetName": "M5StickS3 48x24x15",
+          "overlapVolume": 17280,
+          "groupIndex": 17,
+          "color": [
+            255,
+            76,
+            196
+          ],
+          "hex": "#ff4cc4"
+        },
+        {
+          "index": 18,
+          "id": "obj-11__obj-15",
+          "sourceIndex": 10,
+          "targetIndex": 14,
+          "sourceId": "obj-11",
+          "targetId": "obj-15",
+          "sourceName": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "targetName": "TypeC2Grove U151 32x24x11",
+          "overlapVolume": 8448.000000000002,
+          "groupIndex": 18,
+          "color": [
+            142,
+            106,
+            255
+          ],
+          "hex": "#8e6aff"
+        },
+        {
+          "index": 19,
+          "id": "obj-11__obj-16",
+          "sourceIndex": 10,
+          "targetIndex": 15,
+          "sourceId": "obj-11",
+          "targetId": "obj-16",
+          "sourceName": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "targetName": "ENV III U001-C 32x24x8",
+          "overlapVolume": 6143.999999999999,
+          "groupIndex": 19,
+          "color": [
+            255,
+            145,
+            48
+          ],
+          "hex": "#ff9130"
+        },
+        {
+          "index": 20,
+          "id": "obj-11__obj-17",
+          "sourceIndex": 10,
+          "targetIndex": 16,
+          "sourceId": "obj-11",
+          "targetId": "obj-17",
+          "sourceName": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "targetName": "replaceable desiccant pack",
+          "overlapVolume": 23100,
+          "groupIndex": 20,
+          "color": [
+            86,
+            232,
+            202
+          ],
+          "hex": "#56e8ca"
+        },
+        {
+          "index": 21,
+          "id": "obj-11__obj-18",
+          "sourceIndex": 10,
+          "targetIndex": 17,
+          "sourceId": "obj-11",
+          "targetId": "obj-18",
+          "sourceName": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "targetName": "Unit Watering U101 193x27x33 inside-box fit check",
+          "overlapVolume": 171963,
+          "groupIndex": 21,
+          "color": [
+            210,
+            245,
+            60
+          ],
+          "hex": "#d2f53c"
+        },
+        {
+          "index": 22,
+          "id": "obj-11__obj-23",
+          "sourceIndex": 10,
+          "targetIndex": 22,
+          "sourceId": "obj-11",
+          "targetId": "obj-23",
+          "sourceName": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "targetName": "5V USB-C only path from adapter to IoT box",
+          "overlapVolume": 4423.227730338011,
+          "groupIndex": 22,
+          "color": [
+            255,
+            120,
+            120
+          ],
+          "hex": "#ff7878"
+        },
+        {
+          "index": 23,
+          "id": "obj-11__obj-26",
+          "sourceIndex": 10,
+          "targetIndex": 25,
+          "sourceId": "obj-11",
+          "targetId": "obj-26",
+          "sourceName": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "targetName": "5V USB-C drip loop before IoT box up leg",
+          "overlapVolume": 1836.8804753524305,
+          "groupIndex": 23,
+          "color": [
+            80,
+            150,
+            255
+          ],
+          "hex": "#5096ff"
+        },
+        {
+          "index": 24,
+          "id": "obj-11__obj-27",
+          "sourceIndex": 10,
+          "targetIndex": 26,
+          "sourceId": "obj-11",
+          "targetId": "obj-27",
+          "sourceName": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "targetName": "Grove signal/power short cable M5StickS3 to TypeC2Grove",
+          "overlapVolume": 490.4467047132761,
+          "groupIndex": 24,
+          "color": [
+            190,
+            110,
+            60
+          ],
+          "hex": "#be6e3c"
+        },
+        {
+          "index": 25,
+          "id": "obj-11__obj-28",
+          "sourceIndex": 10,
+          "targetIndex": 27,
+          "sourceId": "obj-11",
+          "targetId": "obj-28",
+          "sourceName": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "targetName": "Grove cable TypeC2Grove to ENV III",
+          "overlapVolume": 466.7909699546541,
+          "groupIndex": 25,
+          "color": [
+            255,
+            68,
+            16
+          ],
+          "hex": "#ff4410"
+        },
+        {
+          "index": 26,
+          "id": "obj-11__obj-29",
+          "sourceIndex": 10,
+          "targetIndex": 28,
+          "sourceId": "obj-11",
+          "targetId": "obj-29",
+          "sourceName": "5V IP65 IoT box recommended 300x190x100 outer translucent outer envelope",
+          "targetName": "Grove cable TypeC2Grove to Unit Watering",
+          "overlapVolume": 1596.431260628601,
+          "groupIndex": 26,
+          "color": [
+            0,
+            204,
+            255
+          ],
+          "hex": "#00ccff"
+        },
+        {
+          "index": 27,
+          "id": "obj-12__obj-26",
+          "sourceIndex": 11,
+          "targetIndex": 25,
+          "sourceId": "obj-12",
+          "targetId": "obj-26",
+          "sourceName": "5V IP65 IoT box recommended 300x190x100 outer usable floor",
+          "targetName": "5V USB-C drip loop before IoT box up leg",
+          "overlapVolume": 195.93391737092588,
+          "groupIndex": 27,
+          "color": [
+            255,
+            214,
+            0
+          ],
+          "hex": "#ffd600"
+        },
+        {
+          "index": 28,
+          "id": "obj-18__obj-29",
+          "sourceIndex": 17,
+          "targetIndex": 28,
+          "sourceId": "obj-18",
+          "targetId": "obj-29",
+          "sourceName": "Unit Watering U101 193x27x33 inside-box fit check",
+          "targetName": "Grove cable TypeC2Grove to Unit Watering",
+          "overlapVolume": 813.2763025844001,
+          "groupIndex": 28,
+          "color": [
+            66,
+            220,
+            120
+          ],
+          "hex": "#42dc78"
+        },
+        {
+          "index": 29,
+          "id": "obj-23__obj-26",
+          "sourceIndex": 22,
+          "targetIndex": 25,
+          "sourceId": "obj-23",
+          "targetId": "obj-26",
+          "sourceName": "5V USB-C only path from adapter to IoT box",
+          "targetName": "5V USB-C drip loop before IoT box up leg",
+          "overlapVolume": 154.20492064374528,
+          "groupIndex": 29,
+          "color": [
+            255,
+            76,
+            196
+          ],
+          "hex": "#ff4cc4"
+        }
+      ],
+      "warnings": [],
+      "views": {
+        "front": {
+          "path": "channels/collisions/front.png"
+        },
+        "right": {
+          "path": "channels/collisions/right.png"
+        },
+        "top": {
+          "path": "channels/collisions/top.png"
+        },
+        "iso": {
+          "path": "channels/collisions/iso.png"
+        }
+      }
+    }
+  }
+}

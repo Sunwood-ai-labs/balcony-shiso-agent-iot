@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <style>
+      .bg { fill: #f7f8f4; }
+      .title { font: 700 38px system-ui, -apple-system, sans-serif; fill: #172026; }
+      .subtitle { font: 500 22px system-ui, -apple-system, sans-serif; fill: #44505a; }
+      .label { font: 700 24px system-ui, -apple-system, sans-serif; fill: #172026; }
+      .small { font: 500 18px system-ui, -apple-system, sans-serif; fill: #2e3a43; }
+      .tiny { font: 500 15px system-ui, -apple-system, sans-serif; fill: #44505a; }
+      .warn { font: 800 22px system-ui, -apple-system, sans-serif; fill: #8a1f11; }
+      .box100 { fill: #fff2c2; stroke: #b7791f; stroke-width: 4; }
+      .box5 { fill: #dff3ff; stroke: #2674a8; stroke-width: 4; }
+      .part { fill: white; stroke: #2f3a40; stroke-width: 3; }
+      .ghost { fill: #eef0f2; stroke: #66717a; stroke-width: 2; stroke-dasharray: 10 8; }
+      .usb { stroke: #1f2933; stroke-width: 8; fill: none; stroke-linecap: round; }
+      .ac { stroke: #111; stroke-width: 10; fill: none; stroke-linecap: round; }
+      .grove { stroke: #0096c7; stroke-width: 5; fill: none; stroke-linecap: round; }
+      .water { stroke: #0ea5e9; stroke-width: 7; fill: none; stroke-linecap: round; }
+      .danger { fill: #ffe4e6; stroke: #e11d48; stroke-width: 3; }
+      .ok { fill: #e7f5e7; stroke: #3c7a3c; stroke-width: 3; }
+      .arrow { marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2933"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1600" height="1000"/>
+  <text x="70" y="70" class="title">ベランダでプチトマトエージェントIoT計画 02</text>
+  <text x="70" y="108" class="subtitle">100V AC は屋外用電源ボックス内だけ。IP65 防滴ボックスには 5V USB-C / Grove だけを入れる。</text>
+
+  <rect x="70" y="160" width="620" height="470" rx="16" class="box100"/>
+  <text x="105" y="205" class="label">屋外用電源ボックス = 100V側</text>
+  <text x="105" y="238" class="small">候補: タカショー LSO-70級 / 有効内寸 約330 x 225 x 128 mm</text>
+
+  <rect x="120" y="285" width="210" height="92" rx="8" class="ghost"/>
+  <text x="140" y="322" class="small">HATAYA</text>
+  <text x="140" y="350" class="small">BFX-013KC2</text>
+  <text x="140" y="374" class="tiny">外形は実測要確認</text>
+
+  <rect x="390" y="285" width="180" height="92" rx="8" class="part"/>
+  <text x="420" y="325" class="small">USB-C</text>
+  <text x="420" y="353" class="small">ACアダプタ</text>
+
+  <rect x="115" y="440" width="510" height="110" rx="10" class="danger"/>
+  <text x="140" y="482" class="warn">ここで 100V AC → 5V DC に変換</text>
+  <text x="140" y="516" class="small">完成品を挿すだけ。切らない / 剥かない / ねじらない / 加工しない。</text>
+
+  <rect x="910" y="160" width="620" height="470" rx="16" class="box5"/>
+  <text x="945" y="205" class="label">IP65 防滴ボックス = 5V IoT側</text>
+  <text x="945" y="238" class="small">推奨内寸: Unit Watering収納なら 260 x 160 x 80 mm 以上</text>
+
+  <rect x="960" y="290" width="150" height="70" rx="8" class="part"/>
+  <text x="980" y="332" class="small">M5StickS3</text>
+
+  <rect x="960" y="405" width="150" height="70" rx="8" class="part"/>
+  <text x="978" y="447" class="small">TypeC2Grove</text>
+
+  <rect x="1160" y="290" width="285" height="70" rx="8" class="part"/>
+  <text x="1190" y="332" class="small">Unit Watering</text>
+  <text x="1335" y="332" class="tiny">193 mm</text>
+
+  <rect x="1160" y="405" width="130" height="70" rx="8" class="part"/>
+  <text x="1190" y="447" class="small">ENV III</text>
+
+  <rect x="1320" y="405" width="130" height="70" rx="8" class="part"/>
+  <text x="1346" y="447" class="small">乾燥剤</text>
+
+  <path d="M 575 330 C 700 330, 740 440, 910 440" class="usb arrow"/>
+  <text x="690" y="392" class="label">5V USB-C のみ</text>
+
+  <path d="M 98 330 C 50 410, 50 500, 110 560" class="ac"/>
+  <path d="M 885 440 C 830 520, 835 595, 925 615" class="usb"/>
+  <text x="720" y="585" class="small">水切りループ: 一度下に垂らしてから箱へ入れる</text>
+
+  <path d="M 1035 360 L 1035 405" class="grove arrow"/>
+  <path d="M 1110 440 C 1130 420, 1140 370, 1160 330" class="grove arrow"/>
+  <path d="M 1110 440 L 1160 440" class="grove arrow"/>
+
+  <path d="M 1445 330 C 1510 390, 1515 520, 1470 650" class="water arrow"/>
+  <text x="1215" y="675" class="small">水やりチューブは100V側から離す</text>
+
+  <rect x="70" y="700" width="1460" height="220" rx="16" class="ok"/>
+  <text x="105" y="745" class="label">設置ルール</text>
+  <text x="105" y="790" class="small">1. 床に直置きしない。水タンクや鉢皿より高い位置へ。</text>
+  <text x="105" y="825" class="small">2. 直射日光を避ける。防滴ボックスを完全防水扱いしない。</text>
+  <text x="105" y="860" class="small">3. ケーブル入口は下面または側面下寄り。入口前に必ず水切りループ。</text>
+  <text x="105" y="895" class="small">4. IP65ボックスに100Vを入れない。100V側と給水チューブはできるだけ離す。</text>
+</svg>

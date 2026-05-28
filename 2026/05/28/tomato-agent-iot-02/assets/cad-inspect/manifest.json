@@ -1,0 +1,2696 @@
+{
+  "schemaVersion": 1,
+  "generator": {
+    "command": "forgecad render inspect",
+    "forgecadVersion": "0.9.3"
+  },
+  "source": {
+    "entryFile": "forgecad/main.forge.js",
+    "projectRoot": "forgecad"
+  },
+  "bundle": {
+    "channelsRequested": [
+      "rgb",
+      "mask",
+      "collisions"
+    ],
+    "channelsEmitted": [
+      "rgb",
+      "mask",
+      "collisions"
+    ],
+    "filters": {
+      "focus": null,
+      "hide": []
+    },
+    "sizePx": 900,
+    "quality": "default",
+    "deterministic": true
+  },
+  "views": {
+    "front": {
+      "kind": "canonical"
+    },
+    "right": {
+      "kind": "canonical"
+    },
+    "top": {
+      "kind": "canonical"
+    },
+    "iso": {
+      "kind": "canonical"
+    }
+  },
+  "scene": {
+    "bbox": {
+      "min": [
+        -480,
+        -232.2589685579032,
+        -2.720564026088468
+      ],
+      "max": [
+        493.0543492242562,
+        220,
+        318
+      ]
+    },
+    "volume": 19588163.175436743,
+    "params": [
+      {
+        "name": "View mode",
+        "value": 0,
+        "defaultValue": 0,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "integer": true,
+        "choices": [
+          "final-cad",
+          "exploded"
+        ]
+      },
+      {
+        "name": "Show label plates",
+        "value": 1,
+        "defaultValue": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "boolean": true
+      }
+    ],
+    "cutPlanes": [],
+    "animations": [],
+    "defaultAnimation": null,
+    "verifications": [],
+    "objects": [
+      {
+        "id": "obj-1",
+        "name": "raised balcony shelf plane",
+        "treePath": [
+          "raised balcony shelf plane"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-2",
+        "name": "rear wall reference plane",
+        "treePath": [
+          "rear wall reference plane"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-3",
+        "name": "100V outdoor power box LSO-70 class floor",
+        "treePath": [
+          "100V outdoor power box LSO-70 class floor"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-4",
+        "name": "100V outdoor power box LSO-70 class left wall",
+        "treePath": [
+          "100V outdoor power box LSO-70 class left wall"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-5",
+        "name": "100V outdoor power box LSO-70 class right wall",
+        "treePath": [
+          "100V outdoor power box LSO-70 class right wall"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-6",
+        "name": "100V outdoor power box LSO-70 class back wall",
+        "treePath": [
+          "100V outdoor power box LSO-70 class back wall"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-7",
+        "name": "100V outdoor power box LSO-70 class front wall with lower cable entries",
+        "treePath": [
+          "100V outdoor power box LSO-70 class front wall with lower cable entries"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-8",
+        "name": "100V outdoor power box LSO-70 class usable inner floor",
+        "treePath": [
+          "100V outdoor power box LSO-70 class usable inner floor"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-9",
+        "name": "100V outdoor power box LSO-70 class removable lid shown raised",
+        "treePath": [
+          "100V outdoor power box LSO-70 class removable lid shown raised"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-10",
+        "name": "5V IP65 electronics box floor",
+        "treePath": [
+          "5V IP65 electronics box floor"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-11",
+        "name": "5V IP65 electronics box left wall",
+        "treePath": [
+          "5V IP65 electronics box left wall"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-12",
+        "name": "5V IP65 electronics box right wall",
+        "treePath": [
+          "5V IP65 electronics box right wall"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-13",
+        "name": "5V IP65 electronics box back wall",
+        "treePath": [
+          "5V IP65 electronics box back wall"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-14",
+        "name": "5V IP65 electronics box front wall with lower cable entries",
+        "treePath": [
+          "5V IP65 electronics box front wall with lower cable entries"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-15",
+        "name": "5V IP65 electronics box usable inner floor",
+        "treePath": [
+          "5V IP65 electronics box usable inner floor"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-16",
+        "name": "5V IP65 electronics box removable lid shown raised",
+        "treePath": [
+          "5V IP65 electronics box removable lid shown raised"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-17",
+        "name": "HATAYA BFX breaker block placeholder - measure actual",
+        "treePath": [
+          "HATAYA BFX breaker block placeholder - measure actual"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-18",
+        "name": "HATAYA outlet/tap placeholder - measure actual",
+        "treePath": [
+          "HATAYA outlet/tap placeholder - measure actual"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-19",
+        "name": "USB-C AC adapter placeholder",
+        "treePath": [
+          "USB-C AC adapter placeholder"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-20",
+        "name": "USB-C adapter bend-clearance envelope",
+        "treePath": [
+          "USB-C adapter bend-clearance envelope"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-21",
+        "name": "M5StickS3 48x24x15",
+        "treePath": [
+          "M5StickS3 48x24x15"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-22",
+        "name": "TypeC2Grove U151 32x24x11",
+        "treePath": [
+          "TypeC2Grove U151 32x24x11"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-23",
+        "name": "ENV III U001-C 32x24x8",
+        "treePath": [
+          "ENV III U001-C 32x24x8"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-24",
+        "name": "Unit Watering U101 193x27x33",
+        "treePath": [
+          "Unit Watering U101 193x27x33"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-25",
+        "name": "replaceable desiccant pack",
+        "treePath": [
+          "replaceable desiccant pack"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-26",
+        "name": "100V lower cable entry gland",
+        "treePath": [
+          "100V lower cable entry gland"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-27",
+        "name": "5V USB-C lower cable entry gland",
+        "treePath": [
+          "5V USB-C lower cable entry gland"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-28",
+        "name": "water tube exit kept away from 100V side",
+        "treePath": [
+          "water tube exit kept away from 100V side"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-29",
+        "name": "finished 100V cord entering power box",
+        "treePath": [
+          "finished 100V cord entering power box"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-30",
+        "name": "100V drip loop vertical drop",
+        "treePath": [
+          "100V drip loop vertical drop"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-31",
+        "name": "100V drip loop lower run",
+        "treePath": [
+          "100V drip loop lower run"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-32",
+        "name": "100V drip loop vertical rise to entry",
+        "treePath": [
+          "100V drip loop vertical rise to entry"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-33",
+        "name": "5V USB-C only cord between boxes",
+        "treePath": [
+          "5V USB-C only cord between boxes"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-34",
+        "name": "5V USB-C drip loop vertical drop",
+        "treePath": [
+          "5V USB-C drip loop vertical drop"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-35",
+        "name": "5V USB-C drip loop lower run",
+        "treePath": [
+          "5V USB-C drip loop lower run"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-36",
+        "name": "5V USB-C drip loop vertical rise to entry",
+        "treePath": [
+          "5V USB-C drip loop vertical rise to entry"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-37",
+        "name": "Grove cable M5StickS3 to TypeC2Grove",
+        "treePath": [
+          "Grove cable M5StickS3 to TypeC2Grove"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-38",
+        "name": "Grove cable TypeC2Grove to ENV III",
+        "treePath": [
+          "Grove cable TypeC2Grove to ENV III"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-39",
+        "name": "Grove cable TypeC2Grove to Unit Watering",
+        "treePath": [
+          "Grove cable TypeC2Grove to Unit Watering"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-40",
+        "name": "water tube route away from 100V",
+        "treePath": [
+          "water tube route away from 100V"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-41",
+        "name": "red keep-apart zone between 100V and water tube",
+        "treePath": [
+          "red keep-apart zone between 100V and water tube"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-42",
+        "name": "100V AC SIDE label plate",
+        "treePath": [
+          "100V AC SIDE label plate"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-43",
+        "name": "5V DC SIDE label plate",
+        "treePath": [
+          "5V DC SIDE label plate"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      },
+      {
+        "id": "obj-44",
+        "name": "NO MAINS IN IP65 BOX label plate",
+        "treePath": [
+          "NO MAINS IN IP65 BOX label plate"
+        ],
+        "mock": false,
+        "visible": true,
+        "renderable": true
+      }
+    ]
+  },
+  "channels": {
+    "rgb": {
+      "format": "png",
+      "views": {
+        "front": {
+          "path": "channels/rgb/front.png"
+        },
+        "right": {
+          "path": "channels/rgb/right.png"
+        },
+        "top": {
+          "path": "channels/rgb/top.png"
+        },
+        "iso": {
+          "path": "channels/rgb/iso.png"
+        }
+      }
+    },
+    "mask": {
+      "format": "png",
+      "encoding": "rgb8-object-palette",
+      "backgroundIndex": 0,
+      "backgroundColor": [
+        0,
+        0,
+        0
+      ],
+      "decode": "lookup exact RGB color in objects[].color; antialiased edge pixels may be blended",
+      "objects": [
+        {
+          "index": 1,
+          "color": [
+            230,
+            25,
+            75
+          ],
+          "hex": "#e6194b",
+          "id": "obj-1",
+          "name": "raised balcony shelf plane",
+          "treePath": [
+            "raised balcony shelf plane"
+          ],
+          "mock": false
+        },
+        {
+          "index": 2,
+          "color": [
+            60,
+            180,
+            75
+          ],
+          "hex": "#3cb44b",
+          "id": "obj-2",
+          "name": "rear wall reference plane",
+          "treePath": [
+            "rear wall reference plane"
+          ],
+          "mock": false
+        },
+        {
+          "index": 3,
+          "color": [
+            255,
+            225,
+            25
+          ],
+          "hex": "#ffe119",
+          "id": "obj-3",
+          "name": "100V outdoor power box LSO-70 class floor",
+          "treePath": [
+            "100V outdoor power box LSO-70 class floor"
+          ],
+          "mock": false
+        },
+        {
+          "index": 4,
+          "color": [
+            0,
+            130,
+            200
+          ],
+          "hex": "#0082c8",
+          "id": "obj-4",
+          "name": "100V outdoor power box LSO-70 class left wall",
+          "treePath": [
+            "100V outdoor power box LSO-70 class left wall"
+          ],
+          "mock": false
+        },
+        {
+          "index": 5,
+          "color": [
+            245,
+            130,
+            48
+          ],
+          "hex": "#f58230",
+          "id": "obj-5",
+          "name": "100V outdoor power box LSO-70 class right wall",
+          "treePath": [
+            "100V outdoor power box LSO-70 class right wall"
+          ],
+          "mock": false
+        },
+        {
+          "index": 6,
+          "color": [
+            145,
+            30,
+            180
+          ],
+          "hex": "#911eb4",
+          "id": "obj-6",
+          "name": "100V outdoor power box LSO-70 class back wall",
+          "treePath": [
+            "100V outdoor power box LSO-70 class back wall"
+          ],
+          "mock": false
+        },
+        {
+          "index": 7,
+          "color": [
+            70,
+            240,
+            240
+          ],
+          "hex": "#46f0f0",
+          "id": "obj-7",
+          "name": "100V outdoor power box LSO-70 class front wall with lower cable entries",
+          "treePath": [
+            "100V outdoor power box LSO-70 class front wall with lower cable entries"
+          ],
+          "mock": false
+        },
+        {
+          "index": 8,
+          "color": [
+            240,
+            50,
+            230
+          ],
+          "hex": "#f032e6",
+          "id": "obj-8",
+          "name": "100V outdoor power box LSO-70 class usable inner floor",
+          "treePath": [
+            "100V outdoor power box LSO-70 class usable inner floor"
+          ],
+          "mock": false
+        },
+        {
+          "index": 9,
+          "color": [
+            210,
+            245,
+            60
+          ],
+          "hex": "#d2f53c",
+          "id": "obj-9",
+          "name": "100V outdoor power box LSO-70 class removable lid shown raised",
+          "treePath": [
+            "100V outdoor power box LSO-70 class removable lid shown raised"
+          ],
+          "mock": false
+        },
+        {
+          "index": 10,
+          "color": [
+            250,
+            190,
+            190
+          ],
+          "hex": "#fabebe",
+          "id": "obj-10",
+          "name": "5V IP65 electronics box floor",
+          "treePath": [
+            "5V IP65 electronics box floor"
+          ],
+          "mock": false
+        },
+        {
+          "index": 11,
+          "color": [
+            0,
+            128,
+            128
+          ],
+          "hex": "#008080",
+          "id": "obj-11",
+          "name": "5V IP65 electronics box left wall",
+          "treePath": [
+            "5V IP65 electronics box left wall"
+          ],
+          "mock": false
+        },
+        {
+          "index": 12,
+          "color": [
+            230,
+            190,
+            255
+          ],
+          "hex": "#e6beff",
+          "id": "obj-12",
+          "name": "5V IP65 electronics box right wall",
+          "treePath": [
+            "5V IP65 electronics box right wall"
+          ],
+          "mock": false
+        },
+        {
+          "index": 13,
+          "color": [
+            170,
+            110,
+            40
+          ],
+          "hex": "#aa6e28",
+          "id": "obj-13",
+          "name": "5V IP65 electronics box back wall",
+          "treePath": [
+            "5V IP65 electronics box back wall"
+          ],
+          "mock": false
+        },
+        {
+          "index": 14,
+          "color": [
+            255,
+            250,
+            200
+          ],
+          "hex": "#fffac8",
+          "id": "obj-14",
+          "name": "5V IP65 electronics box front wall with lower cable entries",
+          "treePath": [
+            "5V IP65 electronics box front wall with lower cable entries"
+          ],
+          "mock": false
+        },
+        {
+          "index": 15,
+          "color": [
+            128,
+            0,
+            0
+          ],
+          "hex": "#800000",
+          "id": "obj-15",
+          "name": "5V IP65 electronics box usable inner floor",
+          "treePath": [
+            "5V IP65 electronics box usable inner floor"
+          ],
+          "mock": false
+        },
+        {
+          "index": 16,
+          "color": [
+            170,
+            255,
+            195
+          ],
+          "hex": "#aaffc3",
+          "id": "obj-16",
+          "name": "5V IP65 electronics box removable lid shown raised",
+          "treePath": [
+            "5V IP65 electronics box removable lid shown raised"
+          ],
+          "mock": false
+        },
+        {
+          "index": 17,
+          "color": [
+            128,
+            128,
+            0
+          ],
+          "hex": "#808000",
+          "id": "obj-17",
+          "name": "HATAYA BFX breaker block placeholder - measure actual",
+          "treePath": [
+            "HATAYA BFX breaker block placeholder - measure actual"
+          ],
+          "mock": false
+        },
+        {
+          "index": 18,
+          "color": [
+            255,
+            215,
+            180
+          ],
+          "hex": "#ffd7b4",
+          "id": "obj-18",
+          "name": "HATAYA outlet/tap placeholder - measure actual",
+          "treePath": [
+            "HATAYA outlet/tap placeholder - measure actual"
+          ],
+          "mock": false
+        },
+        {
+          "index": 19,
+          "color": [
+            0,
+            0,
+            128
+          ],
+          "hex": "#000080",
+          "id": "obj-19",
+          "name": "USB-C AC adapter placeholder",
+          "treePath": [
+            "USB-C AC adapter placeholder"
+          ],
+          "mock": false
+        },
+        {
+          "index": 20,
+          "color": [
+            128,
+            128,
+            128
+          ],
+          "hex": "#808080",
+          "id": "obj-20",
+          "name": "USB-C adapter bend-clearance envelope",
+          "treePath": [
+            "USB-C adapter bend-clearance envelope"
+          ],
+          "mock": false
+        },
+        {
+          "index": 21,
+          "color": [
+            230,
+            25,
+            75
+          ],
+          "hex": "#e6194b",
+          "id": "obj-21",
+          "name": "M5StickS3 48x24x15",
+          "treePath": [
+            "M5StickS3 48x24x15"
+          ],
+          "mock": false
+        },
+        {
+          "index": 22,
+          "color": [
+            60,
+            180,
+            75
+          ],
+          "hex": "#3cb44b",
+          "id": "obj-22",
+          "name": "TypeC2Grove U151 32x24x11",
+          "treePath": [
+            "TypeC2Grove U151 32x24x11"
+          ],
+          "mock": false
+        },
+        {
+          "index": 23,
+          "color": [
+            255,
+            225,
+            25
+          ],
+          "hex": "#ffe119",
+          "id": "obj-23",
+          "name": "ENV III U001-C 32x24x8",
+          "treePath": [
+            "ENV III U001-C 32x24x8"
+          ],
+          "mock": false
+        },
+        {
+          "index": 24,
+          "color": [
+            0,
+            130,
+            200
+          ],
+          "hex": "#0082c8",
+          "id": "obj-24",
+          "name": "Unit Watering U101 193x27x33",
+          "treePath": [
+            "Unit Watering U101 193x27x33"
+          ],
+          "mock": false
+        },
+        {
+          "index": 25,
+          "color": [
+            245,
+            130,
+            48
+          ],
+          "hex": "#f58230",
+          "id": "obj-25",
+          "name": "replaceable desiccant pack",
+          "treePath": [
+            "replaceable desiccant pack"
+          ],
+          "mock": false
+        },
+        {
+          "index": 26,
+          "color": [
+            145,
+            30,
+            180
+          ],
+          "hex": "#911eb4",
+          "id": "obj-26",
+          "name": "100V lower cable entry gland",
+          "treePath": [
+            "100V lower cable entry gland"
+          ],
+          "mock": false
+        },
+        {
+          "index": 27,
+          "color": [
+            70,
+            240,
+            240
+          ],
+          "hex": "#46f0f0",
+          "id": "obj-27",
+          "name": "5V USB-C lower cable entry gland",
+          "treePath": [
+            "5V USB-C lower cable entry gland"
+          ],
+          "mock": false
+        },
+        {
+          "index": 28,
+          "color": [
+            240,
+            50,
+            230
+          ],
+          "hex": "#f032e6",
+          "id": "obj-28",
+          "name": "water tube exit kept away from 100V side",
+          "treePath": [
+            "water tube exit kept away from 100V side"
+          ],
+          "mock": false
+        },
+        {
+          "index": 29,
+          "color": [
+            210,
+            245,
+            60
+          ],
+          "hex": "#d2f53c",
+          "id": "obj-29",
+          "name": "finished 100V cord entering power box",
+          "treePath": [
+            "finished 100V cord entering power box"
+          ],
+          "mock": false
+        },
+        {
+          "index": 30,
+          "color": [
+            250,
+            190,
+            190
+          ],
+          "hex": "#fabebe",
+          "id": "obj-30",
+          "name": "100V drip loop vertical drop",
+          "treePath": [
+            "100V drip loop vertical drop"
+          ],
+          "mock": false
+        },
+        {
+          "index": 31,
+          "color": [
+            0,
+            128,
+            128
+          ],
+          "hex": "#008080",
+          "id": "obj-31",
+          "name": "100V drip loop lower run",
+          "treePath": [
+            "100V drip loop lower run"
+          ],
+          "mock": false
+        },
+        {
+          "index": 32,
+          "color": [
+            230,
+            190,
+            255
+          ],
+          "hex": "#e6beff",
+          "id": "obj-32",
+          "name": "100V drip loop vertical rise to entry",
+          "treePath": [
+            "100V drip loop vertical rise to entry"
+          ],
+          "mock": false
+        },
+        {
+          "index": 33,
+          "color": [
+            170,
+            110,
+            40
+          ],
+          "hex": "#aa6e28",
+          "id": "obj-33",
+          "name": "5V USB-C only cord between boxes",
+          "treePath": [
+            "5V USB-C only cord between boxes"
+          ],
+          "mock": false
+        },
+        {
+          "index": 34,
+          "color": [
+            255,
+            250,
+            200
+          ],
+          "hex": "#fffac8",
+          "id": "obj-34",
+          "name": "5V USB-C drip loop vertical drop",
+          "treePath": [
+            "5V USB-C drip loop vertical drop"
+          ],
+          "mock": false
+        },
+        {
+          "index": 35,
+          "color": [
+            128,
+            0,
+            0
+          ],
+          "hex": "#800000",
+          "id": "obj-35",
+          "name": "5V USB-C drip loop lower run",
+          "treePath": [
+            "5V USB-C drip loop lower run"
+          ],
+          "mock": false
+        },
+        {
+          "index": 36,
+          "color": [
+            170,
+            255,
+            195
+          ],
+          "hex": "#aaffc3",
+          "id": "obj-36",
+          "name": "5V USB-C drip loop vertical rise to entry",
+          "treePath": [
+            "5V USB-C drip loop vertical rise to entry"
+          ],
+          "mock": false
+        },
+        {
+          "index": 37,
+          "color": [
+            128,
+            128,
+            0
+          ],
+          "hex": "#808000",
+          "id": "obj-37",
+          "name": "Grove cable M5StickS3 to TypeC2Grove",
+          "treePath": [
+            "Grove cable M5StickS3 to TypeC2Grove"
+          ],
+          "mock": false
+        },
+        {
+          "index": 38,
+          "color": [
+            255,
+            215,
+            180
+          ],
+          "hex": "#ffd7b4",
+          "id": "obj-38",
+          "name": "Grove cable TypeC2Grove to ENV III",
+          "treePath": [
+            "Grove cable TypeC2Grove to ENV III"
+          ],
+          "mock": false
+        },
+        {
+          "index": 39,
+          "color": [
+            0,
+            0,
+            128
+          ],
+          "hex": "#000080",
+          "id": "obj-39",
+          "name": "Grove cable TypeC2Grove to Unit Watering",
+          "treePath": [
+            "Grove cable TypeC2Grove to Unit Watering"
+          ],
+          "mock": false
+        },
+        {
+          "index": 40,
+          "color": [
+            128,
+            128,
+            128
+          ],
+          "hex": "#808080",
+          "id": "obj-40",
+          "name": "water tube route away from 100V",
+          "treePath": [
+            "water tube route away from 100V"
+          ],
+          "mock": false
+        },
+        {
+          "index": 41,
+          "color": [
+            230,
+            25,
+            75
+          ],
+          "hex": "#e6194b",
+          "id": "obj-41",
+          "name": "red keep-apart zone between 100V and water tube",
+          "treePath": [
+            "red keep-apart zone between 100V and water tube"
+          ],
+          "mock": false
+        },
+        {
+          "index": 42,
+          "color": [
+            60,
+            180,
+            75
+          ],
+          "hex": "#3cb44b",
+          "id": "obj-42",
+          "name": "100V AC SIDE label plate",
+          "treePath": [
+            "100V AC SIDE label plate"
+          ],
+          "mock": false
+        },
+        {
+          "index": 43,
+          "color": [
+            255,
+            225,
+            25
+          ],
+          "hex": "#ffe119",
+          "id": "obj-43",
+          "name": "5V DC SIDE label plate",
+          "treePath": [
+            "5V DC SIDE label plate"
+          ],
+          "mock": false
+        },
+        {
+          "index": 44,
+          "color": [
+            0,
+            130,
+            200
+          ],
+          "hex": "#0082c8",
+          "id": "obj-44",
+          "name": "NO MAINS IN IP65 BOX label plate",
+          "treePath": [
+            "NO MAINS IN IP65 BOX label plate"
+          ],
+          "mock": false
+        }
+      ],
+      "views": {
+        "front": {
+          "path": "channels/mask/front.png"
+        },
+        "right": {
+          "path": "channels/mask/right.png"
+        },
+        "top": {
+          "path": "channels/mask/top.png"
+        },
+        "iso": {
+          "path": "channels/mask/iso.png"
+        }
+      }
+    },
+    "collisions": {
+      "format": "png",
+      "encoding": "rgb8-collision-highlight",
+      "backgroundColor": [
+        0,
+        0,
+        0
+      ],
+      "decode": "source objects are translucent ghost geometry; boolean intersection volumes use per-finding collisions[].color palette entries",
+      "method": "boolean-intersection",
+      "options": {
+        "minOverlapVolume": 0.1
+      },
+      "style": {
+        "sourceOpacity": 0.22,
+        "sourceColor": [
+          180,
+          200,
+          220
+        ],
+        "collisionColor": [
+          255,
+          68,
+          16
+        ],
+        "collisionHex": "#ff4410",
+        "collisionPalette": [
+          {
+            "index": 1,
+            "color": [
+              255,
+              68,
+              16
+            ],
+            "hex": "#ff4410"
+          },
+          {
+            "index": 2,
+            "color": [
+              0,
+              204,
+              255
+            ],
+            "hex": "#00ccff"
+          },
+          {
+            "index": 3,
+            "color": [
+              255,
+              214,
+              0
+            ],
+            "hex": "#ffd600"
+          },
+          {
+            "index": 4,
+            "color": [
+              66,
+              220,
+              120
+            ],
+            "hex": "#42dc78"
+          },
+          {
+            "index": 5,
+            "color": [
+              255,
+              76,
+              196
+            ],
+            "hex": "#ff4cc4"
+          },
+          {
+            "index": 6,
+            "color": [
+              142,
+              106,
+              255
+            ],
+            "hex": "#8e6aff"
+          },
+          {
+            "index": 7,
+            "color": [
+              255,
+              145,
+              48
+            ],
+            "hex": "#ff9130"
+          },
+          {
+            "index": 8,
+            "color": [
+              86,
+              232,
+              202
+            ],
+            "hex": "#56e8ca"
+          },
+          {
+            "index": 9,
+            "color": [
+              210,
+              245,
+              60
+            ],
+            "hex": "#d2f53c"
+          },
+          {
+            "index": 10,
+            "color": [
+              255,
+              120,
+              120
+            ],
+            "hex": "#ff7878"
+          },
+          {
+            "index": 11,
+            "color": [
+              80,
+              150,
+              255
+            ],
+            "hex": "#5096ff"
+          },
+          {
+            "index": 12,
+            "color": [
+              190,
+              110,
+              60
+            ],
+            "hex": "#be6e3c"
+          }
+        ]
+      },
+      "objectCount": 44,
+      "collisionCount": 21,
+      "objects": [
+        {
+          "index": 0,
+          "id": "obj-1",
+          "name": "raised balcony shelf plane",
+          "treePath": [
+            "raised balcony shelf plane"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -480,
+              -220,
+              0
+            ],
+            "max": [
+              480,
+              220,
+              8
+            ]
+          }
+        },
+        {
+          "index": 1,
+          "id": "obj-2",
+          "name": "rear wall reference plane",
+          "treePath": [
+            "rear wall reference plane"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -480,
+              180,
+              8
+            ],
+            "max": [
+              480,
+              190,
+              318
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "id": "obj-3",
+          "name": "100V outdoor power box LSO-70 class floor",
+          "treePath": [
+            "100V outdoor power box LSO-70 class floor"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -447.5,
+              -157.5,
+              35
+            ],
+            "max": [
+              -52.5,
+              157.5,
+              52
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "id": "obj-4",
+          "name": "100V outdoor power box LSO-70 class left wall",
+          "treePath": [
+            "100V outdoor power box LSO-70 class left wall"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -447.5,
+              -157.5,
+              52
+            ],
+            "max": [
+              -415,
+              157.5,
+              180
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "id": "obj-5",
+          "name": "100V outdoor power box LSO-70 class right wall",
+          "treePath": [
+            "100V outdoor power box LSO-70 class right wall"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -85,
+              -157.5,
+              52
+            ],
+            "max": [
+              -52.5,
+              157.5,
+              180
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "id": "obj-6",
+          "name": "100V outdoor power box LSO-70 class back wall",
+          "treePath": [
+            "100V outdoor power box LSO-70 class back wall"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -415,
+              112.5,
+              52
+            ],
+            "max": [
+              -85,
+              157.5,
+              180
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "id": "obj-7",
+          "name": "100V outdoor power box LSO-70 class front wall with lower cable entries",
+          "treePath": [
+            "100V outdoor power box LSO-70 class front wall with lower cable entries"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -415,
+              -157.5,
+              52
+            ],
+            "max": [
+              -85,
+              -112.5,
+              180
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "id": "obj-8",
+          "name": "100V outdoor power box LSO-70 class usable inner floor",
+          "treePath": [
+            "100V outdoor power box LSO-70 class usable inner floor"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -415,
+              -112.5,
+              53
+            ],
+            "max": [
+              -85,
+              112.5,
+              55
+            ]
+          }
+        },
+        {
+          "index": 8,
+          "id": "obj-9",
+          "name": "100V outdoor power box LSO-70 class removable lid shown raised",
+          "treePath": [
+            "100V outdoor power box LSO-70 class removable lid shown raised"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -447.5,
+              -157.5,
+              198
+            ],
+            "max": [
+              -52.5,
+              157.5,
+              203
+            ]
+          }
+        },
+        {
+          "index": 9,
+          "id": "obj-10",
+          "name": "5V IP65 electronics box floor",
+          "treePath": [
+            "5V IP65 electronics box floor"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              95,
+              -95,
+              80
+            ],
+            "max": [
+              395,
+              95,
+              100
+            ]
+          }
+        },
+        {
+          "index": 10,
+          "id": "obj-11",
+          "name": "5V IP65 electronics box left wall",
+          "treePath": [
+            "5V IP65 electronics box left wall"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              95,
+              -95,
+              100
+            ],
+            "max": [
+              115,
+              95,
+              180
+            ]
+          }
+        },
+        {
+          "index": 11,
+          "id": "obj-12",
+          "name": "5V IP65 electronics box right wall",
+          "treePath": [
+            "5V IP65 electronics box right wall"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              375,
+              -95,
+              100
+            ],
+            "max": [
+              395,
+              95,
+              180
+            ]
+          }
+        },
+        {
+          "index": 12,
+          "id": "obj-13",
+          "name": "5V IP65 electronics box back wall",
+          "treePath": [
+            "5V IP65 electronics box back wall"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              115,
+              80,
+              100
+            ],
+            "max": [
+              375,
+              95,
+              180
+            ]
+          }
+        },
+        {
+          "index": 13,
+          "id": "obj-14",
+          "name": "5V IP65 electronics box front wall with lower cable entries",
+          "treePath": [
+            "5V IP65 electronics box front wall with lower cable entries"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              115,
+              -95,
+              100
+            ],
+            "max": [
+              375,
+              -80,
+              180
+            ]
+          }
+        },
+        {
+          "index": 14,
+          "id": "obj-15",
+          "name": "5V IP65 electronics box usable inner floor",
+          "treePath": [
+            "5V IP65 electronics box usable inner floor"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              115,
+              -80,
+              101
+            ],
+            "max": [
+              375,
+              80,
+              103
+            ]
+          }
+        },
+        {
+          "index": 15,
+          "id": "obj-16",
+          "name": "5V IP65 electronics box removable lid shown raised",
+          "treePath": [
+            "5V IP65 electronics box removable lid shown raised"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              95,
+              -95,
+              198
+            ],
+            "max": [
+              395,
+              95,
+              203
+            ]
+          }
+        },
+        {
+          "index": 16,
+          "id": "obj-17",
+          "name": "HATAYA BFX breaker block placeholder - measure actual",
+          "treePath": [
+            "HATAYA BFX breaker block placeholder - measure actual"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -375,
+              -76.5,
+              62
+            ],
+            "max": [
+              -285,
+              -33.5,
+              105
+            ]
+          }
+        },
+        {
+          "index": 17,
+          "id": "obj-18",
+          "name": "HATAYA outlet/tap placeholder - measure actual",
+          "treePath": [
+            "HATAYA outlet/tap placeholder - measure actual"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -265,
+              -82.5,
+              62
+            ],
+            "max": [
+              -145,
+              -27.5,
+              107
+            ]
+          }
+        },
+        {
+          "index": 18,
+          "id": "obj-19",
+          "name": "USB-C AC adapter placeholder",
+          "treePath": [
+            "USB-C AC adapter placeholder"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -237.5,
+              32.5,
+              62
+            ],
+            "max": [
+              -192.5,
+              77.5,
+              92
+            ]
+          }
+        },
+        {
+          "index": 19,
+          "id": "obj-20",
+          "name": "USB-C adapter bend-clearance envelope",
+          "treePath": [
+            "USB-C adapter bend-clearance envelope"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -256,
+              19,
+              61
+            ],
+            "max": [
+              -174,
+              91,
+              99
+            ]
+          }
+        },
+        {
+          "index": 20,
+          "id": "obj-21",
+          "name": "M5StickS3 48x24x15",
+          "treePath": [
+            "M5StickS3 48x24x15"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              121,
+              -67,
+              107
+            ],
+            "max": [
+              169,
+              -43,
+              122
+            ]
+          }
+        },
+        {
+          "index": 21,
+          "id": "obj-22",
+          "name": "TypeC2Grove U151 32x24x11",
+          "treePath": [
+            "TypeC2Grove U151 32x24x11"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              129,
+              -7,
+              107
+            ],
+            "max": [
+              161,
+              17,
+              118
+            ]
+          }
+        },
+        {
+          "index": 22,
+          "id": "obj-23",
+          "name": "ENV III U001-C 32x24x8",
+          "treePath": [
+            "ENV III U001-C 32x24x8"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              129,
+              46,
+              107
+            ],
+            "max": [
+              161,
+              70,
+              115
+            ]
+          }
+        },
+        {
+          "index": 23,
+          "id": "obj-24",
+          "name": "Unit Watering U101 193x27x33",
+          "treePath": [
+            "Unit Watering U101 193x27x33"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              183.5,
+              -68.5,
+              107
+            ],
+            "max": [
+              376.5,
+              -41.5,
+              140
+            ]
+          }
+        },
+        {
+          "index": 24,
+          "id": "obj-25",
+          "name": "replaceable desiccant pack",
+          "treePath": [
+            "replaceable desiccant pack"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              248.5,
+              40.5,
+              107
+            ],
+            "max": [
+              303.5,
+              75.5,
+              119
+            ]
+          }
+        },
+        {
+          "index": 25,
+          "id": "obj-26",
+          "name": "100V lower cable entry gland",
+          "treePath": [
+            "100V lower cable entry gland"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -398,
+              -158,
+              87
+            ],
+            "max": [
+              -382,
+              -134,
+              103
+            ]
+          }
+        },
+        {
+          "index": 26,
+          "id": "obj-27",
+          "name": "5V USB-C lower cable entry gland",
+          "treePath": [
+            "5V USB-C lower cable entry gland"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              87,
+              -96,
+              137
+            ],
+            "max": [
+              103,
+              -72,
+              153
+            ]
+          }
+        },
+        {
+          "index": 27,
+          "id": "obj-28",
+          "name": "water tube exit kept away from 100V side",
+          "treePath": [
+            "water tube exit kept away from 100V side"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              377,
+              -96,
+              127
+            ],
+            "max": [
+              393,
+              -72,
+              143
+            ]
+          }
+        },
+        {
+          "index": 28,
+          "id": "obj-29",
+          "name": "finished 100V cord entering power box",
+          "treePath": [
+            "finished 100V cord entering power box"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -423.7651387219676,
+              -163,
+              81.66270488659437
+            ],
+            "max": [
+              -356.2348612780324,
+              -153,
+              108.33729511340564
+            ]
+          }
+        },
+        {
+          "index": 29,
+          "id": "obj-30",
+          "name": "100V drip loop vertical drop",
+          "treePath": [
+            "100V drip loop vertical drop"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -469.2,
+              -162.20000000000002,
+              7
+            ],
+            "max": [
+              -460.8,
+              -153.8,
+              77
+            ]
+          }
+        },
+        {
+          "index": 30,
+          "id": "obj-31",
+          "name": "100V drip loop lower run",
+          "treePath": [
+            "100V drip loop lower run"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -434,
+              -162.2,
+              37.8
+            ],
+            "max": [
+              -372,
+              -153.8,
+              46.2
+            ]
+          }
+        },
+        {
+          "index": 31,
+          "id": "obj-32",
+          "name": "100V drip loop vertical rise to entry",
+          "treePath": [
+            "100V drip loop vertical rise to entry"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -407.2,
+              -162.2,
+              70
+            ],
+            "max": [
+              -398.8,
+              -153.8,
+              126
+            ]
+          }
+        },
+        {
+          "index": 32,
+          "id": "obj-33",
+          "name": "5V USB-C only cord between boxes",
+          "treePath": [
+            "5V USB-C only cord between boxes"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -49.06921552715896,
+              -174.31677058931825,
+              114.84601689203981
+            ],
+            "max": [
+              239.06921552715903,
+              -17.683229410681786,
+              175.1539831079602
+            ]
+          }
+        },
+        {
+          "index": 33,
+          "id": "obj-34",
+          "name": "5V USB-C drip loop vertical drop",
+          "treePath": [
+            "5V USB-C drip loop vertical drop"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              31.8,
+              -99.2,
+              40
+            ],
+            "max": [
+              38.2,
+              -92.8,
+              110
+            ]
+          }
+        },
+        {
+          "index": 34,
+          "id": "obj-35",
+          "name": "5V USB-C drip loop lower run",
+          "treePath": [
+            "5V USB-C drip loop lower run"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              66,
+              -99.2,
+              71.8
+            ],
+            "max": [
+              128,
+              -92.8,
+              78.2
+            ]
+          }
+        },
+        {
+          "index": 35,
+          "id": "obj-36",
+          "name": "5V USB-C drip loop vertical rise to entry",
+          "treePath": [
+            "5V USB-C drip loop vertical rise to entry"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              93.8,
+              -99.2,
+              103
+            ],
+            "max": [
+              100.2,
+              -92.8,
+              159
+            ]
+          }
+        },
+        {
+          "index": 36,
+          "id": "obj-37",
+          "name": "Grove cable M5StickS3 to TypeC2Grove",
+          "treePath": [
+            "Grove cable M5StickS3 to TypeC2Grove"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              143,
+              -25.220863052149692,
+              118.01223253065275
+            ],
+            "max": [
+              147,
+              11.220863052149696,
+              125.98776746934723
+            ]
+          }
+        },
+        {
+          "index": 37,
+          "id": "obj-38",
+          "name": "Grove cable TypeC2Grove to ENV III",
+          "treePath": [
+            "Grove cable TypeC2Grove to ENV III"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              143,
+              35.285036314039814,
+              113.0115859048683
+            ],
+            "max": [
+              147,
+              72.71496368596019,
+              120.9884140951317
+            ]
+          }
+        },
+        {
+          "index": 38,
+          "id": "obj-39",
+          "name": "Grove cable TypeC2Grove to Unit Watering",
+          "treePath": [
+            "Grove cable TypeC2Grove to Unit Watering"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              212.08994328535735,
+              -76.27788728952983,
+              122.00390513752589
+            ],
+            "max": [
+              317.9100567146427,
+              -19.72211271047017,
+              129.9960948624741
+            ]
+          }
+        },
+        {
+          "index": 39,
+          "id": "obj-40",
+          "name": "water tube route away from 100V",
+          "treePath": [
+            "water tube route away from 100V"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              416.9456507757438,
+              -232.2589685579032,
+              -2.720564026088468
+            ],
+            "max": [
+              493.0543492242562,
+              -137.74103144209684,
+              92.7205640260885
+            ]
+          }
+        },
+        {
+          "index": 40,
+          "id": "obj-41",
+          "name": "red keep-apart zone between 100V and water tube",
+          "treePath": [
+            "red keep-apart zone between 100V and water tube"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -45,
+              -145,
+              36
+            ],
+            "max": [
+              35,
+              135,
+              42
+            ]
+          }
+        },
+        {
+          "index": 41,
+          "id": "obj-42",
+          "name": "100V AC SIDE label plate",
+          "treePath": [
+            "100V AC SIDE label plate"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              -297.5,
+              -191.5,
+              210
+            ],
+            "max": [
+              -202.5,
+              -188.5,
+              234
+            ]
+          }
+        },
+        {
+          "index": 42,
+          "id": "obj-43",
+          "name": "5V DC SIDE label plate",
+          "treePath": [
+            "5V DC SIDE label plate"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              197.5,
+              -131.5,
+              212
+            ],
+            "max": [
+              292.5,
+              -128.5,
+              236
+            ]
+          }
+        },
+        {
+          "index": 43,
+          "id": "obj-44",
+          "name": "NO MAINS IN IP65 BOX label plate",
+          "treePath": [
+            "NO MAINS IN IP65 BOX label plate"
+          ],
+          "mock": false,
+          "bbox": {
+            "min": [
+              197.5,
+              126.5,
+              212
+            ],
+            "max": [
+              292.5,
+              129.5,
+              236
+            ]
+          }
+        }
+      ],
+      "collisions": [
+        {
+          "index": 1,
+          "id": "obj-1__obj-30",
+          "sourceIndex": 0,
+          "targetIndex": 29,
+          "sourceId": "obj-1",
+          "targetId": "obj-30",
+          "sourceName": "raised balcony shelf plane",
+          "targetName": "100V drip loop vertical drop",
+          "overlapVolume": 54.786815467301835,
+          "groupIndex": 1,
+          "color": [
+            255,
+            68,
+            16
+          ],
+          "hex": "#ff4410"
+        },
+        {
+          "index": 2,
+          "id": "obj-1__obj-40",
+          "sourceIndex": 0,
+          "targetIndex": 39,
+          "sourceId": "obj-1",
+          "targetId": "obj-40",
+          "sourceName": "raised balcony shelf plane",
+          "targetName": "water tube route away from 100V",
+          "overlapVolume": 0.35696955396686986,
+          "groupIndex": 2,
+          "color": [
+            0,
+            204,
+            255
+          ],
+          "hex": "#00ccff"
+        },
+        {
+          "index": 3,
+          "id": "obj-3__obj-31",
+          "sourceIndex": 2,
+          "targetIndex": 30,
+          "sourceId": "obj-3",
+          "targetId": "obj-31",
+          "sourceName": "100V outdoor power box LSO-70 class floor",
+          "targetName": "100V drip loop lower run",
+          "overlapVolume": 1440.031893198952,
+          "groupIndex": 3,
+          "color": [
+            255,
+            214,
+            0
+          ],
+          "hex": "#ffd600"
+        },
+        {
+          "index": 4,
+          "id": "obj-4__obj-29",
+          "sourceIndex": 3,
+          "targetIndex": 28,
+          "sourceId": "obj-4",
+          "targetId": "obj-29",
+          "sourceName": "100V outdoor power box LSO-70 class left wall",
+          "targetName": "finished 100V cord entering power box",
+          "overlapVolume": 262.45894474127226,
+          "groupIndex": 4,
+          "color": [
+            66,
+            220,
+            120
+          ],
+          "hex": "#42dc78"
+        },
+        {
+          "index": 5,
+          "id": "obj-7__obj-26",
+          "sourceIndex": 6,
+          "targetIndex": 25,
+          "sourceId": "obj-7",
+          "targetId": "obj-26",
+          "sourceName": "100V outdoor power box LSO-70 class front wall with lower cable entries",
+          "targetName": "100V lower cable entry gland",
+          "overlapVolume": 4694.6535089961135,
+          "groupIndex": 5,
+          "color": [
+            255,
+            76,
+            196
+          ],
+          "hex": "#ff4cc4"
+        },
+        {
+          "index": 6,
+          "id": "obj-7__obj-29",
+          "sourceIndex": 6,
+          "targetIndex": 28,
+          "sourceId": "obj-7",
+          "targetId": "obj-29",
+          "sourceName": "100V outdoor power box LSO-70 class front wall with lower cable entries",
+          "targetName": "finished 100V cord entering power box",
+          "overlapVolume": 2012.1852430164208,
+          "groupIndex": 6,
+          "color": [
+            142,
+            106,
+            255
+          ],
+          "hex": "#8e6aff"
+        },
+        {
+          "index": 7,
+          "id": "obj-7__obj-32",
+          "sourceIndex": 6,
+          "targetIndex": 31,
+          "sourceId": "obj-7",
+          "targetId": "obj-32",
+          "sourceName": "100V outdoor power box LSO-70 class front wall with lower cable entries",
+          "targetName": "100V drip loop vertical rise to entry",
+          "overlapVolume": 1300.673968050672,
+          "groupIndex": 7,
+          "color": [
+            255,
+            145,
+            48
+          ],
+          "hex": "#ff9130"
+        },
+        {
+          "index": 8,
+          "id": "obj-11__obj-27",
+          "sourceIndex": 10,
+          "targetIndex": 26,
+          "sourceId": "obj-11",
+          "targetId": "obj-27",
+          "sourceName": "5V IP65 electronics box left wall",
+          "targetName": "5V USB-C lower cable entry gland",
+          "overlapVolume": 2297.383632061925,
+          "groupIndex": 8,
+          "color": [
+            86,
+            232,
+            202
+          ],
+          "hex": "#56e8ca"
+        },
+        {
+          "index": 9,
+          "id": "obj-11__obj-33",
+          "sourceIndex": 10,
+          "targetIndex": 32,
+          "sourceId": "obj-11",
+          "targetId": "obj-33",
+          "sourceName": "5V IP65 electronics box left wall",
+          "targetName": "5V USB-C only cord between boxes",
+          "overlapVolume": 24.239633786367065,
+          "groupIndex": 9,
+          "color": [
+            210,
+            245,
+            60
+          ],
+          "hex": "#d2f53c"
+        },
+        {
+          "index": 10,
+          "id": "obj-11__obj-36",
+          "sourceIndex": 10,
+          "targetIndex": 35,
+          "sourceId": "obj-11",
+          "targetId": "obj-36",
+          "sourceName": "5V IP65 electronics box left wall",
+          "targetName": "5V USB-C drip loop vertical rise to entry",
+          "overlapVolume": 489.18097983151415,
+          "groupIndex": 10,
+          "color": [
+            255,
+            120,
+            120
+          ],
+          "hex": "#ff7878"
+        },
+        {
+          "index": 11,
+          "id": "obj-12__obj-24",
+          "sourceIndex": 11,
+          "targetIndex": 23,
+          "sourceId": "obj-12",
+          "targetId": "obj-24",
+          "sourceName": "5V IP65 electronics box right wall",
+          "targetName": "Unit Watering U101 193x27x33",
+          "overlapVolume": 1336.5,
+          "groupIndex": 11,
+          "color": [
+            80,
+            150,
+            255
+          ],
+          "hex": "#5096ff"
+        },
+        {
+          "index": 12,
+          "id": "obj-12__obj-28",
+          "sourceIndex": 11,
+          "targetIndex": 27,
+          "sourceId": "obj-12",
+          "targetId": "obj-28",
+          "sourceName": "5V IP65 electronics box right wall",
+          "targetName": "water tube exit kept away from 100V side",
+          "overlapVolume": 4594.767264123856,
+          "groupIndex": 12,
+          "color": [
+            190,
+            110,
+            60
+          ],
+          "hex": "#be6e3c"
+        },
+        {
+          "index": 13,
+          "id": "obj-19__obj-20",
+          "sourceIndex": 18,
+          "targetIndex": 19,
+          "sourceId": "obj-19",
+          "targetId": "obj-20",
+          "sourceName": "USB-C AC adapter placeholder",
+          "targetName": "USB-C adapter bend-clearance envelope",
+          "overlapVolume": 60750,
+          "groupIndex": 13,
+          "color": [
+            255,
+            68,
+            16
+          ],
+          "hex": "#ff4410"
+        },
+        {
+          "index": 14,
+          "id": "obj-23__obj-38",
+          "sourceIndex": 22,
+          "targetIndex": 37,
+          "sourceId": "obj-23",
+          "targetId": "obj-38",
+          "sourceName": "ENV III U001-C 32x24x8",
+          "targetName": "Grove cable TypeC2Grove to ENV III",
+          "overlapVolume": 34.78334784707031,
+          "groupIndex": 14,
+          "color": [
+            0,
+            204,
+            255
+          ],
+          "hex": "#00ccff"
+        },
+        {
+          "index": 15,
+          "id": "obj-24__obj-39",
+          "sourceIndex": 23,
+          "targetIndex": 38,
+          "sourceId": "obj-24",
+          "targetId": "obj-39",
+          "sourceName": "Unit Watering U101 193x27x33",
+          "targetName": "Grove cable TypeC2Grove to Unit Watering",
+          "overlapVolume": 739.1770372985485,
+          "groupIndex": 15,
+          "color": [
+            255,
+            214,
+            0
+          ],
+          "hex": "#ffd600"
+        },
+        {
+          "index": 16,
+          "id": "obj-26__obj-29",
+          "sourceIndex": 25,
+          "targetIndex": 28,
+          "sourceId": "obj-26",
+          "targetId": "obj-29",
+          "sourceName": "100V lower cable entry gland",
+          "targetName": "finished 100V cord entering power box",
+          "overlapVolume": 587.4058629705377,
+          "groupIndex": 16,
+          "color": [
+            66,
+            220,
+            120
+          ],
+          "hex": "#42dc78"
+        },
+        {
+          "index": 17,
+          "id": "obj-27__obj-33",
+          "sourceIndex": 26,
+          "targetIndex": 32,
+          "sourceId": "obj-27",
+          "targetId": "obj-33",
+          "sourceName": "5V USB-C lower cable entry gland",
+          "targetName": "5V USB-C only cord between boxes",
+          "overlapVolume": 280.1048542087962,
+          "groupIndex": 17,
+          "color": [
+            255,
+            76,
+            196
+          ],
+          "hex": "#ff4cc4"
+        },
+        {
+          "index": 18,
+          "id": "obj-27__obj-36",
+          "sourceIndex": 26,
+          "targetIndex": 35,
+          "sourceId": "obj-27",
+          "targetId": "obj-36",
+          "sourceName": "5V USB-C lower cable entry gland",
+          "targetName": "5V USB-C drip loop vertical rise to entry",
+          "overlapVolume": 239.76497428452225,
+          "groupIndex": 18,
+          "color": [
+            142,
+            106,
+            255
+          ],
+          "hex": "#8e6aff"
+        },
+        {
+          "index": 19,
+          "id": "obj-29__obj-32",
+          "sourceIndex": 28,
+          "targetIndex": 31,
+          "sourceId": "obj-29",
+          "targetId": "obj-32",
+          "sourceName": "finished 100V cord entering power box",
+          "targetName": "100V drip loop vertical rise to entry",
+          "overlapVolume": 507.53337742624603,
+          "groupIndex": 19,
+          "color": [
+            255,
+            145,
+            48
+          ],
+          "hex": "#ff9130"
+        },
+        {
+          "index": 20,
+          "id": "obj-33__obj-36",
+          "sourceIndex": 32,
+          "targetIndex": 35,
+          "sourceId": "obj-33",
+          "targetId": "obj-36",
+          "sourceName": "5V USB-C only cord between boxes",
+          "targetName": "5V USB-C drip loop vertical rise to entry",
+          "overlapVolume": 158.37390331399155,
+          "groupIndex": 20,
+          "color": [
+            86,
+            232,
+            202
+          ],
+          "hex": "#56e8ca"
+        },
+        {
+          "index": 21,
+          "id": "obj-34__obj-41",
+          "sourceIndex": 33,
+          "targetIndex": 40,
+          "sourceId": "obj-34",
+          "targetId": "obj-41",
+          "sourceName": "5V USB-C drip loop vertical drop",
+          "targetName": "red keep-apart zone between 100V and water tube",
+          "overlapVolume": 31.80368426219779,
+          "groupIndex": 21,
+          "color": [
+            210,
+            245,
+            60
+          ],
+          "hex": "#d2f53c"
+        }
+      ],
+      "warnings": [],
+      "views": {
+        "front": {
+          "path": "channels/collisions/front.png"
+        },
+        "right": {
+          "path": "channels/collisions/right.png"
+        },
+        "top": {
+          "path": "channels/collisions/top.png"
+        },
+        "iso": {
+          "path": "channels/collisions/iso.png"
+        }
+      }
+    }
+  }
+}
