@@ -935,6 +935,10 @@
         </div>
         <div class="station-flow">M5StickS3 -> Wi-Fi -> /metrics.json または MQTT</div>
         <div class="station-base">底面: 1〜2mm水抜き穴 / 側面下寄り: USB-Cケーブル穴 + セパレートキャプコン / ケーブルは一度下へ垂らしてから入れる</div>
+        <div class="note">
+          <strong>箱は分ける:</strong>
+          屋外用電源ボックスは100V側。延長コードのメス側とUSB-C ACアダプタだけを入れる。ダイソー透明ケースは5V側の簡易ウェザーステーション。ここには100Vを入れない。
+        </div>
         <div class="build-layout" aria-label="自作ウェザーステーション部品画像">
           <a class="build-card" href="https://docs.m5stack.com/en/core/StickS3" target="_blank" rel="noopener noreferrer">
             <img src="https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1207/K150-stickS3_main-products_01.webp" alt="M5StickS3">
@@ -1031,25 +1035,25 @@
           </tr>
           <tr>
             <td>2</td>
-            <td>延長コード -> 屋外用電源ボックス</td>
+            <td>延長コード -> 100V側電源ボックス</td>
             <td>Hrensaw級 IP54電源ボックス</td>
             <td>ACアダプタと差込口が無理なく入る内寸</td>
           </tr>
           <tr>
             <td>3</td>
-            <td>100V -> 5V</td>
+            <td>100V側電源ボックス内で100V -> 5V</td>
             <td>USB-C ACアダプタ</td>
             <td>PSE、箱内発熱、ポート数</td>
           </tr>
           <tr>
             <td>4</td>
-            <td>電源ボックス -> ダイソーケース</td>
+            <td>100V側電源ボックス -> 簡易ウェザーステーションケース</td>
             <td>USB-C 1m-2m</td>
-            <td>実際の距離。3mは離す時だけ</td>
+            <td>ここから先は5Vだけ。実際の距離を測る。3mは離す時だけ</td>
           </tr>
           <tr>
             <td>5</td>
-            <td>ダイソーケース入口</td>
+            <td>簡易ウェザーステーションケース入口</td>
             <td>セパレートキャプコン または ゴムグロメット</td>
             <td>USB-Cコネクタが通る穴径、ケーブル外径</td>
           </tr>
