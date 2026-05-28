@@ -340,7 +340,12 @@
     }
 
     .link-table {
+      display: block;
       width: 100%;
+      max-width: 100%;
+      min-width: 760px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
       border-collapse: collapse;
       margin-top: 18px;
       background: #fffdf8;
@@ -680,6 +685,7 @@
       .target-grid { grid-template-columns: 1fr; }
       .weather-station { grid-template-columns: 1fr; }
       .build-layout { grid-template-columns: 1fr 1fr; }
+      .link-table { min-width: 860px; }
       .station-flow { min-height: 32px; }
       .node b { font-size: 15px; }
     }
@@ -1260,7 +1266,7 @@
           </tr>
           <tr>
             <td>zmart/Tuya日光・雨センサー + Zigbee2MQTT</td>
-            <td>約8,000〜12,000円<br><small>日光/雨4,831円 + Zigbee USBドングル目安</small></td>
+            <td>約7,427円〜<br><small>日光/雨4,831円 + USBドングル2,596円。常時稼働機は別</small></td>
             <td>明るさ、雨検知、雨量/雨強度系、電池</td>
             <td>Zigbee + ローカルMQTT</td>
             <td>クラウドを使わず、Home Assistant/Zigbee2MQTTで値を読む。RB-SRAIN01系は illuminance/rain/battery の公開例あり。</td>
@@ -1280,7 +1286,7 @@
           </tr>
           <tr>
             <td>Tuya Zigbee日光/雨センサー + Sonoff Zigbee USB Dongle + Zigbee2MQTT</td>
-            <td>約8,000〜12,000円<br><small>常時稼働PC/RPiがある場合</small></td>
+            <td>約7,427円〜<br><small>スクショの2MQTT USBドングルなら2,596円</small></td>
             <td>明るさ、雨検知、電池。温湿度センサー追加で環境値</td>
             <td>Zigbee + MQTT</td>
             <td>ローカルMQTT。RB-SRAIN01系はZigbee2MQTTで illuminance / rain / battery が見える。</td>
@@ -1367,6 +1373,18 @@
             <td>スクショ表示 4,831円</td>
             <td>日光/明るさ、雨検知。ソーラー充電。Smart Life/Tuya系。単体HTTP APIではなく、Tuya Gateway経由またはZigbee2MQTT経由で読む。</td>
             <td><a href="https://www.amazon.co.jp/s?k=zmart+Tuya+Zigbee+%E6%97%A5%E5%85%89+%E9%9B%A8%E3%82%BB%E3%83%B3%E3%82%B5%E3%83%BC" target="_blank" rel="noopener noreferrer">Amazon検索</a> / <a href="https://www.zigbee2mqtt.io/devices/RB-SRAIN01.html" target="_blank" rel="noopener noreferrer">Zigbee2MQTT対応例</a></td>
+          </tr>
+          <tr>
+            <td>Zigbee 2MQTT 3.0 USBドングル</td>
+            <td>スクショ表示 2,596円</td>
+            <td>Tuya日光・雨センサーをSmart Lifeクラウドではなく、Home Assistant / Zigbee2MQTT側で受けるための受信機。USBで常時稼働PC/Raspberry Piへ挿す。</td>
+            <td><a href="https://www.amazon.co.jp/s?k=Zigbee+2MQTT+3.0+USB%E3%83%89%E3%83%B3%E3%82%B0%E3%83%AB" target="_blank" rel="noopener noreferrer">Amazon検索</a> / <a href="https://www.zigbee2mqtt.io/guide/adapters/" target="_blank" rel="noopener noreferrer">Zigbee2MQTT adapter一覧</a></td>
+          </tr>
+          <tr>
+            <td>常時稼働機</td>
+            <td>既存PCなら0円<br>Raspberry Pi等なら別途</td>
+            <td>Zigbee2MQTT / Home Assistant / MQTT brokerを動かす。これがないとUSBドングルだけでは値を見られない。</td>
+            <td><a href="https://www.home-assistant.io/installation/" target="_blank" rel="noopener noreferrer">Home Assistant</a> / <a href="https://www.zigbee2mqtt.io/guide/getting-started/" target="_blank" rel="noopener noreferrer">Zigbee2MQTT Getting started</a></td>
           </tr>
           <tr>
             <td>Wi-Fi / Smart Life 日光・雨センサー</td>

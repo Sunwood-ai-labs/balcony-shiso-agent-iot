@@ -56,7 +56,7 @@ Zigbeeに限定しない。SwitchBot、Tuya/Smart Life、Matter/Thread、Wi-Fi�
 |---|---:|---|---|---|---|
 | SwitchBot防水温湿度計 + Hub Mini | 約7,010円 | 温度、湿度、VPDなど | Bluetooth + Wi-Fi Hub / SwitchBot Cloud OpenAPI | センサー電池、Hub室内USB | 楽だが照度なし |
 | SwitchBot + Hub + Smart Life日光/雨センサー | 約12,000〜16,000円 | 温度、湿度、明るさ、雨検知 | Bluetooth + Wi-FiまたはZigbee / APIは分離 | 電池/ソーラー + Hub室内USB | 既製品だけなら有力。Home Assistant集約が現実的 |
-| zmart/Tuya日光・雨センサー + Zigbee2MQTT | 約8,000〜12,000円 | 明るさ、雨検知、電池 | Zigbee + ローカルMQTT | センサーソーラー、常時稼働機 | このスクショの商品系。安いが単体APIではない |
+| zmart/Tuya日光・雨センサー + Zigbee2MQTT | 約7,427円〜 | 明るさ、雨検知、電池 | Zigbee + ローカルMQTT | センサーソーラー、USBドングル、常時稼働機 | 日光/雨4,831円 + USBドングル2,596円。常時稼働機は別 |
 | Tuya/Smart Life系で統一 | 約9,000〜13,000円 | 温度、湿度、明るさ、雨検知 | Wi-Fi/Zigbee + Tuya Cloud API | 電池/ソーラー + Gateway室内USB | アプリを1つに寄せられるが屋外温湿度仕様を要確認 |
 | Eve Weather / Matter-Thread + 別体照度 | 約12,000〜25,000円 | 温度、湿度、気圧、照度は追加 | Matter over Thread / Home Assistant等 | 電池 + Thread Border Router | Apple HomeやMatter中心なら候補。雨は別 |
 | Netatmo Weather Station + 別体照度 | 約25,000〜45,000円級 | 温湿度、気圧。雨/風は追加 | Wi-Fi + Netatmo API | 屋外電池、室内親機USB/AC | 既製品感は強いが照度は弱い |
