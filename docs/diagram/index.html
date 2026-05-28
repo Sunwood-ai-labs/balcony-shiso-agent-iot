@@ -346,6 +346,73 @@
       font: 800 12px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
     }
 
+    .planter-plan {
+      margin-top: 12px;
+      padding: 12px;
+      border: 1px solid rgba(47,125,74,.25);
+      background: #fffaf0;
+    }
+
+    .planter-top {
+      position: relative;
+      min-height: 170px;
+      border: 3px solid rgba(47,125,74,.45);
+      background:
+        linear-gradient(90deg, transparent 49%, rgba(47,125,74,.18) 50%, transparent 51%),
+        repeating-linear-gradient(-45deg, #e8d4ad 0 10px, #f3e5c7 10px 20px);
+    }
+
+    .plant-dot,
+    .sensor-dot,
+    .water-dot {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      border-radius: 999px;
+      font: 900 11px/1.25 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    .plant-dot {
+      width: 72px;
+      height: 72px;
+      background: #2f7d4a;
+      color: #fff;
+      top: 48px;
+    }
+
+    .plant-dot.left { left: 18%; transform: translateX(-50%); }
+    .plant-dot.right { left: 82%; transform: translateX(-50%); }
+
+    .sensor-dot {
+      width: 58px;
+      height: 58px;
+      background: #fff;
+      color: var(--water);
+      border: 2px solid var(--water);
+      left: 50%;
+      top: 54px;
+      transform: translateX(-50%);
+    }
+
+    .water-dot {
+      width: 66px;
+      height: 40px;
+      background: var(--water);
+      color: #fff;
+      left: 50%;
+      bottom: 12px;
+      transform: translateX(-50%);
+      border-radius: 18px;
+    }
+
+    .planter-caption {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
     .callout {
       margin: 0;
       padding: 16px 18px;
@@ -562,10 +629,19 @@
               <div class="fallback">GROW<br>BAG</div>
             </div>
             <div class="node-content">
-              <small>tomato side</small>
-              <b>スゴヨコ系プランター候補</b>
-              <p>横長なら設置しやすいが、ミニトマトは深さと日照が重要。防水センサーを根元から少し離して土へ挿す。</p>
+              <small>shiso planter</small>
+              <b>大葉用 横長プランター</b>
+              <p>目安: 幅60〜65cm、深さ20cm以上、2〜3株。株間は20cm前後。北向きでも明るい半日陰なら大葉向き。</p>
               <a class="buy-hint" href="https://www.amazon.co.jp/s?k=%E3%82%B9%E3%82%B4%E3%83%A8%E3%82%B3+%E3%83%97%E3%83%A9%E3%83%B3%E3%82%BF%E3%83%BC" target="_blank" rel="noopener noreferrer">プランター候補を探す</a>
+              <div class="planter-plan" aria-label="大葉プランター上面図">
+                <div class="planter-top">
+                  <div class="plant-dot left">大葉<br>1株</div>
+                  <div class="sensor-dot">水分<br>センサー</div>
+                  <div class="plant-dot right">大葉<br>1株</div>
+                  <div class="water-dot">吐水口</div>
+                </div>
+                <p class="planter-caption">センサーは株元に近すぎない中央寄りへ。吐水口は土表面へ固定。3株にするなら中央センサーの前後に余裕がある深さを選ぶ。</p>
+              </div>
             </div>
           </div>
           <div class="node plant">
@@ -602,7 +678,7 @@
       </article>
       <article class="mini">
         <h3>北向きベランダ</h3>
-        <p>ミニトマトは日照が強く必要。直射が少ないなら収穫少なめ前提、育成ライト補助、または葉物・ハーブへ切り替え。</p>
+        <p>ミニトマトより大葉が現実的。明るい半日陰なら候補。暗い場合は徒長するので、育成ライト補助か葉物へ切り替え。</p>
       </article>
     </section>
 
