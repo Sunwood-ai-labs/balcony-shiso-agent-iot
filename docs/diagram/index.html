@@ -621,6 +621,12 @@
       font: 900 11px/1.25 ui-monospace, SFMono-Regular, Menlo, monospace;
     }
 
+    .part span.price,
+    .build-card span.price {
+      color: #5d4308;
+      font: 900 11px/1.25 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
     .extras {
       margin-top: 18px;
       display: grid;
@@ -714,6 +720,7 @@
             <div class="station-img">
               <span class="fallback" style="display:grid">OUTDOOR<br>OUTLET<br>100V</span>
             </div>
+            <span class="price">既設</span>
             <ul>
               <li>既設の屋外コンセント</li>
               <li>加工しない</li>
@@ -725,6 +732,7 @@
             <a class="station-img" href="https://www.hataya.jp/products/cordreel/post1066/" target="_blank" rel="noopener noreferrer">
               <img src="https://www.hataya.jp/uploads/product/1066/1_1.jpg" alt="HATAYA BFX 防雨延長コード">
             </a>
+            <span class="price">約5,400円〜</span>
             <ul>
               <li>漏電遮断付き</li>
               <li>100V側の安全境界</li>
@@ -736,6 +744,7 @@
             <a class="station-img" href="https://www.amazon.co.jp/s?k=Hrensaw+%E5%A4%A7%E5%9E%8B%E5%B1%8B%E5%A4%96%E9%9B%BB%E6%B0%97%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9+IP54" target="_blank" rel="noopener noreferrer">
               <img src="https://restmo.online/cdn/shop/files/1600.png" alt="Hrensaw 屋外電気ボックス">
             </a>
+            <span class="price">約3,000円前後</span>
             <ul>
               <li>延長コードのメス側</li>
               <li>USB-C ACアダプタ</li>
@@ -769,6 +778,7 @@
             <a class="station-img" href="https://docs.m5stack.com/en/unit/dlight" target="_blank" rel="noopener noreferrer">
               <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/dlight/dlight_01.webp" alt="M5Stack Unit DLight 照度センサー">
             </a>
+            <span class="price">公式 $5.50</span>
             <ul>
               <li>DLightを透明面の裏へ固定</li>
               <li>空の明るさをluxで取る</li>
@@ -781,6 +791,7 @@
               <img src="https://jp.daisonet.com/cdn/shop/files/65bb9186372d754276a503c21fa9a4e3_1024x.jpg?v=1755510727" alt="ダイソー フタ付収納ケース（透明）M" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
               <span class="fallback">DAISO<br>フタ付透明ケースM<br>21.5 x 32 x 12.3cm</span>
             </a>
+            <span class="price">330円</span>
             <ul>
               <li>M5StickS3</li>
               <li>Unit Hub または PaHUB</li>
@@ -793,6 +804,7 @@
             <a class="station-img" href="https://docs.m5stack.com/en/unit/envIII" target="_blank" rel="noopener noreferrer">
               <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/envIII/envIII_01.webp" alt="M5Stack ENV III 温湿度気圧センサー">
             </a>
+            <span class="price">公式 $5.95〜</span>
             <ul>
               <li>左右に細いスリット</li>
               <li>内側に防虫メッシュ</li>
@@ -809,27 +821,27 @@
         <div class="build-layout" aria-label="自作ウェザーステーション部品画像">
           <a class="build-card" href="https://docs.m5stack.com/en/core/StickS3" target="_blank" rel="noopener noreferrer">
             <img src="https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1207/K150-stickS3_main-products_01.webp" alt="M5StickS3">
-            <span>M5StickS3<br>本体/API送信</span>
+            <span>M5StickS3<br>本体/API送信<br><span class="price">公式 $24.90</span></span>
           </a>
           <a class="build-card" href="https://docs.m5stack.com/en/unit/pahub" target="_blank" rel="noopener noreferrer">
             <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/pahub/pahub_01.webp" alt="M5Stack PaHUB">
-            <span>Unit Hub / PaHUB<br>Grove分岐</span>
+            <span>Unit Hub / PaHUB<br>Grove分岐<br><span class="price">公式 $4.50</span></span>
           </a>
           <a class="build-card" href="https://docs.m5stack.com/en/unit/envIII" target="_blank" rel="noopener noreferrer">
             <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/envIII/envIII_01.webp" alt="M5Stack ENV III">
-            <span>ENV III/IV<br>温湿度</span>
+            <span>ENV III/IV<br>温湿度<br><span class="price">公式 $5.95〜</span></span>
           </a>
           <a class="build-card" href="https://docs.m5stack.com/en/unit/dlight" target="_blank" rel="noopener noreferrer">
             <img src="https://static-cdn.m5stack.com/resource/docs/products/unit/dlight/dlight_01.webp" alt="M5Stack DLight">
-            <span>DLight<br>照度 lux</span>
+            <span>DLight<br>照度 lux<br><span class="price">公式 $5.50</span></span>
           </a>
           <a class="build-card" href="https://www.ohm.jp/english/parts/capcon_oa-w/separate/" target="_blank" rel="noopener noreferrer">
             <img src="https://www.ohm.jp/english/media/oa-w_sep_main.jpg" alt="オーム電機 セパレートキャプコン">
-            <span>セパレートキャプコン<br>USB-C穴</span>
+            <span>セパレートキャプコン<br>USB-C穴<br><span class="price">約1,200円前後</span></span>
           </a>
           <a class="build-card" href="https://jp.daisonet.com/products/4550480731698" target="_blank" rel="noopener noreferrer">
             <img src="https://jp.daisonet.com/cdn/shop/files/65bb9186372d754276a503c21fa9a4e3_1024x.jpg?v=1755510727" alt="ダイソー フタ付収納ケース（透明）M">
-            <span>ダイソー<br>フタ付透明ケースM</span>
+            <span>ダイソー<br>フタ付透明ケースM<br><span class="price">330円</span></span>
           </a>
         </div>
       </section>
@@ -1551,15 +1563,15 @@
             <div class="inside">
               <div class="part">
                 <a class="buy-link" href="https://www.ankerjapan.com/products/a2039" target="_blank" rel="noopener noreferrer"><img src="https://www.ankerjapan.com/cdn/shop/products/A2039001_1200x1200.jpg" alt="Anker 523 Charger 47W"></a>
-                <span>Anker 523 Charger</span>
+                <span>Anker 523 Charger<br><span class="price">3,990円</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://www.hataya.jp/products/cordreel/post1066/" target="_blank" rel="noopener noreferrer"><img src="https://www.hataya.jp/uploads/product/1066/1_2.jpg" alt="HATAYA BFX差込側"></a>
-                <span>HATAYA メス側</span>
+                <span>HATAYA メス側<br><span class="price">延長コード側</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://www.ankerjapan.com/products/a8758" target="_blank" rel="noopener noreferrer"><img src="https://www.ankerjapan.com/cdn/shop/products/A8758001_1200x1200.jpg" alt="Anker USB-C & USB-C ケーブル"></a>
-                <span>USB-C 1m-2m ×2<br>3mは離す時だけ</span>
+                <span>USB-C 1m-2m ×2<br>3mは離す時だけ<br><span class="price">1,190円〜/本</span></span>
               </div>
             </div>
           </div>
@@ -1584,55 +1596,55 @@
             <div class="inside">
               <div class="part">
                 <a class="buy-link" href="https://docs.m5stack.com/en/core/StickS3" target="_blank" rel="noopener noreferrer"><img src="https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1207/K150-stickS3_main-products_01.webp" alt="M5StickS3"></a>
-                <span>M5StickS3<br>Grove端子:<br>GND/5V/G9/G10</span>
+                <span>M5StickS3<br>Grove端子:<br>GND/5V/G9/G10<br><span class="price">公式 $24.90</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://docs.m5stack.com/en/unit/typec2grove" target="_blank" rel="noopener noreferrer"><img src="https://static-cdn.m5stack.com/resource/docs/products/unit/typec2grove/typec2grove_01.webp" alt="M5Stack TypeC2Grove"></a>
-                <span>TypeC2Grove</span>
+                <span>TypeC2Grove<br><span class="price">公式 $2.95</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://www.ohm.jp/english/parts/capcon_oa-w/separate/" target="_blank" rel="noopener noreferrer"><img src="https://www.ohm.jp/english/media/oa-w_sep_main.jpg" alt="オーム電機 OA-WH セパレートキャプコン"></a>
-                <span>OA-WH22-06/13 ×2-3</span>
+                <span>OA-WH22-06/13 ×2-3<br><span class="price">約1,200円前後/個</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://shop.m5stack.com/products/grove2dupont-conversion-cable-20cm-5pairs" target="_blank" rel="noopener noreferrer"><img src="https://shop.m5stack.com/cdn/shop/products/1_a12cb37d-7bf3-4336-8bcf-276172f8087b_1200x1200.jpg" alt="M5Stack Grove2Dupont 変換ケーブル"></a>
-                <span>Grove2Dupont<br>A096<br>G9へSignal</span>
+                <span>Grove2Dupont<br>A096<br>G9へSignal<br><span class="price">公式価格要確認</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://www.dfrobot.com/product-1567.html" target="_blank" rel="noopener noreferrer"><img src="https://dfimg.dfrobot.com/enshop/DFR0457/DFR0457_Main_01.jpg" alt="DFRobot Gravity MOSFET Power Controller"></a>
-                <span>DFR0457<br>MOSFET<br>G10へIN</span>
+                <span>DFR0457<br>MOSFET<br>G10へIN<br><span class="price">価格要確認</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://www.amazon.co.jp/s?k=WAGO+221-415" target="_blank" rel="noopener noreferrer"><img src="https://www.wago.com/medias/200-221-Series-LeverNuts-Image.jpg?context=bWFzdGVyfGltYWdlc3wxMjQ2fGltYWdlL2pwZWd8YURNd0wyZzFPQzh4TlRFMk5Ua3dNRE01TURRek1DOHlNREJmTWpJeExWTmxjbWxsY3kxTVpYWmxjazUxZEhNdFNXMWhaMlV1YW5CbnxkZmY0ODUzMjFkOWNmYWJjZTA1YjNkODkwMWFiMmQ2OGI5ODQyZTJhNzIzZjcyMGRiYTBhMDE0M2Q0YjQ1NjA3" alt="WAGO 221 GND端子台"></a>
-                <span>GND端子台<br>WAGO 221<br>M5 GND + ポンプ電源-</span>
+                <span>GND端子台<br>WAGO 221<br>M5 GND + ポンプ電源-<br><span class="price">数百円〜</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://docs.m5stack.com/en/unit/envIII" target="_blank" rel="noopener noreferrer"><img src="https://static-cdn.m5stack.com/resource/docs/products/unit/envIII/envIII_01.webp" alt="M5Stack ENV III 温湿度気圧センサー"></a>
-                <span>ENV III<br>温度/湿度/気圧<br>小型百葉箱へ</span>
+                <span>ENV III<br>温度/湿度/気圧<br>小型百葉箱へ<br><span class="price">公式 $5.95〜</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://docs.m5stack.com/en/unit/dlight" target="_blank" rel="noopener noreferrer"><img src="https://static-cdn.m5stack.com/resource/docs/products/unit/dlight/dlight_01.webp" alt="M5Stack Unit DLight 照度センサー"></a>
-                <span>DLight<br>照度 lx<br>透明カバーへ</span>
+                <span>DLight<br>照度 lx<br>透明カバーへ<br><span class="price">公式 $5.50</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://docs.m5stack.com/en/unit/pahub" target="_blank" rel="noopener noreferrer"><img src="https://static-cdn.m5stack.com/resource/docs/products/unit/pahub/pahub_01.webp" alt="M5Stack PaHUB I2C分岐"></a>
-                <span>Grove Hub / PaHUB<br>I2C分岐</span>
+                <span>Grove Hub / PaHUB<br>I2C分岐<br><span class="price">公式 $4.50</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://www.amazon.co.jp/dp/B0BVLYPYT1" target="_blank" rel="noopener noreferrer"><img src="https://us.switch-bot.com/cdn/shop/files/switchbot-indoor-outdoor-thermo-hygrometer-610954.jpg" alt="SwitchBot 防水温湿度計" onerror="this.style.display='none'"></a>
-                <span>SwitchBot<br>防水温湿度計<br>BLE/Hub/API</span>
+                <span>SwitchBot<br>防水温湿度計<br>BLE/Hub/API<br><span class="price">Amazon 1,780円</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://www.amazon.co.jp/s?k=%E7%85%A7%E5%BA%A6+UV+WiFi+%E3%82%A6%E3%82%A7%E3%82%B6%E3%83%BC%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank" rel="noopener noreferrer"><div class="fallback" style="display:flex">WIFI<br>WEATHER<br>SENSOR</div></a>
-                <span>Wi-Fiウェザーステーション候補<br>温湿度+照度/UV<br>Wi-Fi/APP</span>
+                <span>Wi-Fiウェザーステーション候補<br>温湿度+照度/UV<br>Wi-Fi/APP<br><span class="price">1.7万〜3.8万円級</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://fieldpro.jp/product/t-sensor/fp1806/" target="_blank" rel="noopener noreferrer"><img src="https://fieldpro.jp/wp-content/uploads/2024/05/FP1806_01.jpg" alt="フィールドプロ FP1806 小型自然通風シェルター" onerror="this.style.display='none'"></a>
-                <span>FP1806級<br>自然通風<br>シェルター</span>
+                <span>FP1806級<br>自然通風<br>シェルター<br><span class="price">価格要確認</span></span>
               </div>
               <div class="part">
                 <a class="buy-link" href="https://www.amazon.co.jp/s?k=%E9%80%8F%E6%98%8E%E3%83%95%E3%82%BF+%E5%B0%8F%E5%9E%8B%E3%82%B1%E3%83%BC%E3%82%B9+%E9%98%B2%E6%B0%B4" target="_blank" rel="noopener noreferrer"><div class="fallback" style="display:flex">CLEAR<br>COVER</div></a>
-                <span>DLight用<br>透明カバー</span>
+                <span>DLight用<br>透明カバー<br><span class="price">数百円〜</span></span>
               </div>
             </div>
           </div>
@@ -1652,6 +1664,7 @@
               <div class="target-part">
                 <a class="buy-link" href="https://www.dfrobot.com/product-2054.html" target="_blank" rel="noopener noreferrer"><img src="https://dfimg.dfrobot.com/enshop/SEN0308/SEN0308_Main_01.jpg" alt="DFRobot SEN0308 IP65 防水土壌水分センサー"></a>
                 <b>DFRobot SEN0308</b>
+                <span class="price">公式 $14.90</span>
                 <p>Grove2DupontでM5StickS3へ接続。</p>
                 <ul class="wire-list">
                   <li>Signal -> G9 / ADC</li>
@@ -1662,6 +1675,7 @@
               <div class="target-part">
                 <a class="buy-link" href="https://www.adafruit.com/product/3910" target="_blank" rel="noopener noreferrer"><img src="https://cdn-shop.adafruit.com/970x728/3910-02.jpg" alt="Adafruit 5V-6V チューブポンプ"></a>
                 <b>5V-6V チューブポンプ</b>
+                <span class="price">公式 $9.95級</span>
                 <p>DFR0457 MOSFET経由でG10からON/OFF。</p>
                 <ul class="wire-list">
                   <li>G10 -> MOSFET IN</li>
@@ -1684,6 +1698,7 @@
             <div class="node-content">
               <small>shiso planter</small>
               <b>大葉用 横長プランター + M5固定支柱</b>
+              <span class="price">プランター要確認</span>
               <p>目安: 幅60〜65cm、深さ20cm以上、2〜3株。土に短い支柱か小型ワイヤーネットを立て、M5箱をプランター外側へ固定する。</p>
               <a class="buy-hint" href="https://www.amazon.co.jp/s?k=%E3%82%B9%E3%82%B4%E3%83%A8%E3%82%B3+%E3%83%97%E3%83%A9%E3%83%B3%E3%82%BF%E3%83%BC" target="_blank" rel="noopener noreferrer">プランター候補を探す</a>
               <div class="planter-plan" aria-label="大葉プランター上面図">
@@ -1704,6 +1719,7 @@
             <div class="node-content">
               <small>water source</small>
               <b>水源: 2Lペットボトル or 3L級タンク</b>
+              <span class="price">0円〜数百円</span>
               <p>大葉2株の検証なら5Lは大きめ。まずは2Lペットボトルで試し、常設するならダイソー3.5Lコック付きやワッツ3L級へ。倒れないよう固定し、吸水チューブ先端は底近くへ入れる。</p>
               <a class="buy-hint" href="https://watts-online.jp/products/38122" target="_blank" rel="noopener noreferrer">3L級タンク候補を見る</a>
             </div>
