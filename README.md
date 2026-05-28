@@ -91,6 +91,8 @@ IP65防滴ボックス = M5側
 | Ambient Weather WS-2000 | 68,783円 | ◎ | △ | ◎ | ○ | ○ | APIあり。WS-5000より従来型 |
 | Sainlogic WiFi系 | 52,452円 | △ | × | ○ | × | ○ | WU/WeatherCloud中心。直接API用途では弱い |
 | Moongiantgo系 | 26,850〜38,850円 | △ | × | ○ | × | ○ | 安いがAPI未確定。本命にはしない |
+| QYTEC 0345 5-in-1 | 16,000円 | × | × | × | × | ○ | 安いが温湿度/風/雨のみ。API/照度UVなし |
+| 自作 ESP32/M5Stack 気象ノード | 約18,000〜45,000円 | ◎ | ◎ | ◎ | ○ | 部品次第 | API自由度は最高。防水/校正/設置が作業量大 |
 | SwitchBot + Hub | 7,010円 | ○ | △ | × | × | ◎ | 温湿度だけ。照度/UVなし |
 
 記号: ◎=公式情報で強い、○=可能、△=条件付き/要確認、×=不足。
@@ -118,6 +120,7 @@ IP65防滴ボックス = M5側
 | Ambient Weather WS-5000 | `B09V3FVJGG` | Amazon表示 73,448円 | 温湿度、solar radiation、UV、風、雨。REST/Real-Time API | https://www.amazon.co.jp/dp/B09V3FVJGG |
 | Ambient Weather WS-2000 | `B07GRBY9NP` | Amazon表示 68,783円 | 温湿度、UV、風、雨。REST/Real-Time API | https://www.amazon.co.jp/dp/B07GRBY9NP |
 | Sainlogic Smart WiFi SA6 Plus | `B0FVM5NDJC` | Amazon表示 52,452円 | Wi-Fi/App/WU/WeatherCloud系。APIは弱い | https://www.amazon.co.jp/dp/B0FVM5NDJC |
+| QYTEC 0345 5-in-1 | `B0BVP2NYN7` | Amazon表示 16,000円 | 温度、湿度、風速、風向、降水量。API/照度/UVなし | https://www.amazon.co.jp/dp/B0BVP2NYN7 |
 | JoyeeLii スマート気象観測ステーション | `B0GM6Q7BJV` | Amazon表示 17,699円 | 温度、湿度、UV、雨、風。照度は商品名に明記なし | https://www.amazon.co.jp/dp/B0GM6Q7BJV |
 | Moongiantgo スマホアプリ接続 気象観測器 | `B0DRHXMBKC` | Amazon表示 26,850円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0DRHXMBKC |
 | 特大画面WIFIプロフェッショナル屋外センサー | `B0GZWH4183` | Amazon表示 27,949円 | 温度、湿度、照度、UV、雨、風 | https://www.amazon.co.jp/dp/B0GZWH4183 |
@@ -152,6 +155,28 @@ Amazonアプリで直リンクが開けない場合は、Amazon検索欄にASIN�
 | WeatherFlow Tempest | REST API、WebSocket API、UDP Broadcast、Personal Access Token | https://weatherflow.github.io/Tempest/api/ |
 | Ambient Weather | JSON形式のREST/Real-Time API、API key、application key | https://ambientweather.com/support/question/view/id/1811/ |
 | Sainlogic | Weather Underground、WeatherCloud、App連携 | https://www.sainlogic.com/it/pages/0310-key-features |
+
+## 自作見積もり
+
+| 構成 | 概算 | 取れるもの | API | 注意 |
+|---|---:|---|---|---|
+| 最小API構成 | 8,000〜15,000円 | 温湿度、照度 | ◎ MQTT/HTTP自由 | 雨風なし。まず育成判断用 |
+| 大葉向け常設API構成 | 18,000〜30,000円 | 温湿度、照度、UV、土壌水分 | ◎ MQTT/HTTP自由 | 風雨なし。栽培には一番現実的 |
+| フル気象自作 | 30,000〜45,000円 | 温湿度、照度、UV、風速、風向、雨量、土壌水分 | ◎ MQTT/HTTP自由 | 防水、支柱、校正、風雨センサー固定が面倒 |
+
+自作の部品目安:
+
+| 部品 | 概算 | 用途 |
+|---|---:|---|
+| M5StickS3/ESP32 | 3,000〜5,000円 | Wi-Fi/API送信 |
+| SHT31/SHT35 または BME280 | 1,000〜3,000円 | 温湿度/気圧 |
+| BH1750/TSL2591 | 500〜2,000円 | 照度 |
+| VEML6075/LTR390 | 1,000〜3,000円 | UV |
+| 防水土壌水分センサー | 2,000〜6,000円 | 土壌水分 |
+| 風速/風向センサー | 4,000〜10,000円 | 風 |
+| 転倒ます雨量計 | 3,000〜8,000円 | 雨量 |
+| 自然通風シェルター/防水箱/ケーブルグランド | 5,000〜12,000円 | 屋外保護 |
+| 支柱/固定具/ケーブル | 2,000〜6,000円 | 設置 |
 
 ## 照度の扱い
 
