@@ -676,6 +676,7 @@
         <h1>ベランダで大葉エージェントIoT</h1>
         <p class="lead">大葉用の横長プランター、水源、100V側、5V制御側の位置関係を一枚で確認するための簡易構成図です。画像は各メーカー・販売元ページの公開画像を参照し、購入前の最終仕様確認は別途行います。</p>
         <nav class="quick-nav" aria-label="ページ内リンク">
+          <a href="#power-route">必須の電源導線</a>
           <a href="#weather-station">自作ウェザーステーション</a>
           <a href="#overall">全体構成</a>
           <a href="#daiso-case">ダイソーケース</a>
@@ -685,19 +686,59 @@
       </div>
       <aside class="status">
         <strong>買う前の配置確認</strong>
-        <p>まず北向きベランダの明るさと温湿度を見る。給水と土壌水分はその後。</p>
+        <p>まず100Vを安全に5Vへ落とす導線を固定。その5Vで北向きベランダの明るさと温湿度を見る。</p>
       </aside>
     </header>
 
       <div class="section-panel">
         <h2 class="section-heading">ページの結論</h2>
-        <p>まず作るのは、ダイソーの蓋付き透明ケースに M5StickS3、ENV III/ENV IV、DLight、Unit Hub/PaHUB を入れる簡易ウェザーステーション。ハンダは使わず、Groveケーブルで差すだけにする。</p>
+        <p>最初に必要なのは、コンセントから屋外用電源ボックスまでの安全な電源導線。その後、5V USB-Cだけをダイソー透明ケースへ送り、M5StickS3、ENV III/ENV IV、DLight、Unit Hub/PaHUB の簡易ウェザーステーションを作る。</p>
         <p>ベランダ常設の注意点は、温湿度を密閉箱の熱だまりで測らないこと。ケース左右に通風スリットを作り、防虫メッシュ、底面水抜き、下向きケーブル出口を入れる。照度は透明面の裏で空を見せる。</p>
       </div>
 
+      <section class="section-panel" id="power-route" aria-label="必須の電源導線図解">
+        <h2 class="section-heading">必須の電源導線</h2>
+        <div class="weather-station">
+          <div class="station-box">
+            <h3>防雨形コンセント</h3>
+            <div class="station-img">
+              <span class="fallback" style="display:grid">OUTDOOR<br>OUTLET<br>100V</span>
+            </div>
+            <ul>
+              <li>既設の屋外コンセント</li>
+              <li>加工しない</li>
+              <li>完成品だけを挿す</li>
+            </ul>
+          </div>
+          <div class="station-box">
+            <h3>HATAYA防雨延長</h3>
+            <a class="station-img" href="https://www.hataya.jp/products/cordreel/post1066/" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.hataya.jp/uploads/product/1066/1_1.jpg" alt="HATAYA BFX 防雨延長コード">
+            </a>
+            <ul>
+              <li>漏電遮断付き</li>
+              <li>100V側の安全境界</li>
+              <li>メス側を電源ボックスへ</li>
+            </ul>
+          </div>
+          <div class="station-box main">
+            <h3>100V側 電源ボックス</h3>
+            <a class="station-img" href="https://www.amazon.co.jp/s?k=Hrensaw+%E5%A4%A7%E5%9E%8B%E5%B1%8B%E5%A4%96%E9%9B%BB%E6%B0%97%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9+IP54" target="_blank" rel="noopener noreferrer">
+              <img src="https://restmo.online/cdn/shop/files/1600.png" alt="Hrensaw 屋外電気ボックス">
+            </a>
+            <ul>
+              <li>延長コードのメス側</li>
+              <li>USB-C ACアダプタ</li>
+              <li>100Vはこの箱で止める</li>
+            </ul>
+          </div>
+        </div>
+        <div class="station-flow">100V側電源ボックス<br>↓<br>USB-C ACアダプタで5V化<br>↓<br>5V USB-Cだけをダイソー透明ケースへ</div>
+      </section>
+
       <section class="section-panel" id="weather-station" aria-label="自作簡易ウェザーステーション図解">
         <h2 class="section-heading">自作簡易ウェザーステーション図解</h2>
-        <div class="station-flow"><a href="#overall">全体構成の100V側電源ボックス</a><br>↓<br>5V USB-Cだけをダイソー透明ケースへ</div>
+        <div class="station-flow"><a href="#power-route">上の電源導線</a><br>↓<br>5V USB-Cだけを受ける</div>
         <div class="weather-station">
           <div class="station-box">
             <h3>透明面 / 空側</h3>
