@@ -46,6 +46,14 @@ Amazon で購入する前提の候補リストです。商品リンクは価格�
 | 照度込み | Ecowitt WS2910級 Wi-Fiウェザーステーション | 温度、湿度、光/UV、雨、風 | Wi-Fi、Ecowitt.net、Weather Underground/Weathercloud/WOW、モデルによりCustom upload | 北向きの明るさまで見たいならこちら |
 | DIY | ENV III + DLight + シェルター | 温度、湿度、気圧、照度 | M5StickS3経由 | 学習には良いが、防水と配線が増える |
 
+Amazon検索リンク:
+
+- Ecowitt WS2910: https://www.amazon.co.jp/s?k=Ecowitt+WS2910
+- Ecowitt 照度 UV ウェザーステーション: https://www.amazon.co.jp/s?k=Ecowitt+%E7%85%A7%E5%BA%A6+UV+%E3%82%A6%E3%82%A7%E3%82%B6%E3%83%BC%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3
+- SwitchBot 防水温湿度計: https://www.amazon.co.jp/s?k=SwitchBot+%E9%98%B2%E6%B0%B4%E6%B8%A9%E6%B9%BF%E5%BA%A6%E8%A8%88
+- SwitchBot Hub Mini: https://www.amazon.co.jp/s?k=SwitchBot+Hub+Mini
+- 照度計/ルクスメーター: https://www.amazon.co.jp/s?k=%E7%85%A7%E5%BA%A6%E8%A8%88+%E3%83%AB%E3%82%AF%E3%82%B9%E3%83%A1%E3%83%BC%E3%82%BF%E3%83%BC
+
 ## 環境情報コスト比較
 
 価格は 2026-05-28 時点の確認ベースの概算。USD品は 1 USD = 約160円で丸める。送料、セール、在庫差、国内代理店価格は別。
