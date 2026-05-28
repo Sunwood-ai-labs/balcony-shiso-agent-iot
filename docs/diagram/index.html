@@ -454,6 +454,15 @@
       font-size: 14px;
     }
 
+    .section-heading {
+      margin: 24px 0 8px;
+      padding: 12px 14px;
+      background: #eef7ee;
+      border-left: 6px solid var(--green);
+      color: var(--green);
+      font: 900 18px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
     .extras {
       margin-top: 18px;
       display: grid;
@@ -727,7 +736,7 @@
       <p class="callout">環境情報も取るなら: ENV IIIで温度・湿度・気圧、DLightで照度を追加。G9/G10はI2Cに使い、土壌水分はUnit ADC、ポンプ制御はEXT.IO2へ逃がす。</p>
       <p class="callout">センサー保護: ENV IIIやDLightは裸で雨ざらしにしない。外気用には小型百葉箱/自然通風シェルター、照度用には透明カバーを別途用意する。</p>
       <p class="callout">具体候補: ENV IIIはフィールドプロFP1806級の小型自然通風シェルター、DLightは透明フタ付き小型ケースを候補にする。百葉箱にDLightを入れると暗く測る。</p>
-      <p class="callout">実例傾向: 屋外DIYでは、温湿度は放射シールド/Stevenson screenに入れる。既製品を買う、3Dプリントする、白い皿状パーツで自作する、の3パターンが多い。</p>
+      <p class="callout">実例傾向: 屋外DIYでは、温湿度は放射シールド/Stevenson screenに入れる。既製品を買う、3Dプリントする、白い皿状パーツで自作する、の3パターンが多い。下の「既存自作事例」表にリンク付きで整理。</p>
       <p class="callout">簡単案: 屋外温湿度はSwitchBot防水温湿度計に任せる。照度/UVまで欲しいなら、Ecowitt固定ではなく同じ機能要件のWi-Fiウェザーステーションから選ぶ。M5は土壌水分とポンプ制御に集中。</p>
       <p class="callout">API前提なら判断を変える。安いWi-Fi気象計はAPI未確定。メーカー公式でAPIが強い候補は Ecowitt、WeatherFlow Tempest、Ambient Weather。</p>
       <p class="callout">GW1100+WS90の代替: 第一候補はECOWITT Wittboy GW2001/WS90。API確度を落とさず、Amazon表示47,568円でGW1100+WS90より安い。</p>
@@ -736,6 +745,7 @@
       <p class="callout">照度は必須: 北向きで何が育つかを決める入口。フェーズ1は照度まで常設で取り、UVは外す。</p>
       <p class="callout">電源: ウェザーステーション屋外センサーはソーラー+電池で動かし、100Vを引かない。表示機/ゲートウェイは室内USB/AC、または100V箱側で保護して給電。</p>
       <p class="callout">Amazon商品リンク: SwitchBot防水温湿度計、SwitchBot Hub Mini、照度/UV込みウェザーステーション候補をASIN付き商品ページへリンク。照度計は型番決定後に商品URL化する。</p>
+      <h2 class="section-heading">まず作る透明ケース案</h2>
       <table class="link-table" aria-label="透明ケース簡易版設計図">
         <thead>
           <tr>
@@ -878,6 +888,7 @@
           </tr>
         </tbody>
       </table>
+      <h2 class="section-heading" id="case-studies">既存自作事例</h2>
       <table class="link-table" aria-label="既存自作事例表">
         <thead>
           <tr>
