@@ -697,6 +697,7 @@
           <a href="#overall">全体構成</a>
           <a href="#daiso-case">ダイソーケース</a>
           <a href="#case-studies">既存事例</a>
+          <a href="#ready-made-combo">既製品案</a>
           <a href="#comparison">比較表</a>
         </nav>
       </div>
@@ -1212,6 +1213,123 @@
         ダイソー透明ケースは最短プロトタイプとしては使える。ただし常設の本命は、電子回路箱と温湿度の通風部を分ける構成。照度センサーは透明面または外向き、温湿度センサーは小さな白い通風カバーへ出す。
       </div>
       <h2 class="section-heading" id="comparison">API前提の比較表</h2>
+      <h2 class="section-heading" id="ready-made-combo">既製品組み合わせ案</h2>
+      <div class="note">
+        <strong>作れる:</strong>
+        SwitchBot防水温湿度計で温度/湿度、Tuya/Zigbeeの日光・雨センサーで明るさ/雨を取れば、簡易ウェザーステーション相当にはなる。
+        ただし、SwitchBotとTuyaを混ぜるとデータ取得経路が2系統になる。APIを一本化したいなら Home Assistant / MQTT で集約するか、最初からM5自作に寄せる。
+      </div>
+      <table class="link-table" aria-label="既製品組み合わせウェザーステーション比較">
+        <thead>
+          <tr>
+            <th>構成</th>
+            <th>概算価格</th>
+            <th>取れるもの</th>
+            <th>API/データ取得</th>
+            <th>電源</th>
+            <th>加工</th>
+            <th>判断</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SwitchBot防水温湿度計 + Hub Mini</td>
+            <td>約7,010円<br><small>温湿度計1,780円 + Hub 5,230円</small></td>
+            <td>温度、湿度、絶対湿度、露点、VPD</td>
+            <td>SwitchBot Cloud/OpenAPI、アプリCSV、Home Assistant連携</td>
+            <td>屋外センサー: 単4電池<br>Hub: 室内USB給電</td>
+            <td>なし</td>
+            <td>一番ラク。ただし照度がないので、北向きベランダの明るさ判定には不足。</td>
+          </tr>
+          <tr>
+            <td>SwitchBot防水温湿度計 + Hub Mini + Tuya Zigbee日光/雨センサー + Tuya Zigbee Gateway</td>
+            <td>約13,800〜15,500円<br><small>7,010円 + 日光/雨4,831円 + Zigbee Gateway目安</small></td>
+            <td>温度、湿度、明るさ、雨検知、電池</td>
+            <td>SwitchBot系とTuya系で分離。Tuya Cloud APIは可能だが設定が重い。Home Assistantで集約すると扱いやすい。</td>
+            <td>SwitchBot: 電池<br>日光/雨: ソーラー充電<br>Gateway: 室内USB給電</td>
+            <td>なし</td>
+            <td>既製品だけで目的にかなり近い。API一本化が課題。</td>
+          </tr>
+          <tr>
+            <td>Tuya Zigbee日光/雨センサー + Tuya温湿度センサー + Tuya Gateway</td>
+            <td>約9,000〜13,000円</td>
+            <td>温度、湿度、明るさ、雨検知</td>
+            <td>Tuya/Smart Life内で揃う。Tuya Cloud APIで読める可能性あり。</td>
+            <td>屋外側: 電池/ソーラー<br>Gateway: 室内USB給電</td>
+            <td>なし</td>
+            <td>アプリを1つに寄せられる。ただし温湿度センサーの屋外防水仕様は商品ごとに確認が必要。</td>
+          </tr>
+          <tr>
+            <td>Tuya Zigbee日光/雨センサー + Sonoff Zigbee USB Dongle + Zigbee2MQTT</td>
+            <td>約8,000〜12,000円<br><small>常時稼働PC/RPiがある場合</small></td>
+            <td>明るさ、雨検知、電池。温湿度センサー追加で環境値</td>
+            <td>ローカルMQTT。RB-SRAIN01系はZigbee2MQTTで illuminance / rain / battery が見える。</td>
+            <td>センサー: ソーラー<br>USBドングル: 常時稼働機</td>
+            <td>ソフト設定あり</td>
+            <td>ローカルAPI重視なら強い。ただし初心者向けのラクさは落ちる。</td>
+          </tr>
+          <tr>
+            <td>M5StickS3 + ENV + DLight + ダイソー透明ケース</td>
+            <td>約12,000〜15,000円<br><small>100V->5V電源込みの目安</small></td>
+            <td>温度、湿度、気圧、照度</td>
+            <td>M5がHTTP JSON/MQTTで直接出せる。APIは自由。</td>
+            <td>USB-C 5V常時給電</td>
+            <td>ケース穴あけ、通風スリット、ケーブル入口</td>
+            <td>APIと自由度は一番わかりやすい。工作は必要。</td>
+          </tr>
+          <tr>
+            <td>ECOWITT Wittboy GW2001/WS90</td>
+            <td>47,568円</td>
+            <td>温湿度、照度/light、UV、風、雨</td>
+            <td>Ecowitt Cloud API、LAN HTTP API、Custom upload系</td>
+            <td>屋外センサー: ソーラー/電池<br>Gateway: 室内電源</td>
+            <td>設置のみ</td>
+            <td>高いが一体型で強い。二度手間を避けるなら本命。</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="link-table" aria-label="既製品組み合わせに必要な部品">
+        <thead>
+          <tr>
+            <th>部品</th>
+            <th>目安価格</th>
+            <th>役割</th>
+            <th>購入/確認リンク</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SwitchBot 防水温湿度計</td>
+            <td>Amazon表示 1,780円</td>
+            <td>屋外の温度・湿度。IP65、Bluetooth、Hub追加でリモート確認。</td>
+            <td><a href="https://www.amazon.co.jp/dp/B0BVLYPYT1" target="_blank" rel="noopener noreferrer">Amazon</a> / <a href="https://us.switch-bot.com/pages/switchbot-indoor-outdoor-thermo-hygrometer" target="_blank" rel="noopener noreferrer">メーカー仕様</a></td>
+          </tr>
+          <tr>
+            <td>SwitchBot Hub Mini Matter対応版</td>
+            <td>Amazon表示 5,230円</td>
+            <td>SwitchBot温湿度計をクラウド/API/スマートホームへ逃がす。</td>
+            <td><a href="https://www.amazon.co.jp/dp/B0DSPXKDP8" target="_blank" rel="noopener noreferrer">Amazon</a></td>
+          </tr>
+          <tr>
+            <td>zmart / Tuya Zigbee 日光・雨センサー</td>
+            <td>スクショ表示 4,831円</td>
+            <td>日光/明るさ、雨検知。ソーラー充電。Smart Life/Tuya系。</td>
+            <td><a href="https://www.amazon.co.jp/s?k=zmart+Tuya+Zigbee+%E6%97%A5%E5%85%89+%E9%9B%A8%E3%82%BB%E3%83%B3%E3%82%B5%E3%83%BC" target="_blank" rel="noopener noreferrer">Amazon検索</a> / <a href="https://www.zigbee2mqtt.io/devices/RB-SRAIN01.html" target="_blank" rel="noopener noreferrer">Zigbee2MQTT対応例</a></td>
+          </tr>
+          <tr>
+            <td>Tuya Zigbee Gateway</td>
+            <td>約2,000〜3,500円</td>
+            <td>Tuya日光/雨センサーをSmart Lifeアプリへ接続。</td>
+            <td><a href="https://www.amazon.co.jp/s?k=Tuya+Zigbee+Gateway+Smart+Life" target="_blank" rel="noopener noreferrer">Amazon検索</a></td>
+          </tr>
+          <tr>
+            <td>Sonoff Zigbee USB Dongle</td>
+            <td>約3,000〜5,000円級</td>
+            <td>Tuya Gatewayを使わず、Home Assistant/Zigbee2MQTTでローカルMQTT化。</td>
+            <td><a href="https://www.amazon.co.jp/s?k=SONOFF+Zigbee+3.0+USB+Dongle+Plus" target="_blank" rel="noopener noreferrer">Amazon検索</a> / <a href="https://www.zigbee2mqtt.io/devices/RB-SRAIN01.html" target="_blank" rel="noopener noreferrer">対応デバイス例</a></td>
+          </tr>
+        </tbody>
+      </table>
       <table class="link-table" aria-label="API前提の星取表">
         <thead>
           <tr>

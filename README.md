@@ -97,6 +97,18 @@ IP65防滴ボックス = M5側
 
 記号: ◎=公式情報で強い、○=可能、△=条件付き/要確認、×=不足。
 
+## 既製品組み合わせ案
+
+SwitchBot防水温湿度計とTuya/Zigbee日光・雨センサーを組み合わせれば、温湿度 + 明るさ + 雨検知の簡易ウェザーステーションは作れる。ただし、SwitchBot系とTuya系でAPI/アプリが分かれるため、一本化したい場合はHome Assistant/MQTTで集約する。
+
+| 構成 | 概算価格 | 取れるもの | API/データ取得 | 判断 |
+|---|---:|---|---|---|
+| SwitchBot防水温湿度計 + Hub Mini | 約7,010円 | 温度、湿度、VPDなど | SwitchBot Cloud/OpenAPI、アプリCSV、Home Assistant | 最小で楽。ただし照度なし |
+| SwitchBot + Hub + Tuya Zigbee日光/雨 + Tuya Gateway | 約13,800〜15,500円 | 温度、湿度、明るさ、雨検知 | SwitchBotとTuyaで分離。Home Assistant集約が現実的 | 既製品だけなら有力 |
+| Tuya日光/雨 + Tuya温湿度 + Tuya Gateway | 約9,000〜13,000円 | 温度、湿度、明るさ、雨検知 | Tuya/Smart Life、Tuya Cloud APIは要設定 | アプリを1つに寄せられるが屋外温湿度仕様を要確認 |
+| Tuya日光/雨 + Sonoff Zigbee USB Dongle + Zigbee2MQTT | 約8,000〜12,000円 | 明るさ、雨検知、電池。温湿度は追加 | ローカルMQTT | ローカルAPI重視なら強いが設定が重い |
+| M5StickS3 + ENV + DLight | 約12,000〜15,000円 | 温度、湿度、気圧、照度 | HTTP JSON/MQTTを自由に実装 | 工作は必要だがAPIが一番素直 |
+
 ## 電源まわり
 
 ウェザーステーションを入れる場合でも、屋外センサーへ100Vは引かない。

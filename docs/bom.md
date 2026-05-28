@@ -46,6 +46,18 @@ Amazon で購入する前提の候補リストです。商品リンクは価格�
 | 照度込み | Wi-Fiウェザーステーション各種 | 温度、湿度、光/UV、雨、風 | Wi-Fi、アプリ連動、モデルにより外部サービス/API | 北向きの明るさまで常時見たいならこちら。Ecowitt固定ではなく同等要件で選ぶ |
 | DIY | ENV III + DLight + シェルター | 温度、湿度、気圧、照度 | M5StickS3経由 | 学習には良いが、防水と配線が増える |
 
+## 既製品組み合わせ案
+
+SwitchBot防水温湿度計とTuya/Zigbee日光・雨センサーを組み合わせれば、温湿度 + 明るさ + 雨検知の簡易ウェザーステーションは作れる。問題は、SwitchBot系とTuya系でAPI/アプリが分かれること。データを一本化するならHome Assistant/MQTTで集約する。
+
+| 構成 | 概算価格 | 取れるもの | API/データ取得 | 電源 | 判断 |
+|---|---:|---|---|---|---|
+| SwitchBot防水温湿度計 + Hub Mini | 約7,010円 | 温度、湿度、VPDなど | SwitchBot Cloud/OpenAPI、アプリCSV、Home Assistant | センサー電池、Hub室内USB | 楽だが照度なし |
+| SwitchBot + Hub + Tuya Zigbee日光/雨 + Tuya Gateway | 約13,800〜15,500円 | 温度、湿度、明るさ、雨検知 | SwitchBotとTuyaで分離。Home Assistant集約が現実的 | 電池/ソーラー + Gateway室内USB | 既製品だけなら有力 |
+| Tuya日光/雨 + Tuya温湿度 + Tuya Gateway | 約9,000〜13,000円 | 温度、湿度、明るさ、雨検知 | Tuya/Smart Life、Tuya Cloud APIは要設定 | 電池/ソーラー + Gateway室内USB | アプリを1つに寄せられるが屋外温湿度仕様を要確認 |
+| Tuya日光/雨 + Sonoff Zigbee USB Dongle + Zigbee2MQTT | 約8,000〜12,000円 | 明るさ、雨検知、電池。温湿度は追加 | ローカルMQTT。RB-SRAIN01系はZigbee2MQTT対応例あり | センサーソーラー、常時稼働機 | ローカルAPI重視なら強いが設定が重い |
+| M5StickS3 + ENV + DLight | 約12,000〜15,000円 | 温度、湿度、気圧、照度 | HTTP JSON/MQTTを自由に実装 | USB-C 5V常時給電 | 工作は必要だがAPIが一番素直 |
+
 Amazon商品リンク:
 
 | 用途 | 商品 | ASIN | 確認価格 | 機能 | 電源/通信 | URL | 開けない時 |
