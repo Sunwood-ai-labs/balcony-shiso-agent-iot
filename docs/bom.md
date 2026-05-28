@@ -48,24 +48,24 @@ Amazon で購入する前提の候補リストです。商品リンクは価格�
 
 Amazon商品リンク:
 
-| 用途 | 商品 | ASIN | 概算価格 | 機能 | 電源/通信 | URL | 開けない時 |
+| 用途 | 商品 | ASIN | 確認価格 | 機能 | 電源/通信 | URL | 開けない時 |
 |---|---|---|---:|---|---|---|---|
-| 照度込みウェザーステーション | Ecowitt WS2910級 Wi-Fi Weather Station | B0991GVBYK | 約20,000円前後 | 温度、湿度、照度/日射、UV、雨、風 | 屋外センサーはソーラー+電池、表示機はUSB/AC、Wi-Fi/API系 | https://www.amazon.co.jp/dp/B0991GVBYK | Amazon検索欄に `B0991GVBYK` を入れる |
-| 屋外温湿度 | SwitchBot 防水温湿度計 | B0BVLYPYT1 | 約2,000円 | 温度、湿度 | 電池、Bluetooth。Hub追加でクラウド/API | https://www.amazon.co.jp/dp/B0BVLYPYT1 | Amazon検索欄に `B0BVLYPYT1` を入れる |
-| SwitchBotクラウド連携 | SwitchBot Hub Mini Matter対応版 | B0DSPXKDP8 | 約5,000〜6,000円 | SwitchBot機器の遠隔確認、API/通知連携 | USB給電、Wi-Fi/Bluetooth | https://www.amazon.co.jp/dp/B0DSPXKDP8 | Amazon検索欄に `B0DSPXKDP8` を入れる |
+| 照度込みウェザーステーション | Ecowitt WS2910級 Wi-Fi Weather Station | B0991GVBYK | 公式 $123.99 = 19,838円換算 | 温度、湿度、照度/日射、UV、雨、風 | 屋外センサーはソーラー+電池、表示機はUSB/AC、Wi-Fi/API系 | https://www.amazon.co.jp/dp/B0991GVBYK | Amazon検索欄に `B0991GVBYK` を入れる |
+| 屋外温湿度 | SwitchBot 防水温湿度計 | B0BVLYPYT1 | 公式 1,980円 | 温度、湿度 | 電池、Bluetooth。Hub追加でクラウド/API | https://www.amazon.co.jp/dp/B0BVLYPYT1 | Amazon検索欄に `B0BVLYPYT1` を入れる |
+| SwitchBotクラウド連携 | SwitchBot Hub Mini Matter対応版 | B0DSPXKDP8 | 公式 5,980円 | SwitchBot機器の遠隔確認、API/通知連携 | USB給電、Wi-Fi/Bluetooth | https://www.amazon.co.jp/dp/B0DSPXKDP8 | Amazon検索欄に `B0DSPXKDP8` を入れる |
 | 照度計/ルクスメーター | 未定 | - | 0〜3,000円程度 | 手動の照度確認 | スマホアプリまたは電池式照度計 | - | 初期調査はスマホアプリでも可。買う場合は型番を決めてから商品URL化 |
 
 ## 環境情報コスト比較
 
-価格は 2026-05-28 時点の確認ベースの概算。USD品は 1 USD = 約160円で丸める。送料、セール、在庫差、国内代理店価格は別。
+価格は 2026-05-28 時点でブラウザから確認できた公式価格。Amazon.co.jpの商品ページ価格は取得できなかったため、Amazon価格としては扱わない。USD品は 1 USD = 160円で換算し、送料、セール、在庫差、国内代理店価格は別。
 
 | 方針 | 買うもの | 概算コスト | 取れる情報 | 追加工作 | コメント |
 |---|---|---:|---|---|---|
-| 最安・近距離 | SwitchBot 防水温湿度計のみ | 約2,000円 | 温度、湿度 | ほぼなし | スマホ/BLE圏内で見るだけなら最安。自動連携は弱い |
-| 推奨 | SwitchBot 防水温湿度計 + Hub Mini | 約7,500〜8,000円 | 温度、湿度 | ほぼなし | 屋外IP65。Hub経由で遠隔確認/API/通知へ逃がせる |
+| 最安・近距離 | SwitchBot 防水温湿度計のみ | 公式 1,980円 | 温度、湿度 | ほぼなし | スマホ/BLE圏内で見るだけなら最安。自動連携は弱い |
+| 推奨 | SwitchBot 防水温湿度計 + Hub Mini | 公式セット 7,480円 | 温度、湿度 | ほぼなし | 屋外IP65。Hub経由で遠隔確認/API/通知へ逃がせる |
 | 照度の初期調査 | スマホ照度アプリ、または安価な照度計 | 0〜3,000円程度 | 照度 | ほぼなし | 北向きで何が育つか判断する入口。まず朝/昼/夕方で測る |
-| 照度込み | Ecowitt WS2910級 一式 | 約20,000円前後 | 温度、湿度、光/UV、雨、風など | 設置のみ | 照度/UVまで欲しいなら最安寄りの本命。大葉プランターにはやや大げさ |
-| 高機能分離 | Ecowitt GW1100 + WS90級 | 約27,000円前後 | 温度、湿度、光/UV、雨、風など | 設置のみ | センサー拡張やCustom upload向き。ベランダ小規模には過剰気味 |
+| 照度込み | Ecowitt WS2910級 一式 | 公式 $123.99 = 19,838円換算 | 温度、湿度、光/UV、雨、風など | 設置のみ | 照度/UVまで欲しいなら最安寄りの本命。大葉プランターにはやや大げさ |
+| 高機能分離 | Ecowitt GW1100 + WS90級 | 未確認 | 温度、湿度、光/UV、雨、風など | 設置のみ | センサー拡張やCustom upload向き。ベランダ小規模には過剰気味 |
 | M5直結DIY | ENV III + DLight + PaHUB/Grove Hub + 保護カバー類 | 約8,000〜25,000円以上 | 温度、湿度、気圧、照度 | 多い | 学習には良いが、防水・シェルター・配線で手間が増える |
 
 現時点の判断: まずは SwitchBot 防水温湿度計 + Hub Mini が一番バランスがよい。照度が本当に必要になったら Ecowitt 系を追加検討する。M5側は土壌水分とポンプ制御へ集中させる。
