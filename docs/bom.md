@@ -179,6 +179,18 @@ API:
 
 穴は側面下寄りに開け、ケーブルは一度下へ垂らしてから箱へ入れる。
 
+### 既存事例
+
+| 事例 | URL | 構成 | この計画への反映 |
+|---|---|---|---|
+| Comprehensive Local Weather Station With ESP32 | https://www.instructables.com/Comprehensive-Local-Weather-Station-With-ESP32-for/ | ESP32、温湿度センサー、Stevenson Screen | 温湿度は通風シェルター内で測る |
+| Build a Weather Station Enclosure | https://www.instructables.com/Build-a-Weather-Station-Enclosure/ | 日射と雨を遮り、空気を通す筐体 | 左右スリットだけでなく白い外カバー/日除けが必要 |
+| ESP32 weather station guide | https://zbotic.in/build-an-esp32-weather-station-with-oled-display-complete-project-guide/ | ESP32、BME280、BH1750/LDR、ケーブルグランド | 温湿度 + 照度 + API構成は成立。ケーブルはグランドとドリップループ |
+| HiGrow enclosure | https://youmagine.com/designs/higrow-enclosure | ESP32植物センサー用屋外ケース | 植物系センサーの屋外ケース化事例。防湿処理が必要 |
+| 農業ハウスESP32温度監視 | https://www.shimanuki-farm.net/archives/2403/ | ESP32、防水ケース、温度送信 | 回路本体は防水/防滴箱へ入れる |
+
+反映方針: ダイソー透明ケースはプロトタイプ本体箱。常設寄りにするなら、温湿度センサーだけ小さな白い通風カバーへ出し、照度センサーは透明面または外向きにする。
+
 | 構成 | 概算 | 取れるもの | API | コメント |
 |---|---:|---|---|---|
 | 最低要件構成 | 7,000〜15,000円 | 温湿度、照度 | ◎ MQTT/HTTP/JSON自由 | まずこれ。UV/風雨/土壌水分は入れない |
