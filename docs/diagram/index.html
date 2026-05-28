@@ -1261,6 +1261,19 @@
             <td>温湿度だけなら最安級</td>
           </tr>
           <tr>
+            <td>M5簡易ウェザーステーション</td>
+            <td>12,000〜15,000円</td>
+            <td>◎</td>
+            <td>◎</td>
+            <td>◎</td>
+            <td>×</td>
+            <td>◎</td>
+            <td>×</td>
+            <td>△</td>
+            <td>電源箱</td>
+            <td>APIは一番素直</td>
+          </tr>
+          <tr>
             <td>zmart/Tuya日光・雨 + Zigbee2MQTT</td>
             <td>7,427円〜</td>
             <td>×</td>
@@ -1339,19 +1352,6 @@
             <td>高めで照度が弱い</td>
           </tr>
           <tr>
-            <td>M5StickS3 + ENV + DLight</td>
-            <td>12,000〜15,000円</td>
-            <td>◎</td>
-            <td>◎</td>
-            <td>◎</td>
-            <td>×</td>
-            <td>◎</td>
-            <td>×</td>
-            <td>△</td>
-            <td>電源箱</td>
-            <td>APIは一番素直</td>
-          </tr>
-          <tr>
             <td>ECOWITT Wittboy GW2001/WS90</td>
             <td>47,568円</td>
             <td>◎</td>
@@ -1370,6 +1370,54 @@
         <strong>記号:</strong>
         ◎=強い / ○=使える / △=条件つき / ×=不足。安く照度と雨だけ取るなら、zmart/Tuya日光・雨 + Zigbee2MQTT が一番筋が良い。
       </div>
+      <table class="link-table" aria-label="M5簡易ウェザーステーション部品内訳">
+        <thead>
+          <tr>
+            <th>部品</th>
+            <th>価格</th>
+            <th>役割</th>
+            <th>APIとの関係</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>M5StickS3</td>
+            <td>公式 $24.90</td>
+            <td>Wi-Fi付き本体</td>
+            <td>HTTP JSON / MQTTを直接出せる</td>
+          </tr>
+          <tr>
+            <td>ENV III / ENV IV</td>
+            <td>公式 $5.95〜</td>
+            <td>温度・湿度・気圧</td>
+            <td>M5が値を読む</td>
+          </tr>
+          <tr>
+            <td>DLight</td>
+            <td>公式 $5.50</td>
+            <td>照度 lux</td>
+            <td>M5が値を読む</td>
+          </tr>
+          <tr>
+            <td>Unit Hub / PaHUB</td>
+            <td>公式 $4.50</td>
+            <td>Grove分岐</td>
+            <td>ENVとDLightを同時接続</td>
+          </tr>
+          <tr>
+            <td>ダイソー透明ケース + 通線部品</td>
+            <td>330円 + 約1,200円</td>
+            <td>防滴・通風・USB-C入口</td>
+            <td>屋外設置のための外装</td>
+          </tr>
+          <tr>
+            <td>USB-C電源一式</td>
+            <td>約5,180円〜</td>
+            <td>ACアダプタ + USB-Cケーブル</td>
+            <td>M5を5Vで常時給電</td>
+          </tr>
+        </tbody>
+      </table>
       <table class="link-table" aria-label="既製品組み合わせに必要な部品">
         <thead>
           <tr>
