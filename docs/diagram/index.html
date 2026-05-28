@@ -729,11 +729,89 @@
       <p class="callout">具体候補: ENV IIIはフィールドプロFP1806級の小型自然通風シェルター、DLightは透明フタ付き小型ケースを候補にする。百葉箱にDLightを入れると暗く測る。</p>
       <p class="callout">実例傾向: 屋外DIYでは、温湿度は放射シールド/Stevenson screenに入れる。既製品を買う、3Dプリントする、白い皿状パーツで自作する、の3パターンが多い。</p>
       <p class="callout">簡単案: 屋外温湿度はSwitchBot防水温湿度計に任せる。照度/UVまで欲しいなら、Ecowitt固定ではなく同じ機能要件のWi-Fiウェザーステーションから選ぶ。M5は土壌水分とポンプ制御に集中。</p>
-      <p class="callout">API前提なら判断を変える。安いWi-Fi気象計はAPI未確定。Ecowittは公式にCloud API、LAN HTTP API、Home Assistant integration、Custom upload系が確認できるため本命。</p>
-      <p class="callout">ChromeでAmazon確認: ECOWITT Wittboy GW2001/WS90は47,568円、ECOWITT GW1100+WS90キットは68,273円。安いMoongiantgo系は26,850〜27,990円帯だがAPI未確定。</p>
-      <p class="callout">照度は必須: 北向きで何が育つかを決める入口。まずスマホ照度アプリか安価な照度計で朝/昼/夕方のluxを測る。常時IoT化はその後でよい。</p>
+      <p class="callout">API前提なら判断を変える。安いWi-Fi気象計はAPI未確定。メーカー公式でAPIが強い候補は Ecowitt、WeatherFlow Tempest、Ambient Weather。</p>
+      <p class="callout">GW1100+WS90の代替: 第一候補はECOWITT Wittboy GW2001/WS90。API確度を落とさず、Amazon表示47,568円でGW1100+WS90より安い。</p>
+      <p class="callout">照度は必須: 北向きで何が育つかを決める入口。二度手間を避けるなら、温湿度だけでなく照度/UVまで常設で取れる候補を選ぶ。</p>
       <p class="callout">電源: ウェザーステーション屋外センサーはソーラー+電池で動かし、100Vを引かない。表示機/ゲートウェイは室内USB/AC、または100V箱側で保護して給電。</p>
       <p class="callout">Amazon商品リンク: SwitchBot防水温湿度計、SwitchBot Hub Mini、照度/UV込みウェザーステーション候補をASIN付き商品ページへリンク。照度計は型番決定後に商品URL化する。</p>
+      <table class="link-table" aria-label="API前提の星取表">
+        <thead>
+          <tr>
+            <th>候補</th>
+            <th>価格</th>
+            <th>API確度</th>
+            <th>ローカル取得</th>
+            <th>照度/UV</th>
+            <th>土壌水分拡張</th>
+            <th>判断</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ECOWITT Wittboy GW2001/WS90</td>
+            <td>47,568円</td>
+            <td>◎</td>
+            <td>○</td>
+            <td>◎</td>
+            <td>○</td>
+            <td>第一候補。GW1100+WS90より安いAPI本命</td>
+          </tr>
+          <tr>
+            <td>ECOWITT GW1100 + WS90</td>
+            <td>68,273円</td>
+            <td>◎</td>
+            <td>◎</td>
+            <td>◎</td>
+            <td>◎</td>
+            <td>拡張重視。高いが強い</td>
+          </tr>
+          <tr>
+            <td>WeatherFlow Tempest</td>
+            <td>72,998円</td>
+            <td>◎</td>
+            <td>◎</td>
+            <td>◎</td>
+            <td>×</td>
+            <td>REST/WebSocket/UDPが強い。土壌水分は別系統</td>
+          </tr>
+          <tr>
+            <td>Ambient Weather WS-5000</td>
+            <td>73,448円</td>
+            <td>◎</td>
+            <td>△</td>
+            <td>◎</td>
+            <td>○</td>
+            <td>REST/Real-Time API。Ambientクラウド寄り</td>
+          </tr>
+          <tr>
+            <td>Ambient Weather WS-2000</td>
+            <td>68,783円</td>
+            <td>◎</td>
+            <td>△</td>
+            <td>◎</td>
+            <td>○</td>
+            <td>APIあり。WS-5000より従来型</td>
+          </tr>
+          <tr>
+            <td>Sainlogic WiFi系</td>
+            <td>52,452円</td>
+            <td>△</td>
+            <td>×</td>
+            <td>○</td>
+            <td>×</td>
+            <td>WU/WeatherCloud/App中心。直接API用途では弱い</td>
+          </tr>
+          <tr>
+            <td>Moongiantgo系</td>
+            <td>26,850〜38,850円</td>
+            <td>△</td>
+            <td>×</td>
+            <td>○</td>
+            <td>×</td>
+            <td>安いがAPI未確定。本命外</td>
+          </tr>
+        </tbody>
+      </table>
       <table class="link-table" aria-label="Amazon商品リンク表">
         <thead>
           <tr>
@@ -764,6 +842,42 @@
             <td>温度、湿度、light、UV、風、雨</td>
             <td>LAN/Cloud API系<br>Custom upload<br>センサー拡張</td>
             <td><a href="https://www.amazon.co.jp/dp/B0D8BNR5JL" target="_blank" rel="noopener noreferrer">Amazon商品ページ</a><br>開けない時はAmazon検索欄にASINを入れる</td>
+          </tr>
+          <tr>
+            <td>API代替・照度込み</td>
+            <td>WeatherFlow Tempest</td>
+            <td><code>B0868WY7NY</code></td>
+            <td>Amazon表示 72,998円</td>
+            <td>温湿度、solar radiation、UV、lux、風、雨</td>
+            <td>REST API<br>WebSocket<br>UDP Broadcast</td>
+            <td><a href="https://www.amazon.co.jp/dp/B0868WY7NY" target="_blank" rel="noopener noreferrer">Amazon商品ページ</a><br>開けない時はAmazon検索欄にASINを入れる</td>
+          </tr>
+          <tr>
+            <td>API代替・照度込み</td>
+            <td>Ambient Weather WS-5000</td>
+            <td><code>B09V3FVJGG</code></td>
+            <td>Amazon表示 73,448円</td>
+            <td>温湿度、solar radiation、UV、風、雨</td>
+            <td>REST/Real-Time API<br>API key + application key</td>
+            <td><a href="https://www.amazon.co.jp/dp/B09V3FVJGG" target="_blank" rel="noopener noreferrer">Amazon商品ページ</a><br>開けない時はAmazon検索欄にASINを入れる</td>
+          </tr>
+          <tr>
+            <td>API代替・照度込み</td>
+            <td>Ambient Weather WS-2000</td>
+            <td><code>B07GRBY9NP</code></td>
+            <td>Amazon表示 68,783円</td>
+            <td>温湿度、UV、風、雨</td>
+            <td>REST/Real-Time API<br>API key + application key</td>
+            <td><a href="https://www.amazon.co.jp/dp/B07GRBY9NP" target="_blank" rel="noopener noreferrer">Amazon商品ページ</a><br>開けない時はAmazon検索欄にASINを入れる</td>
+          </tr>
+          <tr>
+            <td>API弱め・照度込み</td>
+            <td>Sainlogic Smart WiFi SA6 Plus</td>
+            <td><code>B0FVM5NDJC</code></td>
+            <td>Amazon表示 52,452円</td>
+            <td>Wi-Fi/App/WU/WeatherCloud系</td>
+            <td>WU/WeatherCloud/App連携<br>独自API未確認</td>
+            <td><a href="https://www.amazon.co.jp/dp/B0FVM5NDJC" target="_blank" rel="noopener noreferrer">Amazon商品ページ</a><br>開けない時はAmazon検索欄にASINを入れる</td>
           </tr>
           <tr>
             <td>照度込みウェザーステーション</td>
@@ -899,7 +1013,7 @@
       </article>
       <article class="mini">
         <h3>照度の初期調査</h3>
-        <p>後回しにしない。スマホ照度アプリか安価な照度計で、朝/昼/夕方の明るさを先に測る。</p>
+        <p>後回しにしない。常設センサーで照度/UVを取る。スマホ照度アプリや照度計は設置前後の補助確認に使う。</p>
       </article>
       <article class="mini">
         <h3>電源分担</h3>

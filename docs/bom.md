@@ -52,6 +52,10 @@ Amazon商品リンク:
 |---|---|---|---:|---|---|---|---|
 | API本命・照度込み | ECOWITT Wittboy GW2001 / WS90 7-in-1 | B09TZZTYPK | Amazon表示 47,568円 | 温度、湿度、照度/light、UV、風、雨 | GW2000系Hub + WS90。Ecowitt Cloud API、Custom upload、Weather Underground/WeatherCloud/WOW系 | https://www.amazon.co.jp/dp/B09TZZTYPK | Amazon検索欄に `B09TZZTYPK` を入れる |
 | API本命・照度込み | ECOWITT GW1100 + WS90 キット | B0D8BNR5JL | Amazon表示 68,273円 | 温度、湿度、照度/light、UV、風、雨 | GW1100 Wi-Fi Gateway + WS90。LAN/Cloud/Custom upload系 | https://www.amazon.co.jp/dp/B0D8BNR5JL | Amazon検索欄に `B0D8BNR5JL` を入れる |
+| API代替・照度込み | WeatherFlow Tempest | B0868WY7NY | Amazon表示 72,998円 | 温湿度、solar radiation、UV、lux、風、雨 | REST API、WebSocket、UDP Broadcast | https://www.amazon.co.jp/dp/B0868WY7NY | Amazon検索欄に `B0868WY7NY` を入れる |
+| API代替・照度込み | Ambient Weather WS-5000 | B09V3FVJGG | Amazon表示 73,448円 | 温湿度、solar radiation、UV、風、雨 | Ambient Weather REST/Real-Time API | https://www.amazon.co.jp/dp/B09V3FVJGG | Amazon検索欄に `B09V3FVJGG` を入れる |
+| API代替・照度込み | Ambient Weather WS-2000 | B07GRBY9NP | Amazon表示 68,783円 | 温湿度、UV、風、雨 | Ambient Weather REST/Real-Time API | https://www.amazon.co.jp/dp/B07GRBY9NP | Amazon検索欄に `B07GRBY9NP` を入れる |
+| API弱め・照度込み | Sainlogic Smart WiFi SA6 Plus | B0FVM5NDJC | Amazon表示 52,452円 | Wi-Fi/App/WU/WeatherCloud系 | Weather Underground/WeatherCloud/App連携。独自API未確認 | https://www.amazon.co.jp/dp/B0FVM5NDJC | Amazon検索欄に `B0FVM5NDJC` を入れる |
 | 照度込みウェザーステーション | JoyeeLii スマート気象観測ステーション | B0GM6Q7BJV | Amazon表示 17,699円 | 温度、湿度、UV、雨、風。照度は商品名に明記なし | 屋外センサー、Wi-Fi/APP連動 | https://www.amazon.co.jp/dp/B0GM6Q7BJV | Amazon検索欄に `B0GM6Q7BJV` を入れる |
 | 照度込みウェザーステーション | Moongiantgo スマホアプリ接続 気象観測器 | B0DRHXMBKC | Amazon表示 26,850円 | 温度、湿度、照度、UV、雨、風 | ソーラーパネル付、スマホアプリ接続。API記載なし | https://www.amazon.co.jp/dp/B0DRHXMBKC | Amazon検索欄に `B0DRHXMBKC` を入れる |
 | 照度込みウェザーステーション | 特大画面WIFIプロフェッショナル屋外センサー | B0GZWH4183 | Amazon表示 27,949円 | 温度、湿度、照度、UV、雨、風 | ソーラーパネル付、Wi-Fi。専用サイトへアップロード表記、API記載なし | https://www.amazon.co.jp/dp/B0GZWH4183 | Amazon検索欄に `B0GZWH4183` を入れる |
@@ -75,23 +79,33 @@ API確認メモ:
 - 自作連携を前提にするなら、購入前に「Weather Underground/WeatherCloudへアップロード可能」または「Custom server/custom upload対応」を商品ページ、説明書、販売者質問で確認する。
 - Weather Underground系はPWSアップロードプロトコルがあり、外部サービスへ送る用途では使われる。ただし買った機器からローカルAPIで直接読めるとは限らない。
 
-## 環境情報コスト比較
+メーカー公式確認:
 
-価格は 2026-05-28 時点でChromeからAmazon.co.jpを開いて確認。SwitchBot 2点は商品ページ、ウェザーステーション候補はAmazon検索結果の表示価格。送料、セール、在庫差、販売者差は別。
+| メーカー | 公式で確認した内容 | URL |
+|---|---|---|
+| Ecowitt | Cloud API、LAN HTTP API、Home Assistant integration、Custom upload、GW1100の対応サーバー/WS90センサー | https://www.ecowitt.com/api/quickstart/product?id=282 |
+| WeatherFlow Tempest | REST API、WebSocket API、UDP Broadcast、Personal Access Token | https://weatherflow.github.io/Tempest/api/ |
+| Ambient Weather | JSON形式のREST/Real-Time API、API key、application key | https://ambientweather.com/support/question/view/id/1811/ |
+| Sainlogic | Weather Underground、WeatherCloud、App連携 | https://www.sainlogic.com/it/pages/0310-key-features |
 
-| 方針 | 買うもの | 概算コスト | 取れる情報 | 追加工作 | コメント |
-|---|---|---:|---|---|---|
-| 最安・近距離 | SwitchBot 防水温湿度計のみ | Amazon表示 1,780円 | 温度、湿度 | ほぼなし | スマホ/BLE圏内で見るだけなら最安。自動連携は弱い |
-| 推奨 | SwitchBot 防水温湿度計 + Hub Mini | Amazon表示 合計 7,010円 | 温度、湿度 | ほぼなし | 屋外IP65。Hub経由で遠隔確認/API/通知へ逃がせる |
-| 照度の初期調査 | スマホ照度アプリ、または安価な照度計 | 0〜3,000円程度 | 照度 | ほぼなし | 北向きで何が育つか判断する入口。まず朝/昼/夕方で測る |
-| 常設の最安候補 | JoyeeLii スマート気象観測ステーション | Amazon表示 17,699円 | 温度、湿度、UV、雨、風。照度は商品名に明記なし | 設置のみ | 安いが、照度が必須なら商品詳細確認なしでは本命にしない |
-| 常設の本命帯 | Moongiantgo スマホアプリ接続 / 特大画面WIFI系 | Amazon表示 26,850〜27,990円 | 温度、湿度、光/UV、雨、風など | 設置のみ | 照度/UV明記あり。ただしAPIは未確定。買う前にアップロード先を確認 |
-| 常設の高め候補 | TIMDU / Moongiantgo / Kurflo 系 | Amazon表示 32,800〜38,850円 | 温度、湿度、光/UV、雨、風など | 設置のみ | 価格高め。日本語説明書やレビュー、販売者で選別 |
-| API本命 | ECOWITT Wittboy GW2001/WS90 | Amazon表示 47,568円 | 温度、湿度、light/UV、風、雨 | 設置のみ | APIやCustom uploadを前提にするなら最有力 |
-| API本命・拡張 | ECOWITT GW1100 + WS90 | Amazon表示 68,273円 | 温度、湿度、light/UV、風、雨 | 設置のみ | LAN/Cloud/Custom uploadとセンサー拡張性を優先する案 |
-| M5直結DIY | ENV III + DLight + PaHUB/Grove Hub + 保護カバー類 | 約8,000〜25,000円以上 | 温度、湿度、気圧、照度 | 多い | 学習には良いが、防水・シェルター・配線で手間が増える |
+## API前提の星取表
 
-現時点の判断: APIで確実に取ることを重視するなら、安い無名Wi-Fi気象計ではなくEcowitt系を本命にする。費用優先ならMoongiantgo系、API優先ならECOWITT Wittboy GW2001/WS90。
+価格は 2026-05-28 時点でChromeからAmazon.co.jpを開いて確認。公式機能はメーカー公式ページ/マニュアル/APIドキュメントで確認。
+
+| 候補 | 価格 | API確度 | ローカル取得 | 照度/UV | 風/雨 | 土壌水分拡張 | Amazon入手 | コメント |
+|---|---:|---|---|---|---|---|---|---|
+| ECOWITT Wittboy GW2001/WS90 | 47,568円 | ◎ | ○ | ◎ | ◎ | ○ | ○ | GW1100+WS90の安い代替。本命 |
+| ECOWITT GW1100 + WS90 | 68,273円 | ◎ | ◎ | ◎ | ◎ | ◎ | ○ | 拡張重視。WH51土壌水分などもEcowitt側へ寄せられる |
+| WeatherFlow Tempest | 72,998円 | ◎ | ◎ | ◎ | ◎ | × | ○ | REST/WebSocket/UDPが強い。土壌水分は別系統 |
+| Ambient Weather WS-5000 | 73,448円 | ◎ | △ | ◎ | ◎ | ○ | ○ | REST/Real-Time API。クラウド寄り |
+| Ambient Weather WS-2000 | 68,783円 | ◎ | △ | ◎ | ◎ | ○ | ○ | APIあり。WS-5000より従来型 |
+| Sainlogic WiFi系 | 52,452円 | △ | × | ○ | ○ | × | ○ | WU/WeatherCloud/App中心。直接API用途では弱い |
+| Moongiantgo系 | 26,850〜38,850円 | △ | × | ○ | ○ | × | ○ | 安いがAPI未確定。API必須なら本命外 |
+| SwitchBot + Hub | 7,010円 | ○ | △ | × | × | × | ◎ | 温湿度のみ。照度/UV用途では不足 |
+
+記号: ◎=公式情報で強い、○=可能、△=条件付き/要確認、×=不足。
+
+現時点の判断: APIで取れない候補は本命から外す。第一候補は ECOWITT Wittboy GW2001/WS90。拡張性まで見るなら ECOWITT GW1100 + WS90。Tempest と Ambient はAPI代替として有力だが、土壌水分まで一体で寄せるならEcowittが扱いやすい。
 
 訂正: 照度は栽培可否の判断に必要なので、初期調査では必ず測る。常時IoT化するかどうかは後でよい。
 
@@ -111,7 +125,7 @@ API確認メモ:
 
 | 手順 | 測るもの | 判断 |
 |---|---|---|
-| 1 | スマホ照度アプリまたは照度計で、朝/昼/夕方のluxを測る | 北向きベランダの実力を見る |
+| 1 | 常設センサーで照度/UVを取る。スマホ照度アプリや照度計は設置前後の補助確認に使う | 北向きベランダの実力を見る |
 | 2 | 1週間ほど晴れ/曇りの日を記録する | 大葉でいけるか、育成ライトがいるか判断 |
 | 3 | 継続ログが欲しくなったらDLight透明カバー、またはWi-Fiウェザーステーションへ進む | IoT化はここからでよい |
 
