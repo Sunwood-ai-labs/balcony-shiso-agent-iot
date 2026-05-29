@@ -272,6 +272,18 @@ Core2代替時のケーブル要否:
 | PaHUB -> DLight | HY2.0-4P Grove | 不足 | DLight公式Includesは本体のみ。Groveケーブルを1本追加する |
 | Core2 -> USB-C電源 | USB-Cケーブル | 購入済み | UGREEN USB-C 100W/5A 1mを使用 |
 
+Groveケーブル本数の確認:
+
+| 構成 | 必要Grove本数 | 付属Grove本数 | 不足 | 判定 |
+|---|---:|---:|---:|---|
+| Core2 + PaHUB + ENV IV + DLight | 3本 | 2本 | 1本 | HY2.0-4P Groveケーブルを1本追加 |
+| StickS3 + PaHUB + ENV IV + DLight | 3本 | 2本 | 1本 | StickS3本体にGroveケーブルは付かない前提。同じく1本追加 |
+| Core2 + ENV IVだけ | 1本 | 1本 | 0本 | ENV IV付属ケーブルで足りる |
+| Core2 + DLightだけ | 1本 | 0本 | 1本 | DLight用Groveケーブルが必要 |
+| Core2 + PaHUB + ENV IV + DLight + TypeC2Grove | 4本 | 3本 | 1本 | TypeC2Groveも付属1本あり。DLight分が不足 |
+
+今回の簡易ウェザーステーション最低構成では、追加購入するGroveケーブルは1本で足りる見込み。ただしケース内取り回しや予備を考えるなら2本買う方が安全。
+
 I2C接続の確認:
 
 | 部品 | 通信 | アドレス | Core2接続 |
