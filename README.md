@@ -318,7 +318,7 @@ API
 | 部品 | 数 | 役割 |
 |---|---:|---|
 | M5StickS3 | 1 | Wi-Fi/API送信本体 |
-| M5Stack ENV III または ENV IV | 1 | 温度・湿度・気圧 |
+| M5Stack ENV III | 1 | 温度・湿度・気圧 |
 | M5Stack Unit DLight | 1 | 照度 lux |
 | M5Stack Unit Hub または PaHUB | 1 | Groveを分岐。ENVとDLightを同時接続 |
 | HY2.0-4P Groveケーブル | 必要分 | 差すだけ配線 |

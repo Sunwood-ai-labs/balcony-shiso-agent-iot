@@ -256,7 +256,7 @@ API:
 |---|---:|---|---|
 | M5StickS3 | 1 | https://docs.m5stack.com/en/core/StickS3 | Wi-Fi/API送信本体 |
 | M5Stack Core2 v1.1 | 手元代替 | https://docs.m5stack.com/en/core/Core2%20v1.1 | StickS3の代替候補。USB-CとGrove Port Aあり |
-| M5Stack ENV III または ENV IV | 1 | https://shop.m5stack.com/products/env-iv-unit-with-temperature-humidity-air-pressure-sensor-sht40-bmp280 | 温度・湿度・気圧 |
+| M5Stack ENV III | 1 | https://www.switch-science.com/products/7254 | 温度・湿度・気圧 |
 | M5Stack Unit DLight | 1 | https://shop.m5stack.com/collections/globo_basis_collection/products/dlight-unit-ambient-light-sensor-bh1750fvi-tr | 照度 lux |
 | M5Stack Unit Hub または PaHUB | 1 | https://shop.m5stack.com/products/i2c-hub-1-to-6-expansion-unit-v2-1-with-dip-switch-pca9548a | Groveを分岐。ENVとDLightを同時接続 |
 | HY2.0-4P Groveケーブル 20cm 5本セット | 1 | https://www.switch-science.com/products/5214 | 日本購入候補。差すだけ配線。M5Stack公式なら海外発送 |
@@ -268,7 +268,7 @@ Core2代替時のケーブル要否:
 | 接続 | 必要ケーブル | 付属で足りるか | メモ |
 |---|---|---|---|
 | Core2 Grove Port A -> PaHUB input | HY2.0-4P Grove | 足りる | PaHUB v2.1に20cm Groveケーブルが1本付属 |
-| PaHUB -> ENV IV | HY2.0-4P Grove | 足りる | ENV IVに20cm Groveケーブルが1本付属 |
+| PaHUB -> ENV III | HY2.0-4P Grove | 足りる | ENV IIIに20cm Groveケーブルが1本付属 |
 | PaHUB -> DLight | HY2.0-4P Grove | 不足 | DLight公式Includesは本体のみ。Groveケーブルを1本追加する |
 | Core2 -> USB-C電源 | USB-Cケーブル | 購入済み | UGREEN USB-C 100W/5A 1mを使用 |
 
@@ -276,11 +276,11 @@ Groveケーブル本数の確認:
 
 | 構成 | 必要Grove本数 | 付属Grove本数 | 不足 | 判定 |
 |---|---:|---:|---:|---|
-| Core2 + PaHUB + ENV IV + DLight | 3本 | 2本 | 1本 | HY2.0-4P Groveケーブルを1本追加 |
-| StickS3 + PaHUB + ENV IV + DLight | 3本 | 2本 | 1本 | StickS3本体にGroveケーブルは付かない前提。同じく1本追加 |
-| Core2 + ENV IVだけ | 1本 | 1本 | 0本 | ENV IV付属ケーブルで足りる |
+| Core2 + PaHUB + ENV III + DLight | 3本 | 2本 | 1本 | HY2.0-4P Groveケーブルを1本追加 |
+| StickS3 + PaHUB + ENV III + DLight | 3本 | 2本 | 1本 | StickS3本体にGroveケーブルは付かない前提。同じく1本追加 |
+| Core2 + ENV IIIだけ | 1本 | 1本 | 0本 | ENV III付属ケーブルで足りる |
 | Core2 + DLightだけ | 1本 | 0本 | 1本 | DLight用Groveケーブルが必要 |
-| Core2 + PaHUB + ENV IV + DLight + TypeC2Grove | 4本 | 3本 | 1本 | TypeC2Groveも付属1本あり。DLight分が不足 |
+| Core2 + PaHUB + ENV III + DLight + TypeC2Grove | 4本 | 3本 | 1本 | TypeC2Groveも付属1本あり。DLight分が不足 |
 
 今回の簡易ウェザーステーション最低構成では、追加購入するGroveケーブルは1本で足りる見込み。ただしケース内取り回しや予備を考えるなら2本買う方が安全。
 
@@ -292,13 +292,25 @@ Groveケーブル本数の確認:
 | M5Stack用GROVE互換 Y分岐ケーブル 20cm 5本セット | https://www.switch-science.com/products/10194 | 748円税込 | 今回は不要 | Y分岐。PaHUBを使わない時の逃げ道。I2Cアドレス衝突に注意 |
 | M5Stack公式 Unbuckled Grove Cable | https://shop.m5stack.com/products/4pin-buckled-grove-cable | 20cm-5pcsあり | 海外発送 | 画像のRegistered Air Mail表示。急ぎなら日本販売店を優先 |
 
+Switchサイエンスで揃えるM5系:
+
+| 優先 | 部品 | SwitchサイエンスURL | 価格/在庫 | 判定 | メモ |
+|---:|---|---|---:|---|---|
+| 1 | M5Stack用温湿度気圧センサユニット Ver.3 ENV III | https://www.switch-science.com/products/7254 | 1,298円 / 在庫100+ | 本命 | ENV IVが売り切れなのでENV IIIを使う。Groveケーブル付属 |
+| 2 | M5Stack用環境光センサユニット BH1750FVI-TR / DLight | https://www.switch-science.com/products/7985/ | 979円 / 在庫32 | 本命 | 照度 lux。I2Cアドレス0x23。DLight用Groveケーブルは別途必要 |
+| 3 | M5Stack用Port A I2C拡張ハブユニット v2.1 / PaHUB | https://www.switch-science.com/products/10192 | 価格はページ確認 | 本命 | I2Cを6ポートへ分岐。Groveケーブル20cm付属 |
+| 4 | M5Stack用GROVE互換ケーブル 20 cm 5本セット A034-B | https://www.switch-science.com/products/5214 | 価格はページ確認 | 本命 | DLight用の不足1本と予備。普通のGroveケーブル |
+| 5 | M5StickS3 | https://www.switch-science.com/products/10921 | 4,290円 / 在庫100+ | 任意 | 手元Core2を使うなら買わなくてよい |
+| 6 | M5Stack Core2 v1.1 | https://www.switch-science.com/products/9349 | 8,976円 / 在庫2 | 手元代替 | すでに手元にあるなら買わなくてよい |
+| 保留 | ENV IV | https://www.switch-science.com/products/9270 | 1,100円 / 在庫0 売り切れ | 保留 | EOL/在庫限り。今から買うならENV IIIへ変更 |
+
 I2C接続の確認:
 
 | 部品 | 通信 | アドレス | Core2接続 |
 |---|---|---|---|
 | Core2 v1.1 | Grove Port A | I2C+I/O+UART | 親機。USB-C 5V入力あり |
 | PaHUB v2.1 | I2C | 0x70-0x77 | Core2のPort Aへ接続 |
-| ENV IV | I2C | SHT40: 0x44 / BMP280: 0x76 | PaHUB配下へ接続 |
+| ENV III | I2C | SHT30: 0x44 / QMP6988: 0x70 | PaHUB配下へ接続 |
 | DLight | I2C | 0x23 | PaHUB配下へ接続 |
 
 この構成ならアドレス衝突はない。最低追加で買うべきものは、DLight用のHY2.0-4P Groveケーブル1本。ケース内で取り回すなら20cmより30cm-50cmも候補。
