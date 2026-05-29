@@ -259,7 +259,7 @@ API:
 | M5Stack ENV III または ENV IV | 1 | https://shop.m5stack.com/products/env-iv-unit-with-temperature-humidity-air-pressure-sensor-sht40-bmp280 | 温度・湿度・気圧 |
 | M5Stack Unit DLight | 1 | https://shop.m5stack.com/collections/globo_basis_collection/products/dlight-unit-ambient-light-sensor-bh1750fvi-tr | 照度 lux |
 | M5Stack Unit Hub または PaHUB | 1 | https://shop.m5stack.com/products/i2c-hub-1-to-6-expansion-unit-v2-1-with-dip-switch-pca9548a | Groveを分岐。ENVとDLightを同時接続 |
-| HY2.0-4P Groveケーブル | 必要分 | https://docs.m5stack.com/en/learn/interface/grove | 差すだけ配線 |
+| HY2.0-4P Groveケーブル 20cm 5本セット | 1 | https://www.switch-science.com/products/5214 | 日本購入候補。差すだけ配線。M5Stack公式なら海外発送 |
 | ダイソー フタ付収納ケース（透明）M | 1 | https://jp.daisonet.com/products/4550480731698 | 本体箱 |
 | 防虫メッシュ、結束バンド、乾燥剤 | 1式 | - | 通風、固定、湿気対策 |
 
@@ -283,6 +283,14 @@ Groveケーブル本数の確認:
 | Core2 + PaHUB + ENV IV + DLight + TypeC2Grove | 4本 | 3本 | 1本 | TypeC2Groveも付属1本あり。DLight分が不足 |
 
 今回の簡易ウェザーステーション最低構成では、追加購入するGroveケーブルは1本で足りる見込み。ただしケース内取り回しや予備を考えるなら2本買う方が安全。
+
+日本で買う場合:
+
+| 候補 | URL | 価格 | 判定 | メモ |
+|---|---|---:|---|---|
+| M5Stack用GROVE互換ケーブル 20 cm 5本セット A034-B | https://www.switch-science.com/products/5214 | スイッチサイエンス価格を確認 | 本命 | 通常のGroveケーブル。PaHUBを使うならこれ |
+| M5Stack用GROVE互換 Y分岐ケーブル 20cm 5本セット | https://www.switch-science.com/products/10194 | 748円税込 | 今回は不要 | Y分岐。PaHUBを使わない時の逃げ道。I2Cアドレス衝突に注意 |
+| M5Stack公式 Unbuckled Grove Cable | https://shop.m5stack.com/products/4pin-buckled-grove-cable | 20cm-5pcsあり | 海外発送 | 画像のRegistered Air Mail表示。急ぎなら日本販売店を優先 |
 
 I2C接続の確認:
 
