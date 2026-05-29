@@ -944,6 +944,81 @@
           </tr>
         </tbody>
       </table>
+      <table class="link-table" aria-label="Core2代替時のケーブル要否">
+        <thead>
+          <tr>
+            <th>接続</th>
+            <th>必要ケーブル</th>
+            <th>付属で足りるか</th>
+            <th>メモ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Core2 Grove Port A -> PaHUB input</td>
+            <td>HY2.0-4P Grove</td>
+            <td>◎</td>
+            <td>PaHUB v2.1に20cm Groveケーブルが1本付属</td>
+          </tr>
+          <tr>
+            <td>PaHUB -> ENV IV</td>
+            <td>HY2.0-4P Grove</td>
+            <td>◎</td>
+            <td>ENV IVに20cm Groveケーブルが1本付属</td>
+          </tr>
+          <tr>
+            <td>PaHUB -> DLight</td>
+            <td>HY2.0-4P Grove</td>
+            <td>×</td>
+            <td>DLight公式Includesは本体のみ。Groveケーブルを1本追加する</td>
+          </tr>
+          <tr>
+            <td>Core2 -> USB-C電源</td>
+            <td>USB-Cケーブル</td>
+            <td>◎</td>
+            <td>購入済みUGREEN USB-C 100W/5A 1mを使用</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="link-table" aria-label="Core2 I2C接続確認">
+        <thead>
+          <tr>
+            <th>部品</th>
+            <th>通信</th>
+            <th>アドレス</th>
+            <th>接続</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Core2 v1.1</td>
+            <td>Grove Port A</td>
+            <td>I2C+I/O+UART</td>
+            <td>親機。USB-C 5V入力あり</td>
+          </tr>
+          <tr>
+            <td>PaHUB v2.1</td>
+            <td>I2C</td>
+            <td>0x70-0x77</td>
+            <td>Core2のPort Aへ接続</td>
+          </tr>
+          <tr>
+            <td>ENV IV</td>
+            <td>I2C</td>
+            <td>SHT40: 0x44 / BMP280: 0x76</td>
+            <td>PaHUB配下へ接続</td>
+          </tr>
+          <tr>
+            <td>DLight</td>
+            <td>I2C</td>
+            <td>0x23</td>
+            <td>PaHUB配下へ接続</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="note">
+        Core2代替構成は成立する。足りない可能性が高いのはDLight用のHY2.0-4P Groveケーブル1本。ケース内で取り回すなら20cmより30cm-50cmも候補。
+      </p>
       <h2 class="section-heading" id="daiso-case">ダイソーケース加工</h2>
       <table class="link-table" aria-label="電源から簡易ウェザーステーションまでの導線チェック">
         <thead>

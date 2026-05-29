@@ -263,6 +263,26 @@ API:
 | ダイソー フタ付収納ケース（透明）M | 1 | https://jp.daisonet.com/products/4550480731698 | 本体箱 |
 | 防虫メッシュ、結束バンド、乾燥剤 | 1式 | - | 通風、固定、湿気対策 |
 
+Core2代替時のケーブル要否:
+
+| 接続 | 必要ケーブル | 付属で足りるか | メモ |
+|---|---|---|---|
+| Core2 Grove Port A -> PaHUB input | HY2.0-4P Grove | 足りる | PaHUB v2.1に20cm Groveケーブルが1本付属 |
+| PaHUB -> ENV IV | HY2.0-4P Grove | 足りる | ENV IVに20cm Groveケーブルが1本付属 |
+| PaHUB -> DLight | HY2.0-4P Grove | 不足 | DLight公式Includesは本体のみ。Groveケーブルを1本追加する |
+| Core2 -> USB-C電源 | USB-Cケーブル | 購入済み | UGREEN USB-C 100W/5A 1mを使用 |
+
+I2C接続の確認:
+
+| 部品 | 通信 | アドレス | Core2接続 |
+|---|---|---|---|
+| Core2 v1.1 | Grove Port A | I2C+I/O+UART | 親機。USB-C 5V入力あり |
+| PaHUB v2.1 | I2C | 0x70-0x77 | Core2のPort Aへ接続 |
+| ENV IV | I2C | SHT40: 0x44 / BMP280: 0x76 | PaHUB配下へ接続 |
+| DLight | I2C | 0x23 | PaHUB配下へ接続 |
+
+この構成ならアドレス衝突はない。最低追加で買うべきものは、DLight用のHY2.0-4P Groveケーブル1本。ケース内で取り回すなら20cmより30cm-50cmも候補。
+
 | 初回で外すもの | 理由 |
 |---|---|
 | UVセンサー | 透明ケースでUVが減衰しやすく、初回の判断材料として不安定 |
