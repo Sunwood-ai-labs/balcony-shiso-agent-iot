@@ -8,28 +8,28 @@ Amazon で購入する前提の候補リストです。商品リンクは価格�
 
 ## まず買う本命セット
 
-| 優先 | 区分 | 候補 | 数量 | 用途 | 購入前確認 |
-|---:|---|---|---:|---|---|
-| 1 | 100V安全 | HATAYA BFX-013KC2 または同等の漏電遮断器付き防雨型延長コード | 1 | 防雨形コンセントから最初に取る延長コード | 屋外用、防雨型、定格、漏電遮断、過負荷保護、口数 |
-| 2 | 100V保護箱 | Hrensaw 大型屋外電気ボックス IP54 / 32 x 22 x 13cm級 | 1 | 延長コードのメス側とUSB-C ACアダプタを入れる | 内寸、ケーブル入口数、IP等級、発熱余裕 |
-| 3 | AC to 5V | Anker 523 Charger 47W 相当 | 1 | USB-C 5V電源 | 目安3,990円。PSE、2ポート時出力、サイズ、密閉箱内の発熱 |
-| 4 | 5V配線 | USB-C & USB-C 1m-2m ケーブル相当 | 1-2 | 100V側から簡易ウェザーステーションへ5Vを引く | 目安1,190円〜。簡易ウェザーステーションだけなら1本。予備や後続ポンプ電源まで見るなら2本。3mは箱を大きく離す時だけ |
-| 5 | M5保護箱 | 推奨: 150 x 200 x 100mm級 IP65防滴ボックス / 最小: タカチ BCAP112107G | 1 | M5StickS3、TypeC2Grove、MOSFET、GND端子台、配線の収納 | 初心者は150 x 200 x 100mm級を優先。BCAP112107Gは入るが配線とUSB-C曲げが窮屈 |
-| 6 | コネクタ通線 | オーム電機 OA-WH22-06/13 セパレートキャプコン相当 | 1-3 | USB-Cなどコネクタ付きケーブルの通線 | 目安約1,200円前後。適合ケーブル径、取付穴径、IP67条件 |
-| 7 | 制御本体 | M5StickS3 | 1 | Wi-Fi付き制御本体 | USB-C 5V入力、Grove端子、固定方法 |
-| 8 | 5V/Grove補助 | M5Stack TypeC2Grove | 1 | M5側の5V/Grove給電・変換補助 | 5V入力、Grove接続、電流余裕 |
-| 9 | 防水土壌水分 | DFRobot Gravity IP65 Capacitive Soil Moisture Sensor / SEN0308 相当 | 1 | ベランダ常設用の土壌水分測定 | IP65、3.3-5.5V、アナログ出力、M5側ADC接続方法 |
-| 10 | 給水 | 5V-6V チューブポンプ / ペリスタルティックポンプ相当 | 1 | センサーと分離した給水 | 流量、電流、チューブ径、空運転対策 |
-| 11 | センサー変換 | Grove/HY2.0-4P to Dupont 変換ケーブル、またはM5用Groveブレイクアウト | 1 | SEN0308の2.54mm 3ピン信号をM5StickS3へ入れる | GND、5V/3.3V、Signalを取り違えない |
-| 12 | ポンプ駆動 | MOSFETポンプドライバ、または5Vポンプ駆動モジュール | 1 | M5のGPIOでポンプ電源を直接流さず制御する | 500mA以上、逆起電力対策、共通GND |
-| 13 | GND共通化 | WAGO 221-415/221-615 相当のレバーコネクタ | 1-2 | M5 GND、ポンプ電源-、MOSFET GND、センサーGNDを同じGNDへまとめる | 低電圧5V側だけに使う。100V側には使わない |
-| 14 | 配線 | 端子台、Dupont線、2.54mm 3ピン接続部品 | 適量 | センサー/ドライバ/ポンプの仮配線と箱内固定 | 緩み、極性、抜け止め |
-| 15 | 電源テスト | USB-C 電圧・電流チェッカー | 1 | 初回テストで電圧降下と電流を見る | USB-C PD対応範囲、表示項目 |
-| 16 | 環境情報 簡単案 | SwitchBot 防水温湿度計 + Hub Mini/Hub 2 | 1式 | 屋外の温度・湿度をM5とは別系統で取る | IP65。Hub経由でクラウド/API、Home AssistantならBluetoothでも拾える |
-| 17 | 環境情報 照度込み | Wi-Fiウェザーステーション候補 | 1式 | 温湿度に加え、照度/日射/UVまで見たい場合 | 屋外7-in-1センサーはソーラー+電池、表示機は室内または100V箱側電源。Wi-Fi/クラウド/API対応を確認 |
-| 18 | 環境情報 DIY案 | M5Stack ENV III + DLight | 各1 | M5へ直接つなぎたい場合 | 防水ではない。センサー保護とI2C拡張が必要 |
-| 19 | DIY保護 | FP1806級自然通風シェルター + 透明カバー | 1式 | ENV III/DLightを外へ出す場合の保護 | DIY案だけで必要。簡単案なら不要 |
-| 20 | DIY I2C拡張 | Grove Hub/PaHUB、Unit ADC、EXT.IO2 | 各1 | 環境センサーまでM5に載せる場合 | G9/G10をI2Cに寄せる |
+| 優先 | 状態 | 区分 | 候補 | 数量 | 用途 | 購入前確認 |
+|---:|---|---|---|---:|---|---|
+| 1 | ✓ 購入済み | 100V安全 | HATAYA BFX-013KC2 または同等の漏電遮断器付き防雨型延長コード | 1 | 防雨形コンセントから最初に取る延長コード | 屋外用、防雨型、定格、漏電遮断、過負荷保護、口数 |
+| 2 | ✓ 購入済み | 100V保護箱 | Hrensaw 大型屋外電気ボックス IP54 / 32 x 22 x 13cm級 | 1 | 延長コードのメス側とUSB-C ACアダプタを入れる | 内寸、ケーブル入口数、IP等級、発熱余裕 |
+| 3 | ✓ 購入済み | AC to 5V | UGREEN 30W GaN 2C1A | 1 | USB-C 5V電源 | Amazon注文: 1,584円。PSE、サイズ、密閉箱内の発熱 |
+| 4 | ✓ 購入済み | 5V配線 | UGREEN USB-C 100W/5A 1m | 1 | 100V側から簡易ウェザーステーションへ5Vを引く | Amazon注文: 788円。簡易ウェザーステーション用にまず1本 |
+| 5 | 未購入 | M5保護箱 | 推奨: 150 x 200 x 100mm級 IP65防滴ボックス / 最小: タカチ BCAP112107G | 1 | M5StickS3、TypeC2Grove、MOSFET、GND端子台、配線の収納 | 初心者は150 x 200 x 100mm級を優先。BCAP112107Gは入るが配線とUSB-C曲げが窮屈 |
+| 6 | ✓ 購入済み | コネクタ通線 | オーム電機 OA-WH22-06/13 セパレートキャプコン相当 | 1 | USB-Cなどコネクタ付きケーブルの通線 | Amazon注文: 1,692円。適合ケーブル径、取付穴径、IP67条件 |
+| 7 | 代替候補あり | 制御本体 | M5StickS3 / 手元のM5Stack Core2 v1.1で代替可 | 1 | Wi-Fi付き制御本体 | Core2はUSB-CとGrove Port Aあり。大きいのでケース寸法に注意 |
+| 8 | 未購入 | 5V/Grove補助 | M5Stack TypeC2Grove | 1 | M5側の5V/Grove給電・変換補助 | 5V入力、Grove接続、電流余裕 |
+| 9 | 未購入 | 防水土壌水分 | DFRobot Gravity IP65 Capacitive Soil Moisture Sensor / SEN0308 相当 | 1 | ベランダ常設用の土壌水分測定 | IP65、3.3-5.5V、アナログ出力、M5側ADC接続方法 |
+| 10 | 未購入 | 給水 | 5V-6V チューブポンプ / ペリスタルティックポンプ相当 | 1 | センサーと分離した給水 | 流量、電流、チューブ径、空運転対策 |
+| 11 | 未購入 | センサー変換 | Grove/HY2.0-4P to Dupont 変換ケーブル、またはM5用Groveブレイクアウト | 1 | SEN0308の2.54mm 3ピン信号をM5StickS3へ入れる | GND、5V/3.3V、Signalを取り違えない |
+| 12 | 未購入 | ポンプ駆動 | MOSFETポンプドライバ、または5Vポンプ駆動モジュール | 1 | M5のGPIOでポンプ電源を直接流さず制御する | 500mA以上、逆起電力対策、共通GND |
+| 13 | 未購入 | GND共通化 | WAGO 221-415/221-615 相当のレバーコネクタ | 1-2 | M5 GND、ポンプ電源-、MOSFET GND、センサーGNDを同じGNDへまとめる | 低電圧5V側だけに使う。100V側には使わない |
+| 14 | 未購入 | 配線 | 端子台、Dupont線、2.54mm 3ピン接続部品 | 適量 | センサー/ドライバ/ポンプの仮配線と箱内固定 | 緩み、極性、抜け止め |
+| 15 | 未購入 | 電源テスト | USB-C 電圧・電流チェッカー | 1 | 初回テストで電圧降下と電流を見る | USB-C PD対応範囲、表示項目 |
+| 16 | 未購入 | 環境情報 簡単案 | SwitchBot 防水温湿度計 + Hub Mini/Hub 2 | 1式 | 屋外の温度・湿度をM5とは別系統で取る | IP65。Hub経由でクラウド/API、Home AssistantならBluetoothでも拾える |
+| 17 | 未購入 | 環境情報 照度込み | Wi-Fiウェザーステーション候補 | 1式 | 温湿度に加え、照度/日射/UVまで見たい場合 | 屋外7-in-1センサーはソーラー+電池、表示機は室内または100V箱側電源。Wi-Fi/クラウド/API対応を確認 |
+| 18 | 未購入 | 環境情報 DIY案 | M5Stack ENV III + DLight | 各1 | M5へ直接つなぎたい場合 | 防水ではない。センサー保護とI2C拡張が必要 |
+| 19 | 未購入 | DIY保護 | FP1806級自然通風シェルター + 透明カバー | 1式 | ENV III/DLightを外へ出す場合の保護 | DIY案だけで必要。簡単案なら不要 |
+| 20 | 未購入 | DIY I2C拡張 | Grove Hub/PaHUB、Unit ADC、EXT.IO2 | 各1 | 環境センサーまでM5に載せる場合 | G9/G10をI2Cに寄せる |
 
 ## 屋外本命の代替候補
 
@@ -255,9 +255,10 @@ API:
 | 部品 | 数 | URL | 役割 |
 |---|---:|---|---|
 | M5StickS3 | 1 | https://docs.m5stack.com/en/core/StickS3 | Wi-Fi/API送信本体 |
-| M5Stack ENV III または ENV IV | 1 | https://docs.m5stack.com/ja/unit/env | 温度・湿度・気圧 |
+| M5Stack Core2 v1.1 | 手元代替 | https://docs.m5stack.com/en/core/Core2%20v1.1 | StickS3の代替候補。USB-CとGrove Port Aあり |
+| M5Stack ENV III または ENV IV | 1 | https://shop.m5stack.com/products/env-iv-unit-with-temperature-humidity-air-pressure-sensor-sht40-bmp280 | 温度・湿度・気圧 |
 | M5Stack Unit DLight | 1 | https://shop.m5stack.com/collections/globo_basis_collection/products/dlight-unit-ambient-light-sensor-bh1750fvi-tr | 照度 lux |
-| M5Stack Unit Hub または PaHUB | 1 | https://docs.m5stack.com/en/unit/pahub | Groveを分岐。ENVとDLightを同時接続 |
+| M5Stack Unit Hub または PaHUB | 1 | https://shop.m5stack.com/products/i2c-hub-1-to-6-expansion-unit-v2-1-with-dip-switch-pca9548a | Groveを分岐。ENVとDLightを同時接続 |
 | HY2.0-4P Groveケーブル | 必要分 | https://docs.m5stack.com/en/learn/interface/grove | 差すだけ配線 |
 | ダイソー フタ付収納ケース（透明）M | 1 | https://jp.daisonet.com/products/4550480731698 | 本体箱 |
 | 防虫メッシュ、結束バンド、乾燥剤 | 1式 | - | 通風、固定、湿気対策 |
